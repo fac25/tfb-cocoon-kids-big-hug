@@ -11,6 +11,8 @@ To help people understand their feelings better.
 ### What are you not building?
 We're not building a platform that is used in schools for teachers to better unterstand the moods of the children they're teaching
 
+We are not building a platform with effective sign-up for children under 13.
+
 ### How did you decide what features were important?
 We listened to our Product Owner and listened to the feedback from the user research that we did on Design week.
 
@@ -39,7 +41,8 @@ It helped us refactor our wireframe and enhance existing ideas.
 
 ### Are there any legal or regulatory requirements you should consider?
 
-Yes. GDPR and T&C need to be in plain and simple language.
+- GDPR and T&C need to be in plain and simple language.
+- Specific Auth requirements for minors are out of scope for this project
 
 
 ## Project learnings 
