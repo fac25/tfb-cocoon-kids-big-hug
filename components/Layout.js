@@ -30,8 +30,8 @@ export default function Layout({ pageTitle, isLanding = false, children }) {
                     <Image
                         src="/assets/logo-full.jpg"
                         alt="Cocoon Kids Big Hug logo"
-                        width={1101}
-                        height={415}
+                        width={550}
+                        height={207}
                     />
                 </header>
             )}
