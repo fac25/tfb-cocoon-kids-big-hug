@@ -1,1 +1,7 @@
-export default function Nav() {}
+export default function Nav() {
+    return (
+        <header>
+            <p>Logo + nav</p>
+        </header>
+    )
+}
