@@ -1,0 +1,189 @@
+{
+    "emotions": [
+        {
+            "id": 1,
+            "name": "Anxiety",
+            "restricted": false,
+            "under13": { "src": "url", "description": "text" },
+            "over13": {
+                "src": "url",
+                "description": "text"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Sadness",
+            "restricted": false,
+            "under13": { "src": "url", "description": "text" },
+            "over13": {
+                "src": "url",
+                "description": "text"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Anger",
+            "restricted": false,
+            "under13": { "src": "url", "description": "text" },
+            "over13": {
+                "src": "url",
+                "description": "text"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Self-harm",
+            "restricted": true,
+            "over13": {
+                "src": "url",
+                "description": "text"
+            }
+        }
+    ],
+    "do-make": [
+        {
+            "under13": [
+                {
+                    "id": 1,
+                    "emotions": ["Anxiety", "Anger"],
+                    "title": "text",
+                    "description": "text",
+                    "src": "url",
+                    "how-it-helps": "text",
+                    "materials": ["text"],
+                    "instructions": [
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "emotions": ["Anxiety", "Anger"],
+                    "title": "text",
+                    "description": "text",
+                    "src": "url",
+                    "how-it-helps": "text",
+                    "materials": ["text"],
+                    "instructions": [
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" }
+                    ]
+                }
+            ],
+            "over13": [
+                {
+                    "id": 1,
+                    "emotions": ["Anxiety", "Anger"],
+                    "title": "text",
+                    "description": "text",
+                    "src": "url",
+                    "how-it-helps": "text",
+                    "materials": ["text"],
+                    "instructions": [
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "emotions": ["Anxiety", "Anger"],
+                    "title": "text",
+                    "description": "text",
+                    "src": "url",
+                    "how-it-helps": "text",
+                    "materials": ["text"],
+                    "instructions": [
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" },
+                        { "src": "url", "step": "text" }
+                    ]
+                }
+            ]
+        }
+    ],
+    "play-game": [
+        {
+            "under13": [
+                {
+                    "id": 1,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "game": "url"
+                },
+                {
+                    "id": 2,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "game": "url"
+                }
+            ],
+            "over13": [
+                {
+                    "id": 1,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "game": "url"
+                },
+                {
+                    "id": 2,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "game": "url"
+                }
+            ]
+        }
+    ],
+    "join-go": [
+        {
+            "under13": [
+                {
+                    "id": 1,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "title": "text",
+                    "location": "text"
+                },
+                {
+                    "id": 2,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "title": "text",
+                    "location": "text"
+                }
+            ],
+            "over13": [
+                {
+                    "id": 1,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "title": "text",
+                    "location": "text"
+                },
+                {
+                    "id": 2,
+                    "emotions": ["Anxiety", "Anger"],
+                    "how-it-helps": "text",
+                    "title": "text",
+                    "location": "text"
+                }
+            ]
+        }
+    ],
+    "chat-speak": [
+        {
+            "under13": {
+                "email": "link",
+                "chat": "link",
+                "phone-numer": "number"
+            },
+            "over13": {
+                "email": "link",
+                "chat": "link",
+                "phone-numer": "number"
+            }
+        }
+    ]
+}
