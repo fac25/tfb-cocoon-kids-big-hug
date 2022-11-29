@@ -17,10 +17,10 @@ export default function Landing() {
             </header>
             <div>
                 <div>
-                    <UserGroupBtn userGroup="-13" text="I’m a child under 13" />
+                    <UserGroupBtn userGroup="under13" text="I’m a child under 13" />
                 </div>
                 <div>
-                    <UserGroupBtn userGroup="+13" text="I’m a child over 13" />
+                    <UserGroupBtn userGroup="over13" text="I’m a child over 13" />
                 </div>
                 <div>
                     <UserGroupBtn

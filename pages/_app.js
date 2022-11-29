@@ -3,7 +3,8 @@ import { useState } from 'react'
 import GlobalUserGroup from '../lib/GlobalContext'
 
 function MyApp({ Component, pageProps }) {
-    const [userGroup, setUserGroup] = useState('-13')
+    
+    const [userGroup, setUserGroup] = useState()
     return (
         <GlobalUserGroup.Provider value={{ userGroup, setUserGroup }}>
             <Component {...pageProps} />

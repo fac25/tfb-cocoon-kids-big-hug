@@ -14,9 +14,9 @@
             "id": 2,
             "name": "Angry",
             "restricted": false,
-            "under13": { "src": "Alone.jpg", "description": "text" },
+            "under13": { "src": "Angry.jpg", "description": "text" },
             "over13": {
-                "src": "Alone.jpg",
+                "src": "Angry.jpg",
                 "description": "text"
             }
         },

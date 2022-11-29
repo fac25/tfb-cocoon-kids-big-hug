@@ -8,7 +8,7 @@ const Emotions = ({ emotions }) => {
                 return (
                     <div key={emotion.id}>
                         <Image
-                            src="/assets/img/over13/logo.jpg"
+                            src={`/assets/under13/${emotion.under13.src}`}
                             width={300}
                             height={300}
                         />
