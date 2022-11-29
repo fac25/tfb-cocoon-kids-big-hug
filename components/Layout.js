@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Nav from './Nav'
 import Image from 'next/image'
 import Footer from './Footer'
+import HelpAndExitButton from './HelpAndExitButton'
 export const siteTitle = 'Cocoon Kids Big Hug'
 
 export default function Layout({ pageTitle, isLanding = false, children }) {
@@ -30,11 +31,12 @@ export default function Layout({ pageTitle, isLanding = false, children }) {
                     <Image
                         src="/assets/logo-full.jpg"
                         alt="Cocoon Kids Big Hug logo"
-                        width={1101}
-                        height={415}
+                        width={550}
+                        height={207}
                     />
                 </header>
             )}
+            <HelpAndExitButton />
             <main>{children}</main>
             {!isLanding ? (
                 <Footer />
