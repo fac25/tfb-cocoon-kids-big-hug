@@ -1,4 +1,5 @@
 import Emotions from '../../../components/Emotions'
+import Layout from '../../../components/Layout'
 
 export async function getStaticProps() {
     const res = await fetch('http://localhost:3002/emotions')
@@ -8,5 +9,13 @@ export async function getStaticProps() {
 
 export default function AllEmotions({ emotions }) {
     // console.log(localStorage && localStorage.getItem("user-group"))
-    return <Emotions emotions={emotions} length={emotions.length} page={false} />
+    return (
+        <Layout pageTitle="Emotions">
+            <Emotions
+                emotions={emotions}
+                length={emotions.length}
+                page={false}
+            />
+        </Layout>
+    )
 }

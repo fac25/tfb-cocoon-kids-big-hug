@@ -1,4 +1,4 @@
-
+import Layout from '../../components/Layout'
 import Emotions from '../../components/Emotions'
 
 export async function getStaticProps() {
@@ -9,5 +9,9 @@ export async function getStaticProps() {
 }
 
 export default function UserGroup({ emotions }) {
-    return <Emotions emotions={emotions} length={9} page={true} />
+    return (
+        <Layout pageTitle="User Group">
+            <Emotions emotions={emotions} length={9} page={true} />
+        </Layout>
+    )
 }
