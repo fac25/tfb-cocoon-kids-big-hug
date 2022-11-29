@@ -7,5 +7,6 @@ export async function getStaticProps() {
 }
 
 export default function AllEmotions({ emotions }) {
+    // console.log(localStorage && localStorage.getItem("user-group"))
     return <Emotions emotions={emotions} />
 }
