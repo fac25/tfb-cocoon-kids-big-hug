@@ -1,11 +1,7 @@
 import { useRouter } from 'next/router'
-import Image from 'next/image'
-
-import { useContext } from 'react'
-import GlobalUserGroup from '../../../lib/GlobalContext'
+import SingleEmotion from '../../../components/Emotion'
 
 import Layout from '../../../components/Layout'
-
 
 export async function getStaticPaths() {
     const res = await fetch('http://localhost:3002/emotions')
@@ -28,24 +24,12 @@ export async function getStaticProps() {
 export default function Emotion({ emotions }) {
     const router = useRouter()
     const { name } = router.query
-    const { userGroup } = useContext(GlobalUserGroup)
     return (
         <Layout pageTitle="Emotion">
-            {emotions.map((emotion) => {
-                if (emotion.name === name) {
-                    return (
-                        <div key={emotion.id}>
-                            <Image
-                                src={`/assets/${userGroup}/${emotion[userGroup].src}`}
-                                width={300}
-                                height={300}
-                                alt={emotion.name}
-                            />
-                            <p>{emotion.name}</p>
-                        </div>
-                    )
-                }
-            })}
+            <SingleEmotion
+                name={name}
+                emotions={emotions}
+            />
         </Layout>
     )
 }

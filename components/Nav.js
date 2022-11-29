@@ -5,9 +5,9 @@ export default function Nav() {
     const [isNavOpen, setIsNavOpen] = useState(false)
     const navMenu = [
         { name: 'Home', route: '/user-group' },
+        { name: 'Emotions', route: 'user-group/emotions' },
         { name: 'About us', route: '/about-us' },
         { name: 'Contact us', route: '/contact-us' },
-        { name: 'Emotions', route: 'user-group/emotions' },
         { name: 'Select different age content', route: '/' },
         { name: 'Get help now', route: '/help' },
     ]

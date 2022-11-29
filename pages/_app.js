@@ -4,7 +4,6 @@ import GlobalUserGroup from '../lib/GlobalContext'
 
 function MyApp({ Component, pageProps }) {
     const initialState = 'under13'
-    //const [cart, setCart] = useState(initialState)
     const [userGroup, setUserGroup] = useState(initialState)
 
     useEffect(() => {
@@ -15,12 +14,6 @@ function MyApp({ Component, pageProps }) {
             setUserGroup(localStorage.setItem('user-group', 'under13'))
         }
     }, [userGroup])
-
-    // useEffect(() => {
-    //     if (userGroup !== initialState) {
-    //         localStorage.setItem('user-group', userGroup)
-    //     }
-    // }, [userGroup])
 
     return (
         <GlobalUserGroup.Provider value={{ userGroup, setUserGroup }}>
