@@ -1,4 +1,3 @@
-
 import Emotions from '../../components/Emotions'
 
 export async function getStaticProps() {
