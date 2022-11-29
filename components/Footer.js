@@ -1,3 +1,3 @@
 export default function Footer() {
-    return <footer>Footer</footer>
+    return <footer>Cocoon Kids and Big Hug &#169; 2022</footer>
 }
