@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
-export default function AboutUs() {
+export default function ContactUs() {
     return (
-        <Layout pageTitle="About us">
+        <Layout pageTitle="Contact us">
             <div>about us</div>
         </Layout>
     )

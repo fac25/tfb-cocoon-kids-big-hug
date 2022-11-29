@@ -4,6 +4,9 @@ import Image from 'next/image'
 import { useContext } from 'react'
 import GlobalUserGroup from '../../../lib/GlobalContext'
 
+import Layout from '../../../components/Layout'
+
+
 export async function getStaticPaths() {
     const res = await fetch('http://localhost:3002/emotions')
     const emotions = await res.json()
@@ -27,7 +30,7 @@ export default function Emotion({ emotions }) {
     const { name } = router.query
     const { userGroup } = useContext(GlobalUserGroup)
     return (
-        <div>
+        <Layout pageTitle="Emotion">
             {emotions.map((emotion) => {
                 if (emotion.name === name) {
                     return (
@@ -43,6 +46,6 @@ export default function Emotion({ emotions }) {
                     )
                 }
             })}
-        </div>
+        </Layout>
     )
 }
