@@ -1,10 +1,27 @@
 import '../styles/globals.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import GlobalUserGroup from '../lib/GlobalContext'
 
 function MyApp({ Component, pageProps }) {
-    
-    const [userGroup, setUserGroup] = useState()
+    const initialState = 'under13'
+    //const [cart, setCart] = useState(initialState)
+    const [userGroup, setUserGroup] = useState(initialState)
+
+    useEffect(() => {
+        const ageGroup = localStorage.getItem('user-group')
+        if (ageGroup) {
+            setUserGroup(ageGroup)
+        } else {
+            setUserGroup(localStorage.setItem('user-group', 'under13'))
+        }
+    }, [userGroup])
+
+    // useEffect(() => {
+    //     if (userGroup !== initialState) {
+    //         localStorage.setItem('user-group', userGroup)
+    //     }
+    // }, [userGroup])
+
     return (
         <GlobalUserGroup.Provider value={{ userGroup, setUserGroup }}>
             <Component {...pageProps} />
