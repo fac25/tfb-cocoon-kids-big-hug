@@ -10,6 +10,7 @@ import '@reach/accordion/styles.css'
 import SingleEmotion from '../../../components/Emotion'
 
 import Layout from '../../../components/Layout'
+import ChatSpeak from '../../../components/ChatSpeak'
 
 export async function getStaticPaths() {
     const res = await fetch('http://localhost:3003/emotions')
@@ -24,12 +25,15 @@ export async function getStaticPaths() {
 
 export async function getStaticProps() {
     const res = await fetch('http://localhost:3003/emotions')
+    const res2 = await fetch('http://localhost:3003/chat-speak')
     const emotions = await res.json()
+    const chat = await res2.json()
 
-    return { props: { emotions } }
+    return { props: { emotions, chat } }
 }
 
-export default function Emotion({ emotions }) {
+export default function Emotion({ emotions, chat }) {
+    // console.log(chat)
     const router = useRouter()
     const { name } = router.query
     return (
@@ -65,7 +69,9 @@ export default function Emotion({ emotions }) {
                         <h3>
                             <AccordionButton>Chat/Speak</AccordionButton>
                         </h3>
-                        <AccordionPanel>Buttons to Chat/Speak</AccordionPanel>
+                        <AccordionPanel>
+                            <ChatSpeak chat={chat} />
+                        </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
             </section>

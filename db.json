@@ -716,12 +716,12 @@
             "under13": {
                 "email": "https://www.childline.org.uk/locker/inbox/",
                 "chat": "https://www.childline.org.uk/login/?returnPath=/get-support/1-2-1-counsellor-chat/chat-entry/",
-                "phone-numer": "08001111"
+                "phone": "08001111"
             },
             "over13": {
-                "email": "https://www.childline.org.uk/locker/inbox/",
-                "chat": "https://www.childline.org.uk/login/?returnPath=/get-support/1-2-1-counsellor-chat/chat-entry/",
-                "phone-numer": "08001111"
+                "email": "https://www.themix.org.uk/get-support/speak-to-our-team/email-us",
+                "chat": "https://www.themix.org.uk/get-support/speak-to-our-team",
+                "phone": "08088084994"
             }
         }
     ]
