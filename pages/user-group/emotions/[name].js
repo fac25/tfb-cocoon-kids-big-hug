@@ -1,4 +1,12 @@
 import { useRouter } from 'next/router'
+import {
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+} from '@reach/accordion'
+import '@reach/accordion/styles.css'
+
 import SingleEmotion from '../../../components/Emotion'
 
 import Layout from '../../../components/Layout'
@@ -26,10 +34,41 @@ export default function Emotion({ emotions }) {
     const { name } = router.query
     return (
         <Layout pageTitle="Emotion">
-            <SingleEmotion
-                name={name}
-                emotions={emotions}
-            />
+            <SingleEmotion name={name} emotions={emotions} />
+            <section>
+                <Accordion>
+                    <AccordionItem>
+                        <h3>
+                            <AccordionButton>Do/Make</AccordionButton>
+                        </h3>
+                        <AccordionPanel>
+                            Grid of do/makes component
+                        </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <h3>
+                            <AccordionButton>Play/Game</AccordionButton>
+                        </h3>
+                        <AccordionPanel>
+                            Grid of Play/Game component
+                        </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <h3>
+                            <AccordionButton>Join/Go</AccordionButton>
+                        </h3>
+                        <AccordionPanel>
+                            Grid of Join/Go component
+                        </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <h3>
+                            <AccordionButton>Chat/Speak</AccordionButton>
+                        </h3>
+                        <AccordionPanel>Buttons to Chat/Speak</AccordionPanel>
+                    </AccordionItem>
+                </Accordion>
+            </section>
         </Layout>
     )
 }
