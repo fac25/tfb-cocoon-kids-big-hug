@@ -1,22 +1,24 @@
 {
-  "name": "tfb-cocoon-kids-big-hug",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5",
-    "json-server": "^0.17.1",
-    "next": "13.0.5",
-    "prettier": "^2.8.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-select": "^5.6.1",
-    "sass": "^1.56.1"
-  }
+    "name": "tfb-cocoon-kids-big-hug",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "j-s": "npx json-server db.json --port 3003"
+    },
+    "dependencies": {
+        "@reach/accordion": "^0.18.0",
+        "eslint": "8.28.0",
+        "eslint-config-next": "13.0.5",
+        "json-server": "^0.17.1",
+        "next": "13.0.5",
+        "prettier": "^2.8.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-select": "^5.6.1",
+        "sass": "^1.56.1"
+    }
 }

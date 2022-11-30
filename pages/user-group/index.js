@@ -3,7 +3,7 @@ import Emotions from '../../components/Emotions'
 import WhatToDo from '../../components/WhatToDo'
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3002/emotions')
+    const res = await fetch('http://localhost:3003/emotions')
     const emotions = await res.json()
 
     return { props: { emotions } }
