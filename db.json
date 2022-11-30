@@ -161,11 +161,11 @@
         },
         {
             "id": 13,
-            "name": "Emberrassed",
+            "name": "Embarrassed",
             "restricted": false,
-            "under13": { "src": "emberrassed.jpg", "description": "text" },
+            "under13": { "src": "embarrassed.jpg", "description": "text" },
             "over13": {
-                "src": "emberrassed.jpg",
+                "src": "embarrassed.jpg",
                 "description": "text"
             }
         },
@@ -331,7 +331,6 @@
         }
     ],
 
-    
     "do-make": {
         "under13": [
             {
