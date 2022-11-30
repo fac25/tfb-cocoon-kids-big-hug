@@ -26,10 +26,7 @@ export default function Emotion({ emotions }) {
     const { name } = router.query
     return (
         <Layout pageTitle="Emotion">
-            <SingleEmotion
-                name={name}
-                emotions={emotions}
-            />
+            <SingleEmotion name={name} emotions={emotions} />
         </Layout>
     )
 }
