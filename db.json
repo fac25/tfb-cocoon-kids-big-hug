@@ -4,9 +4,9 @@
             "id": 1,
             "name": "Alone",
             "restricted": false,
-            "under13": { "src": "Alone.jpg", "description": "text" },
+            "under13": { "src": "alone.jpg", "description": "text" },
             "over13": {
-                "src": "Alone.jpg",
+                "src": "alone.jpg",
                 "description": "text"
             }
         },
@@ -14,9 +14,9 @@
             "id": 2,
             "name": "Angry",
             "restricted": false,
-            "under13": { "src": "Angry.jpg", "description": "text" },
+            "under13": { "src": "angry.jpg", "description": "text" },
             "over13": {
-                "src": "Angry.jpg",
+                "src": "angry.jpg",
                 "description": "text"
             }
         },
@@ -25,7 +25,7 @@
             "name": "Anxious",
             "restricted": false,
             "under13": {
-                "src": "Anxious.jpg",
+                "src": "anxious.jpg",
                 "description": "Anxiety is  feeling that everybody gets. How do you know if you're feeling anxious? You might...",
                 "symptoms": [
                     "cry more",
@@ -47,7 +47,7 @@
                 ]
             },
             "over13": {
-                "src": "Anxious.jpg",
+                "src": "anxious.jpg",
                 "description": "It's really important to someone know and to get help if you feel like this regularly. Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than weeks.",
                 "symptoms": [
                     "cry more often or feel like you are going to",
@@ -73,9 +73,9 @@
             "id": 4,
             "name": "Ashamed",
             "restricted": false,
-            "under13": { "src": "Ashamed.jpg", "description": "text" },
+            "under13": { "src": "ashamed.jpg", "description": "text" },
             "over13": {
-                "src": "Ashamed.jpg",
+                "src": "ashamed.jpg",
                 "description": "text"
             }
         },
@@ -83,9 +83,9 @@
             "id": 5,
             "name": "Bored",
             "restricted": false,
-            "under13": { "src": "Bored.jpg", "description": "text" },
+            "under13": { "src": "bored.jpg", "description": "text" },
             "over13": {
-                "src": "Bored.jpg",
+                "src": "bored.jpg",
                 "description": "text"
             }
         },
@@ -93,9 +93,9 @@
             "id": 6,
             "name": "Chatty",
             "restricted": false,
-            "under13": { "src": "Chatty.jpg", "description": "text" },
+            "under13": { "src": "chatty.jpg", "description": "text" },
             "over13": {
-                "src": "Chatty.jpg",
+                "src": "chatty.jpg",
                 "description": "text"
             }
         },
@@ -103,9 +103,9 @@
             "id": 7,
             "name": "Comfortable",
             "restricted": false,
-            "under13": { "src": "Comfortable.jpg", "description": "text" },
+            "under13": { "src": "comfortable.jpg", "description": "text" },
             "over13": {
-                "src": "Comfortable.jpg",
+                "src": "comfortable.jpg",
                 "description": "text"
             }
         },
@@ -113,9 +113,9 @@
             "id": 8,
             "name": "Confident",
             "restricted": false,
-            "under13": { "src": "Confident.jpg", "description": "text" },
+            "under13": { "src": "confident.jpg", "description": "text" },
             "over13": {
-                "src": "Confident.jpg",
+                "src": "confident.jpg",
                 "description": "text"
             }
         },
@@ -123,9 +123,9 @@
             "id": 9,
             "name": "Confused",
             "restricted": false,
-            "under13": { "src": "Confused.jpg", "description": "text" },
+            "under13": { "src": "confused.jpg", "description": "text" },
             "over13": {
-                "src": "Confused.jpg",
+                "src": "confused.jpg",
                 "description": "text"
             }
         },
@@ -133,9 +133,9 @@
             "id": 10,
             "name": "Depressed",
             "restricted": false,
-            "under13": { "src": "Depressed.jpg", "description": "text" },
+            "under13": { "src": "depressed.jpg", "description": "text" },
             "over13": {
-                "src": "Depressed.jpg",
+                "src": "depressed.jpg",
                 "description": "text"
             }
         },
@@ -143,189 +143,189 @@
             "id": 11,
             "name": "Disgusted",
             "restricted": false,
-            "under13": { "src": "Disgusted.jpg", "description": "text" },
+            "under13": { "src": "disgusted.jpg", "description": "text" },
             "over13": {
-                "src": "Disgusted.jpg",
-                "description": "text"
-            }
-        },
-        {
-            "id": 11,
-            "name": "Down",
-            "restricted": false,
-            "under13": { "src": "Down.jpg", "description": "text" },
-            "over13": {
-                "src": "Down.jpg",
+                "src": "disgusted.jpg",
                 "description": "text"
             }
         },
         {
             "id": 12,
-            "name": "Emberrassed",
+            "name": "Down",
             "restricted": false,
-            "under13": { "src": "Emberrassed.jpg", "description": "text" },
+            "under13": { "src": "down.jpg", "description": "text" },
             "over13": {
-                "src": "Emberrassed.jpg",
+                "src": "down.jpg",
                 "description": "text"
             }
         },
         {
             "id": 13,
-            "name": "Excited",
+            "name": "Emberrassed",
             "restricted": false,
-            "under13": { "src": "Excited.jpg", "description": "text" },
+            "under13": { "src": "emberrassed.jpg", "description": "text" },
             "over13": {
-                "src": "Excited.jpg",
+                "src": "emberrassed.jpg",
                 "description": "text"
             }
         },
         {
             "id": 14,
-            "name": "Fed up",
+            "name": "Excited",
             "restricted": false,
-            "under13": { "src": "Fed-Up.jpg", "description": "text" },
+            "under13": { "src": "excited.jpg", "description": "text" },
             "over13": {
-                "src": "Fed-Up.jpg",
+                "src": "excited.jpg",
                 "description": "text"
             }
         },
         {
             "id": 15,
-            "name": "Friendly",
+            "name": "Fed up",
             "restricted": false,
-            "under13": { "src": "Friendly.jpg", "description": "text" },
+            "under13": { "src": "fedUp.jpg", "description": "text" },
             "over13": {
-                "src": "Friendly.jpg",
+                "src": "fedUp.jpg",
                 "description": "text"
             }
         },
         {
             "id": 16,
-            "name": "Frustrated",
+            "name": "Friendly",
             "restricted": false,
-            "under13": { "src": "Frustrated.jpg", "description": "text" },
+            "under13": { "src": "friendly.jpg", "description": "text" },
             "over13": {
-                "src": "Frustrated.jpg",
+                "src": "friendly.jpg",
                 "description": "text"
             }
         },
         {
             "id": 17,
-            "name": "Guilty",
+            "name": "Frustrated",
             "restricted": false,
-            "under13": { "src": "Guilty.jpg", "description": "text" },
+            "under13": { "src": "frustrated.jpg", "description": "text" },
             "over13": {
-                "src": "Guilty.jpg",
+                "src": "frustrated.jpg",
                 "description": "text"
             }
         },
         {
             "id": 18,
-            "name": "Happy",
+            "name": "Guilty",
             "restricted": false,
-            "under13": { "src": "Happy.jpg", "description": "text" },
+            "under13": { "src": "guilty.jpg", "description": "text" },
             "over13": {
-                "src": "Happy.jpg",
+                "src": "guilty.jpg",
                 "description": "text"
             }
         },
         {
             "id": 19,
-            "name": "Hopeless",
+            "name": "Happy",
             "restricted": false,
-            "under13": { "src": "Hopeless.jpg", "description": "text" },
+            "under13": { "src": "happy.jpg", "description": "text" },
             "over13": {
-                "src": "Hopeless.jpg",
+                "src": "happy.jpg",
                 "description": "text"
             }
         },
         {
             "id": 20,
-            "name": "Lonely",
+            "name": "Hopeless",
             "restricted": false,
-            "under13": { "src": "Lonely.jpg", "description": "text" },
+            "under13": { "src": "hopeless.jpg", "description": "text" },
             "over13": {
-                "src": "Lonely.jpg",
+                "src": "hopeless.jpg",
                 "description": "text"
             }
         },
         {
             "id": 21,
-            "name": "Quiet",
+            "name": "Lonely",
             "restricted": false,
-            "under13": { "src": "Quiet.jpg", "description": "text" },
+            "under13": { "src": "lonely.jpg", "description": "text" },
             "over13": {
-                "src": "Quiet.jpg",
+                "src": "lonely.jpg",
                 "description": "text"
             }
         },
         {
             "id": 22,
-            "name": "Relieved",
+            "name": "Quiet",
             "restricted": false,
-            "under13": { "src": "Relieved.jpg", "description": "text" },
+            "under13": { "src": "quiet.jpg", "description": "text" },
             "over13": {
-                "src": "Relieved.jpg",
+                "src": "quiet.jpg",
                 "description": "text"
             }
         },
         {
             "id": 23,
-            "name": "Sad",
+            "name": "Relieved",
             "restricted": false,
-            "under13": { "src": "Sad.jpg", "description": "text" },
+            "under13": { "src": "relieved.jpg", "description": "text" },
             "over13": {
-                "src": "Sad.jpg",
+                "src": "relieved.jpg",
                 "description": "text"
             }
         },
         {
             "id": 24,
+            "name": "Sad",
+            "restricted": false,
+            "under13": { "src": "sad.jpg", "description": "text" },
+            "over13": {
+                "src": "sad.jpg",
+                "description": "text"
+            }
+        },
+        {
+            "id": 25,
             "name": "Satisfied",
             "restricted": false,
-            "under13": { "src": "Satisfied.jpg", "description": "text" },
+            "under13": { "src": "satisfied.jpg", "description": "text" },
             "over13": {
-                "src": "Satisfied.jpg",
-                "description": "text"
-            }
-        },
-        {
-            "id": 25,
-            "name": "Scared",
-            "restricted": false,
-            "under13": { "src": "Scared.jpg", "description": "text" },
-            "over13": {
-                "src": "Scared.jpg",
-                "description": "text"
-            }
-        },
-        {
-            "id": 25,
-            "name": "Surprised",
-            "restricted": false,
-            "under13": { "src": "Surprised.jpg", "description": "text" },
-            "over13": {
-                "src": "Surprised.jpg",
+                "src": "satisfied.jpg",
                 "description": "text"
             }
         },
         {
             "id": 26,
-            "name": "Upset",
+            "name": "Scared",
             "restricted": false,
-            "under13": { "src": "Upset.jpg", "description": "text" },
+            "under13": { "src": "scared.jpg", "description": "text" },
             "over13": {
-                "src": "Upset.jpg",
+                "src": "scared.jpg",
                 "description": "text"
             }
         },
         {
             "id": 27,
+            "name": "Surprised",
+            "restricted": false,
+            "under13": { "src": "surprised.jpg", "description": "text" },
+            "over13": {
+                "src": "surprised.jpg",
+                "description": "text"
+            }
+        },
+        {
+            "id": 28,
+            "name": "Upset",
+            "restricted": false,
+            "under13": { "src": "upset.jpg", "description": "text" },
+            "over13": {
+                "src": "upset.jpg",
+                "description": "text"
+            }
+        },
+        {
+            "id": 29,
             "name": "Worried",
             "restricted": false,
-            "under13": { "src": "Worried.jpg", "description": "text" },
+            "under13": { "src": "worried.jpg", "description": "text" },
             "over13": {
-                "src": "Worried.jpg",
+                "src": "worried.jpg",
                 "description": "text"
             }
         }

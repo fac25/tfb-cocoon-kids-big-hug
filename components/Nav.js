@@ -17,7 +17,7 @@ export default function Nav() {
                 <div>
                     <Link href="/user-group">
                         <Image
-                            src="/assets/logo.jpg"
+                            src="/assets/img/logo.jpg"
                             height={62}
                             width={70}
                             alt="Cocoon kids logo"
