@@ -23,7 +23,7 @@ const Emotions = ({ emotions, length, page }) => {
                                 key={emotion.id}
                             >
                                 <Image
-                                    src={`/assets/${userGroup}/${emotion[userGroup].src}`}
+                                    src={`/assets/img/${userGroup}/${emotion[userGroup].src}`}
                                     width={300}
                                     height={300}
                                     alt={emotion.name}

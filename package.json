@@ -6,7 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "j-s": "npx json-server db.json --port 3003"
     },
     "dependencies": {
         "@reach/accordion": "^0.18.0",
