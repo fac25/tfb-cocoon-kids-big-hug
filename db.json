@@ -183,7 +183,7 @@
             "id": 15,
             "name": "Fed up",
             "restricted": false,
-            "under13": { "src": "fedUp.jpg", "description": "text" },
+            "under13": { "src": "fedup.jpg", "description": "text" },
             "over13": {
                 "src": "fedUp.jpg",
                 "description": "text"
@@ -330,298 +330,297 @@
             }
         }
     ],
-    "do-make": [
-        {
-            "under13": [
-                {
-                    "id": 1,
-                    "emotions": ["Anxious"],
-                    "title": "Make your own calming, regulating sensory bottle",
-                    "description": "You can make a sensory bottle out of a recycled clear plastic bottle, water, oil, and anything that you want to add.. sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons, rice. What else can you think of to add? ",
-                    "src": "url",
-                    "how-it-helps": [
-                        "Sensory bottles are tested by Scientists.",
-                        "They see that they make people feel calmer, less anxious and less worried about things. ",
-                        " Watching the shapes and colours slowly move helps us to focus and think about one thing right now..",
-                        "This can help us to worry less about something else.",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
-                        " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)"
-                    ],
-                    "materials": [
-                        "Plastic bottle",
-                        "the bottle lid",
-                        "tap water",
-                        "PVA glue (to glue the lid)",
-                        "oil - baby oil is best, (you need half a cup of oil)",
-                        "felt tip pen",
-                        "Funnel (to pour water and oil in)",
-                        "Cellotape - if it's needed in case there are any leaks",
-                        "Things to go inside the bottle",
-                        "Two drops of food colouring to change the colour of the water and oil (if wanted)"
-                    ],
-                    "instructions": [
-                        {
-                            "src": "url",
-                            "step": [
-                                "Put the funnel in the top of the bottle",
-                                "Half fill the plastic bottle with water",
-                                "Add the dry ingredients (beads, etc.)"
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "Add two drops of food colouring (if you are using it)",
-                                " Use a pen to draw a line 2cm from the top of the bottle",
-                                "Add the oil - don't fill past the 2cm pen line "
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "Put PVA glue around the lid of the bottle",
-                                "Screw the lid on tight",
-                                "Leave the PVA glue to dry in the night time",
-                                "Give it a shake when you wake up to check for any leaking water",
-                                "Add cellotape if you need to"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "emotions": ["Anxiety"],
-                    "title": "Make a rain stick sensory bottle",
-                    "description": "You don't need any water or oil... Use dry rice, pasta, or lentils, small lego, sand, beads, sequins, small plastic animals, floam, magic sand - or anything else that will make a noise! Can you make more than one? Can you find the best sound for you?",
-                    "src": "url",
-                    "materials": [
-                        "Plastic bottle",
-                        "Bottle lid",
-                        "Felt tip pen",
-                        "PVA glue",
-                        "Cellotape",
-                        "Small things that make a noise!"
-                    ],
-                    "instructions": [
-                        {
-                            "src": "url",
-                            "step": [
-                                "Draw a line 2cm from the top of the bottle with a felt tip pen ",
-                                "Slowly fill the bottle up with your small things ",
-                                "Don't fill past the line"
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "PVA glue the lid on tight",
-                                "Let the PVA glue dry over night",
-                                "Use cellotape to cover the lid if there are any leaks",
-                                "Shake!"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "emotions": ["Anxiety"],
-                    "title": "Make a moving lava lamp bottle",
-                    "caution": "Careful! This lava lamp MUST be made with your parent, carer or teacher or other adult! ",
-                    "how-it-helps": [
-                        " Sensory bottles are tested by Scientists. ",
-                        "They see that they make people feel calmer, less anxious and less worried about things. ",
-                        "Watching the shapes and colours slowly move helps us to focus and think about one thing right now..",
-                        "This can help us to worry less about something else.",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
-                        "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-                    ],
-                    "description": "Why Alka-Seltzer tablets? They're effervescent which means they dissolve and fizz out air into water. When the air inside the fizz bubbles reach the top they pop. The air is let out. The coloured water blobs sink down to the bottom. ",
-                    "src": "url",
-                    "materials": [
-                        "Plastic bottle ",
-                        "Bottle lid ",
-                        "Water",
-                        "Oil (baby oil is best)",
-                        "Felt tip pen ",
-                        "PVA glue",
-                        "Cellotape",
-                        "2 or 3 Drops of Food colouring ",
-                        "Alka Seltzer tablets ",
-                        "small light items, such as orbeez, glitter, pom poms, coloured rice (if wanted)",
-                        "Jug and funnel to pour (if needed)",
-                        "Small things that float!"
-                    ],
-                    "instructions": [
-                        {
-                            "src": "url",
-                            "step": [
-                                "Draw a line with a felt tip pen 2cm from the top of the bottle",
-                                "Fill your bottle half way up with oil ",
-                                "Pour the water in",
-                                "Don't fill past the 2cm line",
-                                "You can add small items that float like orbeez or glitter "
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "Add 2 or 3 drops of food colouring",
-                                "Add the Alka-Seltzer tablet to the bottle",
-                                "IMPORTANT - Keep the lid off until the fizzing chemical reaction stops"
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "Put PVA on the lid and glue the lid on",
-                                "Leave it over night to dry",
-                                "Use cellotape  to cover any leaks"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "emotions": ["Anxiety"],
-                    "title": "Bubblewrap anxiety helper. Bubble wrap is great for popping when you feel anxious.",
-                    "how-it-helps": [
-                        "Sensory bubble wrap can help you feel calmer, less anxious and less worried about things. ",
-                        "Popping the bubble can us to let go of (release) feelings that are in our brain, muscles, nervous system and other parts of our body.",
-                        "Popping the bubbles can help us to release feelings such as anxiety, frustration,anger.",
-                        "It also helps us to focus and think about one thing right now..",
-                        "This can help us to worry less about something else.",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
-                        "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-                    ],
-                    "src": "url",
-                    "materials": [
-                        "Plastic bottle ",
-                        "Bottle lid ",
-                        "Water",
-                        "Oil (baby oil is best)",
-                        "Felt tip pen ",
-                        "PVA glue",
-                        "Cellotape",
-                        "2 or 3 Drops of Food colouring ",
-                        "Alka Seltzer tablets ",
-                        "small light items, such as orbeez, glitter, pom poms, coloured rice (if wanted)",
-                        "Jug and funnel to pour (if needed)",
-                        "Small things that float!"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "emotions": ["Anxiety"],
-                    "title": "Giant bubbles",
-                    "how-it-helps": [
-                        "These games and ideas are Sensory Regulatory.",
-                        "Scientists see that they help you to feel calmer, less anxious and less worried about things.",
-                        "This is because you breather in and out carefully when you blow a bubble.",
-                        "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing).You also have to concentrate as you're doing it. ",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too."
-                    ],
-                    "description": "Bubbles of all sizes can be fun to make and do. These are extra huge, but you can also make great ones using every day things.",
-                    "src": "url",
-                    "materials": [
-                        "Plastic bottle to hold the solution afterwards",
-                        "Bottle lid ",
-                        "Washing up or other big bowl",
-                        "Half a teaspoon of Guar gum powder",
-                        "1  or 2 teaspoons of Glycerine ",
-                        "11 litre of water",
-                        "3-5 tablespoons of concentrated washing-up liquid ",
-                        "Half a teaspoon baking powder",
-                        "A spoon or fork to mix"
-                    ],
-                    "instructions": [
-                        {
-                            "src": "url",
-                            "step": [
-                                "Put the Guar gum powder in the bowl",
-                                "Cover the guar gum powder with the Glycerine powder",
-                                "Add more glycerine and mix these together until you’ve got a very liquid consistency.",
-                                "Slowly add the water "
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "Mix it together with the spoon or fork",
-                                "Add the washing up liquid ",
-                                "Stir gently and don't make the mixture froth (lots of bubbles)",
-                                "Add the baking powder and stir very gently "
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                "Add more washing up liquid if your bubbles are popping too soon.",
-                                "Try using: a hula hoop, your hand, a ribbon or string tied in a circle to a string to blow HU"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "over13": [
-                {
-                    "id": 1,
-                    "emotions": ["Anxiety"],
-                    "title": "Make a sensory bottle",
-                    "description": "Engage your senses and feel grounded again, as you recycle plastic bottles. Sensory bottles are not just for young kids. There's lots of science behind why they help you to feel calmer, less anxious and more in control of your feelings. Make your sensory bottle out of a recycled clear plastic bottle or a glass jar - any shape, or size works.  how about making a 2 litre one? Add sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons and coloured rice look satisfying. ",
-                    "src": "url",
-                    "how-it-helps": "text",
-                    "materials": [
-                        "Plastic bottle or glass jar - any size",
-                        "the bottle lid",
-                        "tap water ",
-                        "PVA glue (to glue the lid)",
-                        "oil (baby oil is best)",
-                        "felt tip pen",
-                        "Funnel (to pour water and oil in)",
-                        "Cellotape - if it's needed in case there are any leaks",
-                        "Things to go inside the bottle",
-                        "food colouring if wanted"
-                    ],
-                    "instructions": [
-                        {
-                            "src": "url",
-                            "step": [
-                                "Use funnel to half fill the plastic bottle with water",
-                                "Add dry items (beads, etc.)",
-                                "Add food colouring",
-                                "Use pen to draw 2cm near top (don't fill past here )",
-                                "Add oil - leave 2cm"
-                            ]
-                        },
-                        {
-                            "src": "url",
-                            "step": [
-                                " Put PVA glue around lid of bottle",
-                                "Screw lid on tight",
-                                "Leave PVA glue  to dry until next day",
-                                "Give it a shake when you wake up to check for any leaking water",
-                                "Add cellotape if you need to"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "emotions": ["Anxiety", "Anger"],
-                    "title": "text",
-                    "description": "text",
-                    "src": "url",
-                    "how-it-helps": "text",
-                    "materials": ["text"],
-                    "instructions": [
-                        { "src": "url", "step": "text" },
-                        { "src": "url", "step": "text" },
-                        { "src": "url", "step": "text" }
-                    ]
-                }
-            ]
-        }
-    ],
+    "do-make": {
+        "under13": [
+            {
+                "id": 1,
+                "emotions": ["Anxious"],
+                "title": "Make your own calming, regulating sensory bottle",
+                "description": "You can make a sensory bottle out of a recycled clear plastic bottle, water, oil, and anything that you want to add.. sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons, rice. What else can you think of to add? ",
+                "src": "url",
+                "how-it-helps": [
+                    "Sensory bottles are tested by Scientists.",
+                    "They see that they make people feel calmer, less anxious and less worried about things. ",
+                    " Watching the shapes and colours slowly move helps us to focus and think about one thing right now..",
+                    "This can help us to worry less about something else.",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
+                    " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)"
+                ],
+                "materials": [
+                    "Plastic bottle",
+                    "the bottle lid",
+                    "tap water",
+                    "PVA glue (to glue the lid)",
+                    "oil - baby oil is best, (you need half a cup of oil)",
+                    "felt tip pen",
+                    "Funnel (to pour water and oil in)",
+                    "Cellotape - if it's needed in case there are any leaks",
+                    "Things to go inside the bottle",
+                    "Two drops of food colouring to change the colour of the water and oil (if wanted)"
+                ],
+                "instructions": [
+                    {
+                        "src": "url",
+                        "step": [
+                            "Put the funnel in the top of the bottle",
+                            "Half fill the plastic bottle with water",
+                            "Add the dry ingredients (beads, etc.)"
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "Add two drops of food colouring (if you are using it)",
+                            " Use a pen to draw a line 2cm from the top of the bottle",
+                            "Add the oil - don't fill past the 2cm pen line "
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "Put PVA glue around the lid of the bottle",
+                            "Screw the lid on tight",
+                            "Leave the PVA glue to dry in the night time",
+                            "Give it a shake when you wake up to check for any leaking water",
+                            "Add cellotape if you need to"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "emotions": ["Anxiety"],
+                "title": "Make a rain stick sensory bottle",
+                "description": "You don't need any water or oil... Use dry rice, pasta, or lentils, small lego, sand, beads, sequins, small plastic animals, floam, magic sand - or anything else that will make a noise! Can you make more than one? Can you find the best sound for you?",
+                "src": "url",
+                "materials": [
+                    "Plastic bottle",
+                    "Bottle lid",
+                    "Felt tip pen",
+                    "PVA glue",
+                    "Cellotape",
+                    "Small things that make a noise!"
+                ],
+                "instructions": [
+                    {
+                        "src": "url",
+                        "step": [
+                            "Draw a line 2cm from the top of the bottle with a felt tip pen ",
+                            "Slowly fill the bottle up with your small things ",
+                            "Don't fill past the line"
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "PVA glue the lid on tight",
+                            "Let the PVA glue dry over night",
+                            "Use cellotape to cover the lid if there are any leaks",
+                            "Shake!"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "emotions": ["Anxiety"],
+                "title": "Make a moving lava lamp bottle",
+                "caution": "Careful! This lava lamp MUST be made with your parent, carer or teacher or other adult! ",
+                "how-it-helps": [
+                    " Sensory bottles are tested by Scientists. ",
+                    "They see that they make people feel calmer, less anxious and less worried about things. ",
+                    "Watching the shapes and colours slowly move helps us to focus and think about one thing right now..",
+                    "This can help us to worry less about something else.",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
+                    "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                ],
+                "description": "Why Alka-Seltzer tablets? They're effervescent which means they dissolve and fizz out air into water. When the air inside the fizz bubbles reach the top they pop. The air is let out. The coloured water blobs sink down to the bottom. ",
+                "src": "url",
+                "materials": [
+                    "Plastic bottle ",
+                    "Bottle lid ",
+                    "Water",
+                    "Oil (baby oil is best)",
+                    "Felt tip pen ",
+                    "PVA glue",
+                    "Cellotape",
+                    "2 or 3 Drops of Food colouring ",
+                    "Alka Seltzer tablets ",
+                    "small light items, such as orbeez, glitter, pom poms, coloured rice (if wanted)",
+                    "Jug and funnel to pour (if needed)",
+                    "Small things that float!"
+                ],
+                "instructions": [
+                    {
+                        "src": "url",
+                        "step": [
+                            "Draw a line with a felt tip pen 2cm from the top of the bottle",
+                            "Fill your bottle half way up with oil ",
+                            "Pour the water in",
+                            "Don't fill past the 2cm line",
+                            "You can add small items that float like orbeez or glitter "
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "Add 2 or 3 drops of food colouring",
+                            "Add the Alka-Seltzer tablet to the bottle",
+                            "IMPORTANT - Keep the lid off until the fizzing chemical reaction stops"
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "Put PVA on the lid and glue the lid on",
+                            "Leave it over night to dry",
+                            "Use cellotape  to cover any leaks"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "emotions": ["Anxiety"],
+                "title": "Bubblewrap anxiety helper. Bubble wrap is great for popping when you feel anxious.",
+                "how-it-helps": [
+                    "Sensory bubble wrap can help you feel calmer, less anxious and less worried about things. ",
+                    "Popping the bubble can us to let go of (release) feelings that are in our brain, muscles, nervous system and other parts of our body.",
+                    "Popping the bubbles can help us to release feelings such as anxiety, frustration,anger.",
+                    "It also helps us to focus and think about one thing right now..",
+                    "This can help us to worry less about something else.",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
+                    "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                ],
+                "src": "url",
+                "materials": [
+                    "Plastic bottle ",
+                    "Bottle lid ",
+                    "Water",
+                    "Oil (baby oil is best)",
+                    "Felt tip pen ",
+                    "PVA glue",
+                    "Cellotape",
+                    "2 or 3 Drops of Food colouring ",
+                    "Alka Seltzer tablets ",
+                    "small light items, such as orbeez, glitter, pom poms, coloured rice (if wanted)",
+                    "Jug and funnel to pour (if needed)",
+                    "Small things that float!"
+                ]
+            },
+            {
+                "id": 5,
+                "emotions": ["Anxiety"],
+                "title": "Giant bubbles",
+                "how-it-helps": [
+                    "These games and ideas are Sensory Regulatory.",
+                    "Scientists see that they help you to feel calmer, less anxious and less worried about things.",
+                    "This is because you breather in and out carefully when you blow a bubble.",
+                    "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing).You also have to concentrate as you're doing it. ",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too."
+                ],
+                "description": "Bubbles of all sizes can be fun to make and do. These are extra huge, but you can also make great ones using every day things.",
+                "src": "url",
+                "materials": [
+                    "Plastic bottle to hold the solution afterwards",
+                    "Bottle lid ",
+                    "Washing up or other big bowl",
+                    "Half a teaspoon of Guar gum powder",
+                    "1  or 2 teaspoons of Glycerine ",
+                    "11 litre of water",
+                    "3-5 tablespoons of concentrated washing-up liquid ",
+                    "Half a teaspoon baking powder",
+                    "A spoon or fork to mix"
+                ],
+                "instructions": [
+                    {
+                        "src": "url",
+                        "step": [
+                            "Put the Guar gum powder in the bowl",
+                            "Cover the guar gum powder with the Glycerine powder",
+                            "Add more glycerine and mix these together until you’ve got a very liquid consistency.",
+                            "Slowly add the water "
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "Mix it together with the spoon or fork",
+                            "Add the washing up liquid ",
+                            "Stir gently and don't make the mixture froth (lots of bubbles)",
+                            "Add the baking powder and stir very gently "
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            "Add more washing up liquid if your bubbles are popping too soon.",
+                            "Try using: a hula hoop, your hand, a ribbon or string tied in a circle to a string to blow HU"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "over13": [
+            {
+                "id": 1,
+                "emotions": ["Anxiety"],
+                "title": "Make a sensory bottle",
+                "description": "Engage your senses and feel grounded again, as you recycle plastic bottles. Sensory bottles are not just for young kids. There's lots of science behind why they help you to feel calmer, less anxious and more in control of your feelings. Make your sensory bottle out of a recycled clear plastic bottle or a glass jar - any shape, or size works.  how about making a 2 litre one? Add sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons and coloured rice look satisfying. ",
+                "src": "url",
+                "how-it-helps": "text",
+                "materials": [
+                    "Plastic bottle or glass jar - any size",
+                    "the bottle lid",
+                    "tap water ",
+                    "PVA glue (to glue the lid)",
+                    "oil (baby oil is best)",
+                    "felt tip pen",
+                    "Funnel (to pour water and oil in)",
+                    "Cellotape - if it's needed in case there are any leaks",
+                    "Things to go inside the bottle",
+                    "food colouring if wanted"
+                ],
+                "instructions": [
+                    {
+                        "src": "url",
+                        "step": [
+                            "Use funnel to half fill the plastic bottle with water",
+                            "Add dry items (beads, etc.)",
+                            "Add food colouring",
+                            "Use pen to draw 2cm near top (don't fill past here )",
+                            "Add oil - leave 2cm"
+                        ]
+                    },
+                    {
+                        "src": "url",
+                        "step": [
+                            " Put PVA glue around lid of bottle",
+                            "Screw lid on tight",
+                            "Leave PVA glue  to dry until next day",
+                            "Give it a shake when you wake up to check for any leaking water",
+                            "Add cellotape if you need to"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "emotions": ["Anxiety", "Anger"],
+                "title": "text",
+                "description": "text",
+                "src": "url",
+                "how-it-helps": "text",
+                "materials": ["text"],
+                "instructions": [
+                    { "src": "url", "step": "text" },
+                    { "src": "url", "step": "text" },
+                    { "src": "url", "step": "text" }
+                ]
+            }
+        ]
+    },
+
     "play-game": [
         {
             "under13": [
@@ -675,6 +674,7 @@
             ]
         }
     ],
+
     "join-go": [
         {
             "under13": [
@@ -711,6 +711,7 @@
             ]
         }
     ],
+
     "chat-speak": [
         {
             "under13": {
