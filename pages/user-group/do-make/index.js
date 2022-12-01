@@ -3,15 +3,15 @@ import Layout from '../../../components/Layout'
 
 export async function getStaticProps() {
     const res = await fetch('http://localhost:3003/do-make')
-    const doMake = await res.json()
+    const doMakes = await res.json()
 
-    return { props: { doMake } }
+    return { props: { doMakes } }
 }
 
-export default function UserGroup({ doMake }) {
+export default function UserGroup({ doMakes }) {
     return (
         <Layout pageTitle="Do/Make">
-            <DoMakeGrid doMake={doMake} />
+            <DoMakeGrid doMakes={doMakes} />
         </Layout>
     )
 }
