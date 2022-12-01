@@ -622,60 +622,57 @@
         ]
     },
 
-    "play-game": [
-        {
-            "under13": [
-                {
-                    "id": 1,
-                    "emotions": ["Anxiety"],
-                    "how-it-helps": [
-                        "These games are called Sensory Regulatory games.",
-                        "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                        "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-                    ],
-                    "game": "https://www.sensoryapphouse.com/JustTouchToo-pwa/index.html"
-                },
-                {
-                    "id": 2,
-                    "emotions": ["Anxiety"],
-                    "how-it-helps": [
-                        "These games are called Sensory Regulatory games.",
-                        "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                        "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-                    ],
-                    "game": "https://www.sensoryapphouse.com/chrysaora-pwa/index.html"
-                },
-                {
-                    "id": 3,
-                    "emotions": ["Anxiety"],
-                    "how-it-helps": [
-                        "These games are called Sensory Regulatory games.",
-                        "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                        "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                        "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-                    ],
-                    "game": "https://www.sensoryapphouse.com/sandbox-pwa/index.html"
-                }
-            ],
-            "over13": [
-                {
-                    "id": 1,
-                    "emotions": ["Anxiety", "Anger"],
-                    "how-it-helps": "text",
-                    "game": "url"
-                },
-                {
-                    "id": 2,
-                    "emotions": ["Anxiety", "Anger"],
-                    "how-it-helps": "text",
-                    "game": "url"
-                }
-            ]
-        }
-    ],
-
+    "play-game": {
+        "under13": [
+            {
+                "id": 1,
+                "emotions": ["Anxiety"],
+                "how-it-helps": [
+                    "These games are called Sensory Regulatory games.",
+                    "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+                    "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                ],
+                "game": "https://www.sensoryapphouse.com/JustTouchToo-pwa/index.html"
+            },
+            {
+                "id": 2,
+                "emotions": ["Anxiety"],
+                "how-it-helps": [
+                    "These games are called Sensory Regulatory games.",
+                    "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+                    "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                ],
+                "game": "https://www.sensoryapphouse.com/chrysaora-pwa/index.html"
+            },
+            {
+                "id": 3,
+                "emotions": ["Anxiety"],
+                "how-it-helps": [
+                    "These games are called Sensory Regulatory games.",
+                    "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+                    "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+                    "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                ],
+                "game": "https://www.sensoryapphouse.com/sandbox-pwa/index.html"
+            }
+        ],
+        "over13": [
+            {
+                "id": 1,
+                "emotions": ["Anxiety", "Anger"],
+                "how-it-helps": "text",
+                "game": "url"
+            },
+            {
+                "id": 2,
+                "emotions": ["Anxiety", "Anger"],
+                "how-it-helps": "text",
+                "game": "url"
+            }
+        ]
+    },
     "join-go": [
         {
             "under13": [
