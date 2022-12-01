@@ -1,31 +1,57 @@
-import { useContext, useEffect, useState } from 'react'
-import GlobalUserGroup from '../lib/GlobalContext'
+//import Image from 'next/image'
 
-const DoMake = ({ doMake }) => {
-    const { userGroup } = useContext(GlobalUserGroup)
+// import { useContext } from 'react'
+// import GlobalUserGroup from '../lib/GlobalContext'
 
+const DoMake = ({ currentDoMake }) => {
+    // const { userGroup } = useContext(GlobalUserGroup)
     return (
-        <div>
-            {doMake &&
-                doMake[userGroup].map((make) => {
-                    return (
-                        <div key={make.id}>
-                            <div>
-                                {make.emotions.map((emotion) => {
-                                    return <span>{emotion}</span>
-                                })}
+        <article>
+            <h2>{currentDoMake.title}</h2>
+            <p>{currentDoMake.description}</p>
+            {currentDoMake['how-it-helps'] && (
+                <div>
+                    <h3>How it Helps</h3>
+                    <ul>
+                        {currentDoMake['how-it-helps'].map((how) => (
+                            <li key={how}>{how}</li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+            {currentDoMake['materials'] && (
+                <div>
+                    <h3>Materials</h3>
+                    <ul>
+                        {currentDoMake['materials']?.map((item) => (
+                            <li key={item}>{item}</li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+            {currentDoMake['instructions'] && (
+                <div>
+                    <h3>Instructions</h3>
+                    <div>
+                        {currentDoMake['instructions']?.map((item, index) => (
+                            <div key={`item-${index}`}>
+                                {/* <Image
+                                src={item.src}
+                                alt=""
+                                width={300}
+                                height={300}
+                            /> */}
+                                <ul>
+                                    {item.step?.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
                             </div>
-                            <p>{make.title}</p>
-                            <p>{make.description}</p>
-                            <div>
-                                {make["how-it-helps"]?.map((how) => {
-                                    return <span>{how}</span>
-                                })}
-                            </div>
-                        </div>
-                    )
-                })}
-        </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </article>
     )
 }
 
