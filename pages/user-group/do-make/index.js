@@ -8,7 +8,7 @@ export async function getStaticProps() {
     return { props: { doMakes } }
 }
 
-export default function UserGroup({ doMakes }) {
+export default function DoMakePage({ doMake }) {
     return (
         <Layout pageTitle="Do/Make">
             <DoMakeGrid doMakes={doMakes} />
