@@ -1,14 +1,15 @@
-import GlobalUserGroup from '../lib/GlobalContext'
+import GlobalUserGroup from '../../lib/GlobalContext'
 import { useContext } from 'react'
+
+import Link from 'next/link'
+
 const PlayGame = ({ games }) => {
     const { userGroup } = useContext(GlobalUserGroup)
-
-    console.log(games[userGroup])
     return (
         <div>
-            {games[userGroup].map((game) => {
+            {games.map((game) => {
                 return (
-                    <Link href={game.id} key={game.id}>
+                    <Link href={`/user-group/play-game/${game.id.toString()}`} key={game.id}>
                         <div>
                             {game.emotions.map((emotion) => (
                                 <span>{emotion}</span>
@@ -19,7 +20,7 @@ const PlayGame = ({ games }) => {
                                 <span>{how}</span>
                             ))}
                         </div>
-                        <a href={game.game}>Play Game</a>
+                        {/* <a href={game.game}>Play Game</a> */}
                     </Link>
                 )
             })}

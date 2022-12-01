@@ -6,10 +6,10 @@ import {
 } from '@reach/accordion'
 import '@reach/accordion/styles.css'
 
-import SingleEmotion from '../../../components/Emotion'
+import SingleEmotion from '../../../components/emotions/Emotion'
 import { fetchData } from '../../../components/FetchData'
 
-import Layout from '../../../components/Layout'
+import Layout from '../../../components/layout/Layout'
 import ChatSpeak from '../../../components/ChatSpeak'
 
 export async function getStaticPaths() {

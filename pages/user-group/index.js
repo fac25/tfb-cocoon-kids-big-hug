@@ -1,5 +1,5 @@
-import Layout from '../../components/Layout'
-import Emotions from '../../components/Emotions'
+import Layout from '../../components/layout/Layout'
+import Emotions from '../../components/emotions/Emotions'
 import WhatToDo from '../../components/WhatToDo'
 import { fetchData } from '../../components/FetchData'
 

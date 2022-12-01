@@ -1,24 +1,26 @@
-import { fetchData } from "../../../components/FetchData"
-
-import { useRouter } from 'next/router'
+import { fetchData } from '../../../components/FetchData'
+import SinglePlayGame from '../../../components/playgame/SinglePlayGame'
 
 export async function getStaticPaths() {
-
-    const games = ['under13', 'over13']
+    const games = await fetchData('play-game')
 
     const paths = games.map((game) => ({
-        params: { game: game },
+        params: { game: game.id.toString() },
     }))
 
     return { paths, fallback: false }
 }
 
-export async function getStaticProps() {
-    const games = await fetchData("play-game")
-    return { props: { games } }
+export async function getStaticProps(context) {
+    const param = context.params.game
+    const game = await fetchData(`play-game/?id=${param}`)
+    return { props: { game } }
 }
 
-export default function Emotion({ games }) {
-    console.log(games)
-    return <div></div>
+export default function Emotion({ game }) {
+    return (
+        <div>
+            <SinglePlayGame game={game} />
+        </div>
+    )
 }
