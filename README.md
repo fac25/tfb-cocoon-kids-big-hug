@@ -2,11 +2,13 @@
 
 ## Installation
 
-1. Install node modules
+1. run: npm config set legacy-peer-deps true
+
+2. Install node modules
 
 ``` run npm i ```
 
-2. Open two consoles:
+3. Open two consoles:
 
 Start json server:
 
