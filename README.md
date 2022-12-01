@@ -4,17 +4,17 @@
 
 1. Install node modules
 
-```js run npm i ```
+``` run npm i ```
 
 2. Open two consoles:
 
 Start json server:
 
-```js npm run j-s ```
+``` npm run j-s ```
 
 Start localhost:
 
-```js npm run dev ```
+``` npm run dev ```
 
 
 ## Introduction 
