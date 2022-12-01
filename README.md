@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. 
+1. Install node modules
 
 ```js run npm i ```
 
