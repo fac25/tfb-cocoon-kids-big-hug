@@ -1,5 +1,5 @@
-import Emotions from '../../../components/Emotions'
-import Layout from '../../../components/Layout'
+import Emotions from '../../../components/emotions/Emotions'
+import Layout from '../../../components/layout/Layout'
 import Select from 'react-select'
 import { useState } from 'react'
 import Link from 'next/link'

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Nav from './Nav'
 import Image from 'next/image'
 import Footer from './Footer'
-import HelpAndExitButton from './HelpAndExitButton'
+import HelpAndExitButton from '../HelpAndExitButton'
 export const siteTitle = 'Cocoon Kids Big Hug'
 
 export default function Layout({ pageTitle, isLanding = false, children }) {

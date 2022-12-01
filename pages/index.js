@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import Layout from '../components/layout/Layout'
 import UserGroupBtn from '../components/UserGroupBtn'
 
 export default function Landing() {
