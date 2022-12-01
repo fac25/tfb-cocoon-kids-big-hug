@@ -12,6 +12,8 @@ Start json server:
 
 ```js npm run j-s ```
 
+Start localhost:
+
 ```js npm run dev ```
 
 
