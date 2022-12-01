@@ -8,9 +8,9 @@
 
 3. Open two consoles:
 
-Start json server: ``` npm run j-s ```
+5. Start json server: ``` npm run j-s ```
 
-Start localhost: ``` npm run dev ```
+6. Start localhost: ``` npm run dev ```
 
 
 ## Introduction 
