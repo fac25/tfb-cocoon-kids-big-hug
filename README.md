@@ -4,19 +4,13 @@
 
 1. run: ``` npm config set legacy-peer-deps true ```
 
-2. Install node modules
-
-``` run npm i ```
+2. Install node modules: ``` run npm i ```
 
 3. Open two consoles:
 
-Start json server:
+Start json server: ``` npm run j-s ```
 
-``` npm run j-s ```
-
-Start localhost:
-
-``` npm run dev ```
+Start localhost: ``` npm run dev ```
 
 
 ## Introduction 
