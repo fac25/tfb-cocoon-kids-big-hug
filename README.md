@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. run: npm config set legacy-peer-deps true
+1. run: ``` npm config set legacy-peer-deps true ```
 
 2. Install node modules
 
