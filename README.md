@@ -1,5 +1,20 @@
 # Tech for Better - Cocoon Kids Big Hug
 
+## Installation
+
+1. 
+
+```js run npm i ```
+
+2. Open two consoles:
+
+Start json server:
+
+```js npm run j-s ```
+
+```js npm run dev ```
+
+
 ## Introduction 
 ### What are you building?
 Cocoon Kids Big Hug is a therapeutic service for children and young adults and parents.
