@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import {
     Accordion,
     AccordionItem,
@@ -8,13 +7,13 @@ import {
 import '@reach/accordion/styles.css'
 
 import SingleEmotion from '../../../components/Emotion'
+import { fetchData } from '../../../components/FetchData'
 
 import Layout from '../../../components/Layout'
 import ChatSpeak from '../../../components/ChatSpeak'
 
 export async function getStaticPaths() {
-    const res = await fetch('http://localhost:3003/emotions')
-    const emotions = await res.json()
+    const emotions = await fetchData('emotions')
 
     const paths = emotions.map((emotion) => ({
         params: { name: emotion.name },
@@ -23,22 +22,19 @@ export async function getStaticPaths() {
     return { paths, fallback: false }
 }
 
-export async function getStaticProps() {
-    const res = await fetch('http://localhost:3003/emotions')
-    const res2 = await fetch('http://localhost:3003/chat-speak')
-    const emotions = await res.json()
-    const chat = await res2.json()
+export async function getStaticProps(context) {
+    const name = context.params.name
 
-    return { props: { emotions, chat } }
+    const emotion = await fetchData('emotions/?name=' + name)
+    const chat = await fetchData('chat-speak')
+
+    return { props: { emotion, chat } }
 }
 
-export default function Emotion({ emotions, chat }) {
-    // console.log(chat)
-    const router = useRouter()
-    const { name } = router.query
+export default function Emotion({ emotion, chat }) {
     return (
         <Layout pageTitle="Emotion">
-            <SingleEmotion name={name} emotions={emotions} />
+            <SingleEmotion emotion={emotion} />
             <section>
                 <Accordion>
                     <AccordionItem>

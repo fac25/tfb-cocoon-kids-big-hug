@@ -3,17 +3,16 @@ import Layout from '../../../components/Layout'
 import Select from 'react-select'
 import { useState } from 'react'
 import Link from 'next/link'
+import { fetchData } from '../../../components/FetchData'
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3003/emotions')
-    const emotions = await res.json()
+    const emotions = await fetchData("emotions")
     const emotionsArray = emotions.map((el) => el.name)
-    console.log(emotionsArray)
+    
     const selectOptions = emotionsArray.map((opt) => ({
         label: opt,
         value: opt,
     }))
-    console.log(selectOptions)
     return { props: { emotions, selectOptions } }
 }
 

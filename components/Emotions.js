@@ -17,8 +17,10 @@ const Emotions = ({ emotions, length, page }) => {
                             <Link
                                 href={
                                     page
-                                        ? '/user-group/emotions/' + emotion.name
-                                        : 'emotions/' + emotion.name
+                                        ? '/user-group/emotions/' +
+                                          emotion.name
+                                        : 'emotions/' +
+                                          emotion.name
                                 }
                                 key={emotion.id}
                             >
