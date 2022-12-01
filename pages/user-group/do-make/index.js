@@ -1,4 +1,4 @@
-import DoMake from '../../../components/DoMake'
+import DoMakeGrid from '../../../components/DoMakeGrid'
 import Layout from '../../../components/Layout'
 
 export async function getStaticProps() {
@@ -11,7 +11,7 @@ export async function getStaticProps() {
 export default function UserGroup({ doMake }) {
     return (
         <Layout pageTitle="Do/Make">
-            <DoMake doMake={doMake} />
+            <DoMakeGrid doMake={doMake} />
         </Layout>
     )
 }

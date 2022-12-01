@@ -1,32 +1,23 @@
-import { useContext, useEffect, useState } from 'react'
+import Image from 'next/image'
+
+import { useContext } from 'react'
 import GlobalUserGroup from '../lib/GlobalContext'
 
-const DoMake = ({ doMake }) => {
+const SingleDoMake = ({ doMakes }) => {
     const { userGroup } = useContext(GlobalUserGroup)
-
     return (
-        <div>
-            {doMake &&
-                doMake[userGroup].map((make) => {
+        <section>
+            {doMakes.map((doMake) => {
+                if (doMake.path === path) {
                     return (
-                        <div key={make.id}>
-                            <div>
-                                {make.emotions.map((emotion) => {
-                                    return <span>{emotion}</span>
-                                })}
-                            </div>
-                            <p>{make.title}</p>
-                            <p>{make.description}</p>
-                            <div>
-                                {make["how-it-helps"]?.map((how) => {
-                                    return <span>{how}</span>
-                                })}
-                            </div>
+                        <div key={doMake.id}>
+                            <h2>{doMake.title}</h2>
                         </div>
                     )
-                })}
-        </div>
+                }
+            })}
+        </section>
     )
 }
 
-export default DoMake
+export default SingleDoMake
