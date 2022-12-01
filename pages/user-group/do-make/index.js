@@ -1,17 +1,17 @@
-import DoMake from '../../../components/DoMake'
+import DoMakeGrid from '../../../components/DoMakeGrid'
 import Layout from '../../../components/Layout'
 
 export async function getStaticProps() {
     const res = await fetch('http://localhost:3003/do-make')
-    const doMake = await res.json()
+    const doMakes = await res.json()
 
-    return { props: { doMake } }
+    return { props: { doMakes } }
 }
 
 export default function DoMakePage({ doMake }) {
     return (
         <Layout pageTitle="Do/Make">
-            <DoMake doMake={doMake} />
+            <DoMakeGrid doMakes={doMakes} />
         </Layout>
     )
 }

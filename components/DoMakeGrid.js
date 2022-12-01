@@ -1,0 +1,37 @@
+import { useContext } from 'react'
+import GlobalUserGroup from '../lib/GlobalContext'
+
+import Link from 'next/link'
+
+const DoMakeGrid = ({ doMakes }) => {
+    const { userGroup } = useContext(GlobalUserGroup)
+
+    return (
+        <div>
+            {doMakes &&
+                doMakes[userGroup].map((make) => {
+                    return (
+                        <Link
+                            href={`/user-group/do-make/${userGroup}-${make.title}`}
+                            key={make.id}
+                        >
+                            <div>
+                                {make.emotions.map((emotion) => {
+                                    return <span key={emotion}>{emotion}</span>
+                                })}
+                            </div>
+                            <p>{make.title}</p>
+                            <p>{make.description}</p>
+                            <div>
+                                {make['how-it-helps']?.map((how) => {
+                                    return <span key={how}>{how}</span>
+                                })}
+                            </div>
+                        </Link>
+                    )
+                })}
+        </div>
+    )
+}
+
+export default DoMakeGrid
