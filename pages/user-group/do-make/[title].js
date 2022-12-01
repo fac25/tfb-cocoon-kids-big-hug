@@ -1,5 +1,5 @@
 import DoMake from '../../../components/DoMake'
-import Layout from '../../../components/Layout'
+import Layout from '../../../components/layout/Layout'
 import { useRouter } from 'next/router'
 
 export async function getStaticPaths() {
