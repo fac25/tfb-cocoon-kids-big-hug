@@ -8,7 +8,7 @@ export async function getStaticProps() {
     return { props: { doMakes } }
 }
 
-export default function DoMakePage({ doMake }) {
+export default function DoMakePage({ doMakes }) {
     return (
         <Layout pageTitle="Do/Make">
             <DoMakeGrid doMakes={doMakes} />
