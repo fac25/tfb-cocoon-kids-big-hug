@@ -8,7 +8,7 @@ const PlayGame = ({ games }) => {
         <div>
             {games[userGroup].map((game) => {
                 return (
-                    <div key={game.id}>
+                    <Link href={game.id} key={game.id}>
                         <div>
                             {game.emotions.map((emotion) => (
                                 <span>{emotion}</span>
@@ -20,7 +20,7 @@ const PlayGame = ({ games }) => {
                             ))}
                         </div>
                         <a href={game.game}>Play Game</a>
-                    </div>
+                    </Link>
                 )
             })}
         </div>

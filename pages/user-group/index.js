@@ -1,11 +1,10 @@
 import Layout from '../../components/Layout'
 import Emotions from '../../components/Emotions'
 import WhatToDo from '../../components/WhatToDo'
+import { fetchData } from '../../components/FetchData'
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3003/emotions')
-    const emotions = await res.json()
-
+    const emotions = await fetchData('emotions')
     return { props: { emotions } }
 }
 

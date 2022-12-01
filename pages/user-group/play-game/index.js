@@ -1,10 +1,10 @@
 
+import { fetchData } from "../../../components/FetchData"
 import Layout from "../../../components/Layout"
 import PlayGame from "../../../components/PlayGame"
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3003/play-game')
-    const games = await res.json()
+    const games = await fetchData("play-game")
 
     return { props: { games } }
 }
