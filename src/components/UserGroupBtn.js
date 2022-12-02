@@ -10,7 +10,7 @@ export default function UserGroupBtn({ userGroup, text }) {
         setUserGroup(localStorage.setItem('user-group', userGroup))
     }
     return (
-        <Link href={'/user-group'} onClick={updateUserGroup}>
+        <Link href={'/welcome'} onClick={updateUserGroup}>
             {text}
         </Link>
     )

@@ -1,5 +1,5 @@
-import DoMakeGrid from '../../../components/DoMakeGrid'
-import Layout from '../../../components/layout/Layout'
+import DoMakeGrid from '../../components/DoMakeGrid'
+import Layout from '../../components/layout/Layout'
 
 export async function getStaticProps() {
     const res = await fetch('http://localhost:3003/do-make')

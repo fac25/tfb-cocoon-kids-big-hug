@@ -1,9 +1,9 @@
-import Emotions from '../../../components/emotions/Emotions'
-import Layout from '../../../components/layout/Layout'
+import Emotions from '../../components/emotions/Emotions'
+import Layout from '../../components/layout/Layout'
 import Select from 'react-select'
 import { useState } from 'react'
 import Link from 'next/link'
-import { fetchData } from '../../../components/FetchData'
+import { fetchData } from '../../components/FetchData'
 
 export async function getStaticProps() {
     const emotions = await fetchData("emotions")

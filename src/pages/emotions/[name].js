@@ -1,8 +1,8 @@
-import SingleEmotion from '../../../components/emotions/Emotion'
-import { fetchData } from '../../../components/FetchData'
+import SingleEmotion from '../../components/emotions/Emotion'
+import { fetchData } from '../../components/FetchData'
 
-import Layout from '../../../components/layout/Layout'
-import ChatSpeak from '../../../components/ChatSpeak'
+import Layout from '../../components/layout/Layout'
+import ChatSpeak from '../../components/ChatSpeak'
 
 export async function getStaticPaths() {
     const emotions = await fetchData('emotions')

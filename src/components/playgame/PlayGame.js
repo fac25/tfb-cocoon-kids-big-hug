@@ -9,7 +9,7 @@ const PlayGame = ({ games }) => {
         <div>
             {games.map((game) => {
                 return (
-                    <Link href={`/user-group/play-game/${game.id.toString()}`} key={game.id}>
+                    <Link href={`/play/${game.id.toString()}`} key={game.id}>
                         <div>
                             {game.emotions.map((emotion) => (
                                 <span>{emotion}</span>

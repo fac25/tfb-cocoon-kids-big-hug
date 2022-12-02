@@ -12,7 +12,7 @@ const DoMakeGrid = ({ doMakes }) => {
                 doMakes[userGroup].map((make) => {
                     return (
                         <Link
-                            href={`/user-group/do-make/${userGroup}-${make.title}`}
+                            href={`/do/${userGroup}-${make.title}`}
                             key={make.id}
                         >
                             <div>

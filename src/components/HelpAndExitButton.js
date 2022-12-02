@@ -6,8 +6,8 @@ const HelpAndExitButton = () => {
     }
     return (
         <div className="help-and-exit">
-            <button onClick={handleExit}>Exit</button>
-            <Link href="/help">Help</Link>
+            <button onClick={handleExit}>Exit now!</button>
+            <Link href="/help">Get help now!</Link>
         </div>
     )
 }

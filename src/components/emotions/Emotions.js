@@ -15,13 +15,7 @@ const Emotions = ({ emotions, length, page }) => {
                     if (parseInt(emotion.id) < length) {
                         return (
                             <Link
-                                href={
-                                    page
-                                        ? '/user-group/emotions/' +
-                                          emotion.name
-                                        : 'emotions/' +
-                                          emotion.name
-                                }
+                                href={'emotions/' + emotion.name}
                                 key={emotion.id}
                             >
                                 <Image
