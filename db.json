@@ -334,7 +334,7 @@
     "do-make": [
         {
             "id": 1,
-            "emotions": ["Anxious"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Make your own calming, regulating sensory bottle",
@@ -391,7 +391,7 @@
         },
         {
             "id": 2,
-            "emotions": ["Anxiety"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Make a rain stick sensory bottle",
@@ -427,7 +427,7 @@
         },
         {
             "id": 3,
-            "emotions": ["Anxiety"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Make a moving lava lamp bottle",
@@ -487,7 +487,7 @@
         },
         {
             "id": 4,
-            "emotions": ["Anxiety"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Bubblewrap anxiety helper. Bubble wrap is great for popping when you feel anxious.",
@@ -518,7 +518,7 @@
         },
         {
             "id": 5,
-            "emotions": ["Anxiety"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Giant bubbles",
@@ -572,7 +572,7 @@
         },
         {
             "id": 1,
-            "emotions": ["Anxiety"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Make a sensory bottle",
@@ -616,7 +616,7 @@
         },
         {
             "id": 2,
-            "emotions": ["Anxiety", "Anger"],
+            "emotions": ["anxious", "anger"],
             "under13": true,
             "over13": true,
             "title": "text",
@@ -635,7 +635,7 @@
     "play-game": [
         {
             "id": 1,
-            "emotions": ["alone","anxiety", "surprised", "scared"],
+            "emotions": ["alone","anxious", "surprised", "scared"],
             "name" : "justTouchToo",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
@@ -647,7 +647,7 @@
         },
         {
             "id": 2,
-            "emotions": ["alone","lonely", "anxiety", "quiet", "relieved"],
+            "emotions": ["alone","lonely", "anxious", "quiet", "relieved"],
             "name" : "chrysaora",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
@@ -672,7 +672,7 @@
 
         {
             "id": 4,
-            "emotions": ["alone","anxiety", "confused"],
+            "emotions": ["alone","anxious", "confused"],
             "name" : "sandbox",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",

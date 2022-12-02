@@ -1,5 +1,5 @@
-import { fetchData } from '../../../components/FetchData'
-import SinglePlayGame from '../../../components/playgame/SinglePlayGame'
+import { fetchData } from '../../components/FetchData'
+import SinglePlayGame from '../../components/playgame/SinglePlayGame'
 
 export async function getStaticPaths() {
     const games = await fetchData('play-game')
