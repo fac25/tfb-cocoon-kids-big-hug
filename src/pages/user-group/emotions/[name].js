@@ -1,11 +1,3 @@
-import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-} from '@reach/accordion'
-import '@reach/accordion/styles.css'
-
 import SingleEmotion from '../../../components/emotions/Emotion'
 import { fetchData } from '../../../components/FetchData'
 
@@ -36,40 +28,14 @@ export default function Emotion({ emotion, chat }) {
         <Layout pageTitle="Emotion">
             <SingleEmotion emotion={emotion} />
             <section>
-                <Accordion>
-                    <AccordionItem>
-                        <h3>
-                            <AccordionButton>Do/Make</AccordionButton>
-                        </h3>
-                        <AccordionPanel>
-                            Grid of do/makes component
-                        </AccordionPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                        <h3>
-                            <AccordionButton>Play/Game</AccordionButton>
-                        </h3>
-                        <AccordionPanel>
-                            Grid of Play/Game component
-                        </AccordionPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                        <h3>
-                            <AccordionButton>Join/Go</AccordionButton>
-                        </h3>
-                        <AccordionPanel>
-                            Grid of Join/Go component
-                        </AccordionPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                        <h3>
-                            <AccordionButton>Chat/Speak</AccordionButton>
-                        </h3>
-                        <AccordionPanel>
-                            <ChatSpeak chat={chat} />
-                        </AccordionPanel>
-                    </AccordionItem>
-                </Accordion>
+                <h3>Do/Make</h3>
+                Grid of do/makes component
+                <h3>Play/Game</h3>
+                Grid of Play/Game component
+                <h3>Join/Go</h3>
+                Grid of Join/Go component
+                <h3>Chat/Speak</h3>
+                <ChatSpeak chat={chat} />
             </section>
         </Layout>
     )
