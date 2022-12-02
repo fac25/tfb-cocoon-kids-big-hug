@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { useContext } from 'react'
-import GlobalUserGroup from '../../lib/GlobalContext'
+import GlobalUserGroup from '../../context/GlobalContext'
 
 const SingleEmotion = ({ emotion }) => {
     const { userGroup } = useContext(GlobalUserGroup)

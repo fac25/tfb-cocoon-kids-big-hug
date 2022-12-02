@@ -1,4 +1,4 @@
-import GlobalUserGroup from '../../lib/GlobalContext'
+import GlobalUserGroup from '../../context/GlobalContext'
 import { useContext } from 'react'
 
 import Link from 'next/link'
