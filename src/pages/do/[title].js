@@ -1,52 +1,26 @@
-import DoMake from '../../components/DoMake'
+import { fetchData } from '../../components/FetchData'
+import DoMake from '../../components/domake/DoMake'
 import Layout from '../../components/layout/Layout'
-import { useRouter } from 'next/router'
 
 export async function getStaticPaths() {
-    const res = await fetch('http://localhost:3003/do-make')
-    const doMakes = await res.json()
-    // mapping both age groups
-    const ageGroupsKeys = Object.keys(doMakes)
-    // ["under13", "over13"]
-    let nestedPaths = []
+    const doMakes = await fetchData('do-make')
 
-    ageGroupsKeys.forEach((ageGroupKey) =>
-        nestedPaths.push(
-            doMakes[ageGroupKey].map((doMake) => {
-                const path = `${ageGroupKey}-${doMake.title}`
-                return {
-                    params: { title: path },
-                }
-            })
-        )
-    )
-    const paths = nestedPaths.flatMap((el) => el)
+    const paths = doMakes.map((domake) => ({
+        params: { title: domake.title },
+    }))
 
     return { paths, fallback: false }
 }
 
-export async function getStaticProps() {
-    const res = await fetch('http://localhost:3003/do-make')
-    const doMakes = await res.json()
-    return { props: { doMakes } }
+export async function getStaticProps({ params }) {
+    const domake = await fetchData(`do-make/?title=${params.title}`)
+    return { props: { domake } }
 }
 
-export default function SingleDoMake({ doMakes }) {
-    // get userGroup
-    // map usergroup do makes
-    // show content
-    const router = useRouter()
-    const { title } = router.query
-    const splitTitle = title.split('-')
-    // use the age group to access their domakes
-    // get the specific domake for this page filtering the title
-    const currentDoMake = doMakes[splitTitle[0]].filter(
-        (doMake) => doMake.title === splitTitle[1]
-    )
-
+export default function SingleDoMake({ domake }) {
     return (
         <Layout pageTitle="Do/Make">
-            <DoMake currentDoMake={currentDoMake[0]} />
+            <DoMake domake={domake[0]} />
         </Layout>
     )
 }

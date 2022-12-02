@@ -1,5 +1,6 @@
 import { fetchData } from '../../components/FetchData'
 import SinglePlayGame from '../../components/playgame/SinglePlayGame'
+import Layout from '../../components/layout/Layout'
 
 export async function getStaticPaths() {
     const games = await fetchData('play-game')
@@ -19,8 +20,8 @@ export async function getStaticProps(context) {
 
 export default function Emotion({ game }) {
     return (
-        <div>
+        <Layout pageTitle="Game">
             <SinglePlayGame game={game} />
-        </div>
+        </Layout>
     )
 }

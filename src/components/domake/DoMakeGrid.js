@@ -1,20 +1,17 @@
-import { useContext } from 'react'
-import GlobalUserGroup from '../context/GlobalContext'
+//import { useContext } from 'react'
+//import GlobalUserGroup from '../context/GlobalContext'
 
 import Link from 'next/link'
 
 const DoMakeGrid = ({ doMakes }) => {
-    const { userGroup } = useContext(GlobalUserGroup)
+    //const { userGroup } = useContext(GlobalUserGroup)
 
     return (
         <div>
             {doMakes &&
-                doMakes[userGroup].map((make) => {
+                doMakes.map((make) => {
                     return (
-                        <Link
-                            href={`/do/${userGroup}-${make.title}`}
-                            key={make.id}
-                        >
+                        <Link href={`/do/${make.title}`} key={make.id}>
                             <div>
                                 {make.emotions.map((emotion) => {
                                     return <span key={emotion}>{emotion}</span>
@@ -22,11 +19,11 @@ const DoMakeGrid = ({ doMakes }) => {
                             </div>
                             <p>{make.title}</p>
                             <p>{make.description}</p>
-                            <div>
+                            {/* <div>
                                 {make['how-it-helps']?.map((how) => {
                                     return <span key={how}>{how}</span>
                                 })}
-                            </div>
+                            </div> */}
                         </Link>
                     )
                 })}

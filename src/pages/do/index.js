@@ -1,9 +1,9 @@
-import DoMakeGrid from '../../components/DoMakeGrid'
+import { fetchData } from '../../components/FetchData'
+import DoMakeGrid from '../../components/domake/DoMakeGrid'
 import Layout from '../../components/layout/Layout'
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3003/do-make')
-    const doMakes = await res.json()
+    const doMakes = await fetchData('do-make')
 
     return { props: { doMakes } }
 }

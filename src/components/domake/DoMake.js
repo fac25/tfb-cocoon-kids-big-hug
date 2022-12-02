@@ -3,37 +3,36 @@
 // import { useContext } from 'react'
 // import GlobalUserGroup from '../lib/GlobalContext'
 
-const DoMake = ({ currentDoMake }) => {
-    // const { userGroup } = useContext(GlobalUserGroup)
+const DoMake = ({ domake }) => {
     return (
         <article>
-            <h2>{currentDoMake.title}</h2>
-            <p>{currentDoMake.description}</p>
-            {currentDoMake['how-it-helps'] && (
+            <h2>{domake.title}</h2>
+            <p>{domake.description}</p>
+            {domake['how-it-helps'] && (
                 <div>
                     <h3>How it Helps</h3>
                     <ul>
-                        {currentDoMake['how-it-helps'].map((how) => (
+                        {domake['how-it-helps'].map((how) => (
                             <li key={how}>{how}</li>
                         ))}
                     </ul>
                 </div>
             )}
-            {currentDoMake['materials'] && (
+            {domake['materials'] && (
                 <div>
                     <h3>Materials</h3>
                     <ul>
-                        {currentDoMake['materials']?.map((item) => (
+                        {domake['materials']?.map((item) => (
                             <li key={item}>{item}</li>
                         ))}
                     </ul>
                 </div>
             )}
-            {currentDoMake['instructions'] && (
+            {domake['instructions'] && (
                 <div>
                     <h3>Instructions</h3>
                     <div>
-                        {currentDoMake['instructions']?.map((item, index) => (
+                        {domake['instructions']?.map((item, index) => (
                             <div key={`item-${index}`}>
                                 {/* <Image
                                 src={item.src}

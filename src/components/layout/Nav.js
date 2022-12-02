@@ -6,7 +6,7 @@ export default function Nav() {
     const navMenu = [
         { name: 'Home', route: '/welcome' },
         { name: 'Emotions', route: '/emotions' },
-        // { name: 'Do/Make', route: '/do' },
+        { name: 'Do/Make', route: '/do' },
         { name: 'Play/Game', route: '/play' },
         { name: 'Go/Join', route: '/go' },
         { name: 'Chat/Speak', route: '/chat' },
