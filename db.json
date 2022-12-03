@@ -4,20 +4,30 @@
             "id": 1,
             "name": "alone",
             "restricted": false,
-            "under13": { "src": "alone.jpg", "description": "text" },
+            "under13": {
+                "src": "alone.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "alone.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 2,
             "name": "angry",
             "restricted": false,
-            "under13": { "src": "angry.jpg", "description": "text" },
+            "under13": {
+                "src": "angry.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "angry.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
@@ -73,260 +83,389 @@
             "id": 4,
             "name": "ashamed",
             "restricted": false,
-            "under13": { "src": "ashamed.jpg", "description": "text" },
+            "under13": {
+                "src": "ashamed.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "ashamed.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 5,
             "name": "bored",
             "restricted": false,
-            "under13": { "src": "bored.jpg", "description": "text" },
+            "under13": {
+                "src": "bored.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "bored.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 6,
             "name": "chatty",
             "restricted": false,
-            "under13": { "src": "chatty.jpg", "description": "text" },
+            "under13": {
+                "src": "chatty.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "chatty.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 7,
             "name": "comfortable",
             "restricted": false,
-            "under13": { "src": "comfortable.jpg", "description": "text" },
+            "under13": {
+                "src": "comfortable.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "comfortable.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 8,
             "name": "confident",
             "restricted": false,
-            "under13": { "src": "confident.jpg", "description": "text" },
+            "under13": {
+                "src": "confident.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "confident.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 9,
             "name": "confused",
             "restricted": false,
-            "under13": { "src": "confused.jpg", "description": "text" },
+            "under13": {
+                "src": "confused.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "confused.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 10,
             "name": "depressed",
             "restricted": false,
-            "under13": { "src": "depressed.jpg", "description": "text" },
+            "under13": {
+                "src": "depressed.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "depressed.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 11,
             "name": "disgusted",
             "restricted": false,
-            "under13": { "src": "disgusted.jpg", "description": "text" },
+            "under13": {
+                "src": "disgusted.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "disgusted.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 12,
             "name": "down",
             "restricted": false,
-            "under13": { "src": "down.jpg", "description": "text" },
+            "under13": {
+                "src": "down.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "down.jpg",
-                "description": "text"
+                "description": "Lorem ipsum"
             }
         },
         {
             "id": 13,
             "name": "embarrassed",
             "restricted": false,
-            "under13": { "src": "embarrassed.jpg", "description": "text" },
+            "under13": {
+                "src": "embarrassed.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "embarrassed.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 14,
             "name": "excited",
             "restricted": false,
-            "under13": { "src": "excited.jpg", "description": "text" },
+            "under13": {
+                "src": "excited.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "excited.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 15,
             "name": "fed up",
             "restricted": false,
-            "under13": { "src": "fedup.jpg", "description": "text" },
+            "under13": {
+                "src": "fedup.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "fedUp.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 16,
             "name": "friendly",
             "restricted": false,
-            "under13": { "src": "friendly.jpg", "description": "text" },
+            "under13": {
+                "src": "friendly.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "friendly.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 17,
             "name": "frustrated",
             "restricted": false,
-            "under13": { "src": "frustrated.jpg", "description": "text" },
+            "under13": {
+                "src": "frustrated.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "frustrated.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 18,
             "name": "guilty",
             "restricted": false,
-            "under13": { "src": "guilty.jpg", "description": "text" },
+            "under13": {
+                "src": "guilty.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "guilty.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 19,
             "name": "happy",
             "restricted": false,
-            "under13": { "src": "happy.jpg", "description": "text" },
+            "under13": {
+                "src": "happy.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "happy.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 20,
             "name": "hopeless",
             "restricted": false,
-            "under13": { "src": "hopeless.jpg", "description": "text" },
+            "under13": {
+                "src": "hopeless.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "hopeless.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 21,
             "name": "lonely",
             "restricted": false,
-            "under13": { "src": "lonely.jpg", "description": "text" },
+            "under13": {
+                "src": "lonely.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "lonely.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 22,
             "name": "quiet",
             "restricted": false,
-            "under13": { "src": "quiet.jpg", "description": "text" },
+            "under13": {
+                "src": "quiet.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "quiet.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 23,
             "name": "relieved",
             "restricted": false,
-            "under13": { "src": "relieved.jpg", "description": "text" },
+            "under13": {
+                "src": "relieved.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "relieved.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 24,
             "name": "sad",
             "restricted": false,
-            "under13": { "src": "sad.jpg", "description": "text" },
+            "under13": {
+                "src": "sad.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "sad.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 25,
             "name": "satisfied",
             "restricted": false,
-            "under13": { "src": "satisfied.jpg", "description": "text" },
+            "under13": {
+                "src": "satisfied.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "satisfied.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 26,
             "name": "scared",
             "restricted": false,
-            "under13": { "src": "scared.jpg", "description": "text" },
+            "under13": {
+                "src": "scared.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "scared.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 27,
             "name": "surprised",
             "restricted": false,
-            "under13": { "src": "surprised.jpg", "description": "text" },
+            "under13": {
+                "src": "surprised.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "surprised.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 28,
             "name": "upset",
             "restricted": false,
-            "under13": { "src": "upset.jpg", "description": "text" },
+            "under13": {
+                "src": "upset.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "upset.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
             "id": 29,
             "name": "worried",
             "restricted": false,
-            "under13": { "src": "worried.jpg", "description": "text" },
+            "under13": {
+                "src": "worried.jpg",
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            },
             "over13": {
                 "src": "worried.jpg",
-                "description": "text"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         }
     ],
@@ -338,6 +477,7 @@
             "under13": true,
             "over13": true,
             "title": "Make your own calming, regulating sensory bottle",
+            "caution": null,
             "description": "You can make a sensory bottle out of a recycled clear plastic bottle, water, oil, and anything that you want to add.. sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons, rice. What else can you think of to add? ",
             "src": "url",
             "how-it-helps": [
@@ -395,6 +535,7 @@
             "under13": true,
             "over13": true,
             "title": "Make a rain stick sensory bottle",
+            "caution": null,
             "description": "You don't need any water or oil... Use dry rice, pasta, or lentils, small lego, sand, beads, sequins, small plastic animals, floam, magic sand - or anything else that will make a noise! Can you make more than one? Can you find the best sound for you?",
             "src": "url",
             "materials": [
@@ -432,6 +573,8 @@
             "over13": true,
             "title": "Make a moving lava lamp bottle",
             "caution": "Careful! This lava lamp MUST be made with your parent, carer or teacher or other adult! ",
+            "description": "Why Alka-Seltzer tablets? They're effervescent which means they dissolve and fizz out air into water. When the air inside the fizz bubbles reach the top they pop. The air is let out. The coloured water blobs sink down to the bottom. ",
+            "src": "url",
             "how-it-helps": [
                 " Sensory bottles are tested by Scientists. ",
                 "They see that they make people feel calmer, less anxious and less worried about things. ",
@@ -440,8 +583,6 @@
                 "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
                 "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
             ],
-            "description": "Why Alka-Seltzer tablets? They're effervescent which means they dissolve and fizz out air into water. When the air inside the fizz bubbles reach the top they pop. The air is let out. The coloured water blobs sink down to the bottom. ",
-            "src": "url",
             "materials": [
                 "Plastic bottle ",
                 "Bottle lid ",
@@ -491,6 +632,9 @@
             "under13": true,
             "over13": true,
             "title": "Bubblewrap anxiety helper. Bubble wrap is great for popping when you feel anxious.",
+            "caution": null,
+            "description": "lorem ipsum",
+            "src": "url",
             "how-it-helps": [
                 "Sensory bubble wrap can help you feel calmer, less anxious and less worried about things. ",
                 "Popping the bubble can us to let go of (release) feelings that are in our brain, muscles, nervous system and other parts of our body.",
@@ -500,7 +644,7 @@
                 "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
                 "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
             ],
-            "src": "url",
+
             "materials": [
                 "Plastic bottle ",
                 "Bottle lid ",
@@ -514,6 +658,20 @@
                 "small light items, such as orbeez, glitter, pom poms, coloured rice (if wanted)",
                 "Jug and funnel to pour (if needed)",
                 "Small things that float!"
+            ],
+            "instructions": [
+                {
+                    "src": "url",
+                    "step": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                },
+                {
+                    "src": "url",
+                    "step": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                },
+                {
+                    "src": "url",
+                    "step": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                }
             ]
         },
         {
@@ -522,6 +680,9 @@
             "under13": true,
             "over13": true,
             "title": "Giant bubbles",
+            "caution": null,
+            "description": "Bubbles of all sizes can be fun to make and do. These are extra huge, but you can also make great ones using every day things.",
+            "src": "url",
             "how-it-helps": [
                 "These games and ideas are Sensory Regulatory.",
                 "Scientists see that they help you to feel calmer, less anxious and less worried about things.",
@@ -529,8 +690,6 @@
                 "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing).You also have to concentrate as you're doing it. ",
                 "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too."
             ],
-            "description": "Bubbles of all sizes can be fun to make and do. These are extra huge, but you can also make great ones using every day things.",
-            "src": "url",
             "materials": [
                 "Plastic bottle to hold the solution afterwards",
                 "Bottle lid ",
@@ -571,14 +730,15 @@
             ]
         },
         {
-            "id": 1,
+            "id": 6,
             "emotions": ["anxious"],
-            "under13": true,
+            "under13": false,
             "over13": true,
             "title": "Make a sensory bottle",
+            "caution": null,
             "description": "Engage your senses and feel grounded again, as you recycle plastic bottles. Sensory bottles are not just for young kids. There's lots of science behind why they help you to feel calmer, less anxious and more in control of your feelings. Make your sensory bottle out of a recycled clear plastic bottle or a glass jar - any shape, or size works.  how about making a 2 litre one? Add sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons and coloured rice look satisfying. ",
             "src": "url",
-            "how-it-helps": "text",
+            "how-it-helps": "Lorem ipsum",
             "materials": [
                 "Plastic bottle or glass jar - any size",
                 "the bottle lid",
@@ -615,19 +775,20 @@
             ]
         },
         {
-            "id": 2,
-            "emotions": ["anxious", "anger"],
-            "under13": true,
+            "id": 7,
+            "emotions": ["Lorem ipsum", "Lorem ipsum"],
+            "under13": false,
             "over13": true,
-            "title": "text",
-            "description": "text",
+            "title": "Lorem ipsum",
+            "caution": null,
+            "description": "Lorem ipsum",
             "src": "url",
-            "how-it-helps": "text",
-            "materials": ["text"],
+            "how-it-helps": "Lorem ipsum",
+            "materials": ["Lorem ipsum", "Lorem ipsum"],
             "instructions": [
-                { "src": "url", "step": "text" },
-                { "src": "url", "step": "text" },
-                { "src": "url", "step": "text" }
+                { "src": "url", "step": "Lorem ipsum" },
+                { "src": "url", "step": "Lorem ipsum" },
+                { "src": "url", "step": "Lorem ipsum" }
             ]
         }
     ],
@@ -635,8 +796,8 @@
     "play-game": [
         {
             "id": 1,
-            "emotions": ["alone","anxious", "surprised", "scared"],
-            "name" : "justTouchToo",
+            "emotions": ["alone", "anxious", "surprised", "scared"],
+            "name": "justTouchToo",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -647,8 +808,8 @@
         },
         {
             "id": 2,
-            "emotions": ["alone","lonely", "anxious", "quiet", "relieved"],
-            "name" : "chrysaora",
+            "emotions": ["alone", "lonely", "anxious", "quiet", "relieved"],
+            "name": "chrysaora",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -659,8 +820,8 @@
         },
         {
             "id": 3,
-            "emotions": ["alone","excited","embarrassed", "down"],
-            "name" : "sandbox",
+            "emotions": ["alone", "excited", "embarrassed", "down"],
+            "name": "sandbox",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -672,8 +833,8 @@
 
         {
             "id": 4,
-            "emotions": ["alone","anxious", "confused"],
-            "name" : "sandbox",
+            "emotions": ["alone", "anxious", "confused"],
+            "name": "sandbox",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -685,7 +846,7 @@
         {
             "id": 5,
             "emotions": ["alone"],
-            "name" : "sandbox",
+            "name": "sandbox",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -701,32 +862,32 @@
                 {
                     "id": 1,
                     "emotions": ["alone", "angry"],
-                    "how-it-helps": "text",
-                    "title": "text",
-                    "location": "text"
+                    "how-it-helps": "Lorem ipsum",
+                    "title": "Lorem ipsum",
+                    "location": "Lorem ipsum"
                 },
                 {
                     "id": 2,
                     "emotions": ["alone", "ashamed"],
-                    "how-it-helps": "text",
-                    "title": "text",
-                    "location": "text"
+                    "how-it-helps": "Lorem ipsum",
+                    "title": "Lorem ipsum",
+                    "location": "Lorem ipsum"
                 }
             ],
             "over13": [
                 {
                     "id": 1,
                     "emotions": ["alone", "ashamed"],
-                    "how-it-helps": "text",
-                    "title": "text",
-                    "location": "text"
+                    "how-it-helps": "Lorem ipsum",
+                    "title": "Lorem ipsum",
+                    "location": "Lorem ipsum"
                 },
                 {
                     "id": 2,
                     "emotions": ["alone", "ashamed"],
-                    "how-it-helps": "text",
-                    "title": "text",
-                    "location": "text"
+                    "how-it-helps": "Lorem ipsum",
+                    "title": "Lorem ipsum",
+                    "location": "Lorem ipsum"
                 }
             ]
         }
