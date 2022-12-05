@@ -1,7 +1,7 @@
 import Layout from '../components/layout/Layout'
 import Emotions from '../components/emotions/Emotions'
 import WhatToDo from '../components/WhatToDo'
-import { fetchData } from '../components/FetchData'
+import { fetchData } from '../lib/FetchData'
 
 export async function getStaticProps() {
     const emotions = await fetchData('emotions')

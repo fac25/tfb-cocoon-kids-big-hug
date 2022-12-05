@@ -1,7 +1,14 @@
-// import { Tab } from '@headlessui/react'
-
+import { useState } from 'react'
+import { styled } from '@mui/material/styles'
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
+import MuiAccordion from '@mui/material/Accordion'
+import MuiAccordionSummary from '@mui/material/AccordionSummary'
+import MuiAccordionDetails from '@mui/material/AccordionDetails'
+import Typography from '@mui/material/Typography'
+import { fetchData } from '../../lib/FetchData'
 import SingleEmotion from '../../components/emotions/Emotion'
-import { fetchData } from '../../components/FetchData'
+import SinglePlayGame from '../../components/playgame/SinglePlayGame'
+import DoMake from '../../components/domake/DoMake'
 
 import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
@@ -16,42 +23,122 @@ export async function getStaticPaths() {
     return { paths, fallback: false }
 }
 
+const Accordion = styled((props) => (
+    <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+    border: `1px solid ${theme.palette.divider}`,
+    '&:not(:last-child)': {
+        borderBottom: 0,
+    },
+    '&:before': {
+        display: 'none',
+    },
+}))
+
+const AccordionSummary = styled((props) => (
+    <MuiAccordionSummary
+        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+        {...props}
+    />
+))(({ theme }) => ({
+    backgroundColor:
+        theme.palette.mode === 'dark'
+            ? 'rgba(255, 255, 255, .05)'
+            : 'rgba(0, 0, 0, .03)',
+    flexDirection: 'row-reverse',
+    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+        transform: 'rotate(90deg)',
+    },
+    '& .MuiAccordionSummary-content': {
+        marginLeft: theme.spacing(1),
+    },
+}))
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+    padding: theme.spacing(2),
+    borderTop: '1px solid rgba(0, 0, 0, .125)',
+}))
+
 export async function getStaticProps(context) {
     const name = context.params.name
 
     const emotion = await fetchData('emotions/?name=' + name)
     const chat = await fetchData('chat-speak')
+    const domake = await fetchData(`do-make`)
+    const game = await fetchData(`play-game`)
 
-    return { props: { emotion, chat } }
+    return { props: { emotion, chat, game, domake, name } }
 }
 
-export default function Emotion({ emotion, chat }) {
+export default function Emotion({ emotion, chat, game, domake, name }) {
+    const [expanded, setExpanded] = useState('panel1')
+
+    const handleChange = (panel) => (event, newExpanded) => {
+        setExpanded(newExpanded ? panel : false)
+    }
     return (
         <Layout pageTitle="Emotion">
-            <SingleEmotion emotion={emotion} />
-            <section>
-                {/* <Tab.Group>
-                    <Tab.List>
-                        <Tab>
-                            <h3>Do/Make</h3>
-                        </Tab>
-                        <Tab>
-                            <h3>Play/Game</h3>
-                        </Tab>
-                        <Tab>
-                            <h3>Join/Go</h3>
-                        </Tab>
-                    </Tab.List>
-                    <Tab.Panels>
-                        <Tab.Panel>One do/makes</Tab.Panel>
-                        <Tab.Panel>One Play/Game</Tab.Panel>
-                        <Tab.Panel>One Join/Go</Tab.Panel>
-                    </Tab.Panels>
-                </Tab.Group> */}
+            <h1>You are feeling {name}...</h1>
+            <SingleEmotion emotion={emotion} name={name} />
+            <div>
+                <Accordion
+                    expanded={expanded === 'panel1'}
+                    onChange={handleChange('panel1')}
+                >
+                    <AccordionSummary
+                        aria-controls="panel1d-content"
+                        id="panel1d-header"
+                    >
+                        <Typography>Make/do</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        {/* <DoMake domake={domake} name={name} /> */}
+                    </AccordionDetails>
+                </Accordion>
 
-                <h3>Chat/Speak</h3>
-                <ChatSpeak chat={chat} />
-            </section>
+                <Accordion
+                    expanded={expanded === 'panel2'}
+                    onChange={handleChange('panel2')}
+                >
+                    <AccordionSummary
+                        aria-controls="panel2d-content"
+                        id="panel2d-header"
+                    >
+                        <Typography>Play/game</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <SinglePlayGame game={game} name={name} />
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion
+                    expanded={expanded === 'panel3'}
+                    onChange={handleChange('panel3')}
+                >
+                    <AccordionSummary
+                        aria-controls="panel3d-content"
+                        id="panel3d-header"
+                    >
+                        <Typography>Join/go </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>add join go component</Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion
+                    expanded={expanded === 'panel4'}
+                    onChange={handleChange('panel4')}
+                >
+                    <AccordionSummary
+                        aria-controls="panel4d-content"
+                        id="panel4d-header"
+                    >
+                        <Typography>Chat/Speak</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <ChatSpeak chat={chat} />
+                    </AccordionDetails>
+                </Accordion>
+            </div>
         </Layout>
     )
 }
