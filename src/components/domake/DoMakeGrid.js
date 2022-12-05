@@ -50,7 +50,7 @@ const DoMakeGrid = ({ doMakes }) => {
                                     })}
                                 </div>
                                 <Link
-                                    href={`/do/${make.title}`}
+                                    href={`/do/${make.id}`}
                                     className="stretched-link"
                                 >
                                     {' '}

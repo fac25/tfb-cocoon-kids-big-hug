@@ -6,14 +6,14 @@ export async function getStaticPaths() {
     const doMakes = await fetchData('do-make')
 
     const paths = doMakes.map((domake) => ({
-        params: { title: domake.title },
+        params: { title: domake.id.toString() },
     }))
 
     return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
-    const domake = await fetchData(`do-make/?title=${params.title}`)
+    const domake = await fetchData(`do-make/?id=${params.title}`)
     return { props: { domake } }
 }
 
