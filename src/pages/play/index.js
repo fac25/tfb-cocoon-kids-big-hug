@@ -1,4 +1,4 @@
-import { fetchData } from '../../components/FetchData'
+import { fetchData } from '../../lib/FetchData'
 import Layout from '../../components/layout/Layout'
 import PlayGame from '../../components/playgame/PlayGame'
 

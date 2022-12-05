@@ -1,4 +1,4 @@
-import { fetchData } from '../../components/FetchData'
+import { fetchData } from '../../lib/FetchData'
 import DoMake from '../../components/domake/DoMake'
 import Layout from '../../components/layout/Layout'
 
