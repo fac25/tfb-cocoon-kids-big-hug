@@ -10,11 +10,11 @@ export default function Nav() {
         { name: 'Do/Make', route: '/do' },
         { name: 'Play/Game', route: '/play' },
         { name: 'Go/Join', route: '/go' },
-        { name: 'Chat/Speak', route: '/chat' },
-        { name: 'About us', route: '/about-us' },
-        { name: 'Contact us', route: '/contact-us' },
+        { name: 'Chat/Speak', route: '/help' },
+        { name: 'About us', route: '/about' },
+        { name: 'Contact us', route: '/contact' },
         { name: 'Chat to someone', route: '/help' },
-        { name: 'Change your age', route: '/' },
+        { name: 'Choose your age', route: '/' },
     ]
     return (
         <header>

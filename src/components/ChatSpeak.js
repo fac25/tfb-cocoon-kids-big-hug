@@ -18,9 +18,7 @@ export default function ChatSpeak({ chat }) {
                         : `${chat[0].over13.email}`
                 }
             >
-                {userGroup == 'under13'
-                    ? `${chat[0].under13.email}`
-                    : `${chat[0].over13.email}`}
+                message via email
             </a>
 
             <div>chat</div>
@@ -33,9 +31,7 @@ export default function ChatSpeak({ chat }) {
                         : `${chat[0].over13.chat}`
                 }
             >
-                {userGroup == 'under13'
-                    ? `${chat[0].under13.chat}`
-                    : `${chat[0].over13.chat}`}
+                chat to someone
             </a>
 
             <div>phone</div>

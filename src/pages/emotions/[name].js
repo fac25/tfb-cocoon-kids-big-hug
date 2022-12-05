@@ -65,17 +65,35 @@ export async function getStaticProps(context) {
     const emotion = await fetchData('emotions/?name=' + name)
     const chat = await fetchData('chat-speak')
     const domake = await fetchData(`do-make`)
-    const game = await fetchData(`play-game`)
+    const games = await fetchData(`play-game`)
 
-    return { props: { emotion, chat, game, domake, name } }
+    return { props: { emotion, chat, games, domake, name } }
 }
 
-export default function Emotion({ emotion, chat, game, domake, name }) {
-    const [expanded, setExpanded] = useState('panel1')
+function handleActivity(activity, setGame, name) {
+    activity.map((i) => {
+        i.emotions.map((emotion) => {
+            if (emotion === name) {
+                setGame((prevState) => {
+                    return { ...prevState, ...i }
+                })
+            }
+        })
+    })
+}
+
+export default function Emotion({ emotion, chat, games, domake, name }) {
+    const [expanded, setExpanded] = useState('')
+    const [game, setGame] = useState()
+    const [make, setMake] = useState()
 
     const handleChange = (panel) => (event, newExpanded) => {
+        handleActivity(games, setGame, name)
+        handleActivity(domake, setMake, name)
+
         setExpanded(newExpanded ? panel : false)
     }
+
     return (
         <Layout pageTitle="Emotion">
             <h1>You are feeling {name}...</h1>
@@ -92,7 +110,7 @@ export default function Emotion({ emotion, chat, game, domake, name }) {
                         <Typography>Make/do</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        {/* <DoMake domake={domake} name={name} /> */}
+                        {make && <DoMake domake={make} />}
                     </AccordionDetails>
                 </Accordion>
 
@@ -107,7 +125,7 @@ export default function Emotion({ emotion, chat, game, domake, name }) {
                         <Typography>Play/game</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <SinglePlayGame game={game} name={name} />
+                        {game && <SinglePlayGame game={game} />}
                     </AccordionDetails>
                 </Accordion>
                 <Accordion

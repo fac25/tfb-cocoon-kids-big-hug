@@ -738,7 +738,14 @@
             "caution": null,
             "description": "Engage your senses and feel grounded again, as you recycle plastic bottles. Sensory bottles are not just for young kids. There's lots of science behind why they help you to feel calmer, less anxious and more in control of your feelings. Make your sensory bottle out of a recycled clear plastic bottle or a glass jar - any shape, or size works.  how about making a 2 litre one? Add sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons and coloured rice look satisfying. ",
             "src": "url",
-            "how-it-helps": "Lorem ipsum",
+            "how-it-helps": [
+                "Sensory bottles are tested by Scientists.",
+                "They see that they make people feel calmer, less anxious and less worried about things. ",
+                " Watching the shapes and colours slowly move helps us to focus and think about one thing right now..",
+                "This can help us to worry less about something else.",
+                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
+                " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)"
+            ],
             "materials": [
                 "Plastic bottle or glass jar - any size",
                 "the bottle lid",
@@ -783,7 +790,7 @@
             "caution": null,
             "description": "Lorem ipsum",
             "src": "url",
-            "how-it-helps": "Lorem ipsum",
+            "how-it-helps": ["Lorem ipsum"],
             "materials": ["Lorem ipsum", "Lorem ipsum"],
             "instructions": [
                 { "src": "url", "step": "Lorem ipsum" },
