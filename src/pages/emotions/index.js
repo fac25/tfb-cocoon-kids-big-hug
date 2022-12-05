@@ -28,11 +28,7 @@ export default function AllEmotions({ emotions, selectOptions }) {
 
                 <Link href={userChoice}>SEARCH</Link>
             </div>
-            <Emotions
-                emotions={emotions}
-                length={emotions.length}
-                page={false}
-            />
+            <Emotions emotions={emotions} length={emotions.length} />
             <style>{`
             .search{
                 width: 14rem;
