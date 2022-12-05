@@ -11,7 +11,10 @@ export async function getStaticProps() {
 export default function DoMakePage({ doMakes }) {
     return (
         <Layout pageTitle="Do/Make">
-            <DoMakeGrid doMakes={doMakes} />
+            <div className="container">
+                <h1 className="title">Do / Make</h1>
+                <DoMakeGrid doMakes={doMakes} />
+            </div>
         </Layout>
     )
 }

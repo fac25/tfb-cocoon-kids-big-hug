@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import styles from '../../styles/Nav.module.css'
 export default function Nav() {
     const [isNavOpen, setIsNavOpen] = useState(false)
     const navMenu = [
@@ -12,23 +13,24 @@ export default function Nav() {
         { name: 'Chat/Speak', route: '/chat' },
         { name: 'About us', route: '/about-us' },
         { name: 'Contact us', route: '/contact-us' },
-        { name: 'Select different age content', route: '/' },
-        { name: 'Get help now', route: '/help' },
+        { name: 'Chat to someone', route: '/help' },
+        { name: 'Change your age', route: '/' },
     ]
     return (
         <header>
-            <nav>
-                <div>
-                    <Link href="/welcome">
+            <nav className={styles.nav}>
+                <div className={`${styles.logo} ${styles.container}`}>
+                    <Link href="/welcome" className={styles.logo__link}>
                         <Image
                             src="/assets/img/logo.jpg"
                             height={62}
                             width={70}
                             alt="Cocoon kids logo"
                         />
+                        <span>Coccon Kids & Big Hug</span>
                     </Link>
-                    <div>
-                        <Link href="/login" passHref>
+                    <div className={styles.btn_container}>
+                        <Link href="/login" className={styles.login}>
                             <span>Log in</span>
                         </Link>
                         <button
@@ -36,8 +38,9 @@ export default function Nav() {
                             aria-controls="navbar-sticky"
                             aria-expanded="false"
                             onClick={() => setIsNavOpen(!isNavOpen)} // toggle isNavOpen state on click
+                            className={styles.toggle}
                         >
-                            {/* <span className="sr-only">Open main menu</span> */}
+                            <span className="sr-only">Open main menu</span>
                             <svg
                                 className=" "
                                 aria-hidden="true"
@@ -54,12 +57,21 @@ export default function Nav() {
                             </svg>
                         </button>
                     </div>
-                    <div className={isNavOpen ? 'openNav' : 'closeNav'}>
-                        <ul>
+                    <div
+                        className={
+                            isNavOpen
+                                ? `${styles.Show} ${styles.menu__container}`
+                                : `${styles.menu__container}`
+                        }
+                    >
+                        <ul className={styles.menu__list}>
                             {navMenu.map((item) => {
                                 return (
-                                    <li key={item.name}>
-                                        <Link href={item.route} passHref>
+                                    <li
+                                        key={item.name}
+                                        className={styles.menu__list__item}
+                                    >
+                                        <Link href={item.route}>
                                             {item.name}
                                         </Link>
                                     </li>

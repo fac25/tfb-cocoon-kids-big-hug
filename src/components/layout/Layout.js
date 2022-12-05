@@ -5,9 +5,13 @@ import Footer from './Footer'
 import HelpAndExitButton from '../HelpAndExitButton'
 export const siteTitle = 'Cocoon Kids Big Hug'
 
+import { useContext } from 'react'
+import GlobalUserGroup from '../../context/GlobalContext'
+
 export default function Layout({ pageTitle, isLanding = false, children }) {
+    const { userGroup } = useContext(GlobalUserGroup)
     return (
-        <div>
+        <div className="wrapper">
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -28,26 +32,38 @@ export default function Layout({ pageTitle, isLanding = false, children }) {
                 <Nav />
             ) : (
                 <header>
-                    <Image
-                        src="/assets/img/logo-full.jpg"
-                        alt="Cocoon Kids Big Hug logo"
-                        width={550}
-                        height={207}
-                    />
+                    <div className="logo-landing">
+                        <Image
+                            src="/assets/img/logo-full.jpg"
+                            alt="Cocoon Kids Big Hug logo"
+                            width={550}
+                            height={207}
+                        />
+                    </div>
                 </header>
             )}
             <HelpAndExitButton />
-            <main>{children}</main>
+
             {!isLanding ? (
-                <Footer />
+                <>
+                    <main className={`wrapper__main bg-${userGroup}`}>
+                        {children}
+                    </main>
+                    <Footer />
+                </>
             ) : (
-                <footer>
-                    <p>
-                        Cocoon Kids Big Hug is a therapeutic service for
-                        children and young people age 3-19 and their families to
-                        safely explore their experiences
-                    </p>
-                </footer>
+                <>
+                    <main className={`wrapper__main`}>{children}</main>
+                    <footer className="wrapper__footer">
+                        <div className="container">
+                            <p>
+                                Cocoon Kids Big Hug is a therapeutic service for
+                                children and young people age 3-19 and their
+                                families to safely explore their experiences
+                            </p>
+                        </div>
+                    </footer>
+                </>
             )}
         </div>
     )

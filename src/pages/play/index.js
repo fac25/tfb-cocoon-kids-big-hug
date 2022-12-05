@@ -11,7 +11,10 @@ export async function getStaticProps() {
 export default function PlayGamePage({ games }) {
     return (
         <Layout pageTitle="Play/Games">
-            <PlayGame games={games} />
+            <div className="container">
+                <h1 className="title">Play / Game</h1>
+                <PlayGame games={games} />
+            </div>
         </Layout>
     )
 }
