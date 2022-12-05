@@ -11,7 +11,7 @@ export async function getStaticProps() {
 export default function Welcome({ emotions }) {
     return (
         <Layout pageTitle="User Group">
-            <Emotions emotions={emotions} length={9} page={true} />
+            <Emotions emotions={emotions} length={9} />
             <WhatToDo></WhatToDo>
         </Layout>
     )

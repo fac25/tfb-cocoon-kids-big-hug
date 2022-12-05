@@ -1,4 +1,4 @@
-import { Tab } from '@headlessui/react'
+// import { Tab } from '@headlessui/react'
 
 import SingleEmotion from '../../components/emotions/Emotion'
 import { fetchData } from '../../components/FetchData'
@@ -30,7 +30,7 @@ export default function Emotion({ emotion, chat }) {
         <Layout pageTitle="Emotion">
             <SingleEmotion emotion={emotion} />
             <section>
-                <Tab.Group>
+                {/* <Tab.Group>
                     <Tab.List>
                         <Tab>
                             <h3>Do/Make</h3>
@@ -47,7 +47,7 @@ export default function Emotion({ emotion, chat }) {
                         <Tab.Panel>One Play/Game</Tab.Panel>
                         <Tab.Panel>One Join/Go</Tab.Panel>
                     </Tab.Panels>
-                </Tab.Group>
+                </Tab.Group> */}
 
                 <h3>Chat/Speak</h3>
                 <ChatSpeak chat={chat} />

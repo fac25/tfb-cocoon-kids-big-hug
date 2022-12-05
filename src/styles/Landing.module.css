@@ -1,0 +1,65 @@
+.grid {
+    width: 18em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+.grid__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    border: solid var(--black) 2px;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.5em;
+    min-width: 0;
+    min-height: 0;
+    transition-duration: 500ms;
+    position: relative;
+}
+.grid__btn a {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.grid__btn:hover {
+    cursor: pointer;
+    background-color: var(--white);
+}
+.grid__btn--under13 {
+    border-color: var(--yellow-dark);
+    background-color: var(--yellow-light);
+}
+.grid__btn--over13 {
+    border-color: var(--green);
+    background-color: var(--green-light);
+}
+.grid__btn--adult {
+    border-color: var(--blue-medium);
+    background-color: var(--blue-light);
+}
+
+@media (min-width: 425px) {
+    .grid {
+        width: 22em;
+    }
+}
+@media (min-width: 768px) {
+    .grid {
+        width: 22em;
+    }
+    .grid__btn {
+        padding: 1em;
+    }
+}
+@media (min-width: 768px) {
+    .grid {
+        width: 30em;
+    }
+    .grid__btn {
+        padding: 1.5em;
+    }
+}

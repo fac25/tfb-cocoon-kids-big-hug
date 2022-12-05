@@ -1,30 +1,65 @@
 //import GlobalUserGroup from '../../context/GlobalContext'
 //import { useContext } from 'react'
-
+import styles from '../../styles/Activities.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const PlayGame = ({ games }) => {
     //const { userGroup } = useContext(GlobalUserGroup)
+    // function excerpt(str) {
+    //     return str.replace(/^(.{140}[^\s]*).*/, '$1')
+    // }
     return (
-        <div>
-            {games.map((game) => {
-                return (
-                    <Link href={`/play/${game.id.toString()}`} key={game.id}>
-                        <div>
-                            {game.emotions.map((emotion) => (
-                                <span key={emotion}>{emotion}</span>
-                            ))}
+        <section>
+            <div className={styles.grid}>
+                {games.map((game) => {
+                    return (
+                        <div key={game.id} className={styles.card}>
+                            <div className={styles.card__header}>
+                                {game.src ? (
+                                    <Image
+                                        src={`/assets/img/game/${game.src}`}
+                                        alt={game.title}
+                                        width={500}
+                                        height={334}
+                                        className={styles.card__image}
+                                    />
+                                ) : (
+                                    ''
+                                )}
+                            </div>
+                            <div className={styles.card__body}>
+                                <h2 className={styles.card__title}>
+                                    {game.title}
+                                </h2>
+
+                                <div>
+                                    {game['how-it-helps'].map((how) => (
+                                        <p key={how}>{how}</p>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className={styles.card__tags}>
+                                {game.emotions.map((emotion) => (
+                                    <span
+                                        className={styles.card__tag}
+                                        key={emotion}
+                                    >
+                                        {emotion}
+                                    </span>
+                                ))}
+                            </div>
+                            <Link
+                                href={`/play/${game.id.toString()}`}
+                                className="stretched-link"
+                            >
+                                {' '}
+                            </Link>
                         </div>
-                        <div>
-                            {game['how-it-helps'].map((how) => (
-                                <span key={how}>{how}</span>
-                            ))}
-                        </div>
-                        {/* <a href={game.game}>Play Game</a> */}
-                    </Link>
-                )
-            })}
-        </div>
+                    )
+                })}
+            </div>
+        </section>
     )
 }
 
