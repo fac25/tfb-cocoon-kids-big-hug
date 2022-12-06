@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { useState, useEffect } from 'react'
 import GlobalUserGroup from '../context/GlobalContext'
 
+
 function MyApp({ Component, pageProps }) {
     const initialState = 'under13'
     const [userGroup, setUserGroup] = useState(initialState)
