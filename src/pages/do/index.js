@@ -1,19 +1,22 @@
-import { fetchData } from '../../lib/FetchData'
 import DoMakeGrid from '../../components/domake/DoMakeGrid'
 import Layout from '../../components/layout/Layout'
+import useSWR from 'swr'
 
-export async function getStaticProps() {
-    const doMakes = await fetchData('do-make')
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
-    return { props: { doMakes } }
-}
+export default function DoMakePage() {
+    const { data, error } = useSWR('/api/staticdata', fetcher)
 
-export default function DoMakePage({ doMakes }) {
+    if (error) return <div>Failed to load</div>
+    if (!data) return <div>Loading...</div>
+
+    const json = JSON.parse(data)
+
     return (
         <Layout pageTitle="Do/Make">
             <div className="container">
                 <h1 className="title">Do / Make</h1>
-                <DoMakeGrid doMakes={doMakes} />
+                <DoMakeGrid doMakes={json['do-make']} />
             </div>
         </Layout>
     )
