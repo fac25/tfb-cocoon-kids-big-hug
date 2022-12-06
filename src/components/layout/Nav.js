@@ -30,7 +30,7 @@ export default function Nav() {
                         <span>Coccon Kids & Big Hug</span>
                     </Link>
                     <div className={styles.btn_container}>
-                        <Link href="/login" className={styles.login}>
+                        <Link href="/authenticate" className={styles.login}>
                             <span>Log in</span>
                         </Link>
                         <button
