@@ -6,7 +6,7 @@ const HelpAndExitButton = () => {
     }
     return (
         <div className="help-and-exit">
-            <Link href="/help">
+            <Link href="/welcome">
                 <span>I need urgent help now!</span>
                 <svg
                     width="23"

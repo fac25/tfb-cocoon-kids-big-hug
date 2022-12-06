@@ -6,15 +6,15 @@ export default function Nav() {
     const [isNavOpen, setIsNavOpen] = useState(false)
     const navMenu = [
         { name: 'Home', route: '/welcome' },
-        { name: 'Emotions', route: '/emotions' },
-        { name: 'Do/Make', route: '/do' },
-        { name: 'Play/Game', route: '/play' },
-        { name: 'Go/Join', route: '/go' },
-        { name: 'Chat/Speak', route: '/help' },
-        { name: 'About us', route: '/about' },
-        { name: 'Contact us', route: '/contact' },
-        { name: 'Chat to someone', route: '/help' },
-        { name: 'Choose your age', route: '/' },
+        // { name: 'Emotions', route: '/emotions' },
+        // { name: 'Do/Make', route: '/do' },
+        // { name: 'Play/Game', route: '/play' },
+        // { name: 'Go/Join', route: '/go' },
+        // { name: 'Chat/Speak', route: '/help' },
+        // { name: 'About us', route: '/about' },
+        // { name: 'Contact us', route: '/contact' },
+        // { name: 'Chat to someone', route: '/help' },
+        // { name: 'Choose your age', route: '/' },
     ]
     return (
         <header>

@@ -5,6 +5,8 @@ import { useContext } from 'react'
 import GlobalUserGroup from '../../context/GlobalContext'
 
 const Emotions = ({ emotions, length }) => {
+    console.log(emotions.emotions)
+
     const { userGroup } = useContext(GlobalUserGroup)
     return (
         <section>
@@ -13,13 +15,10 @@ const Emotions = ({ emotions, length }) => {
                 <div className="grid text-center">
                     {emotions &&
                         userGroup &&
-                        emotions.map((emotion) => {
+                        emotions.emotions.map((emotion) => {
                             if (parseInt(emotion.id) < length) {
                                 return (
-                                    <Link
-                                        href={'emotions/' + emotion.name}
-                                        key={emotion.id}
-                                    >
+                                    <Link href={'welcome'} key={emotion.id}>
                                         <div className="cards">
                                             <Image
                                                 src={`/assets/img/${userGroup}/${emotion[userGroup].src}`}
