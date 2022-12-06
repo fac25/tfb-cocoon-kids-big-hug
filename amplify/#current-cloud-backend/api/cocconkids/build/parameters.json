@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "cocconkids",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "S3DeploymentBucket": "amplify-cocconkids-staging-231723-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/19db4ced99c36eaf22d7f0de5713be10cb57fb35"
+}

@@ -1,0 +1,436 @@
+
+type PlayGame @aws_iam @aws_api_key {
+  id: ID!
+  emotions: String
+  name: String
+  how_it_helps: String
+  src: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+type DoMakes @aws_iam @aws_api_key {
+  id: ID!
+  emotions: String
+  title: String
+  description: String
+  src: String
+  how_it_helps: String
+  materials: String
+  instructions: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+type Emotions @aws_iam @aws_api_key {
+  id: ID!
+  name: String
+  under13_src: String
+  under13_description: String
+  over13_src: String
+  over13_description: String
+  restricted: Boolean
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+  _deleted: Boolean
+  _lastChangedAt: AWSTimestamp!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelPlayGameConnection @aws_api_key @aws_iam {
+  items: [PlayGame]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelPlayGameFilterInput {
+  id: ModelIDInput
+  emotions: ModelStringInput
+  name: ModelStringInput
+  how_it_helps: ModelStringInput
+  src: ModelStringInput
+  and: [ModelPlayGameFilterInput]
+  or: [ModelPlayGameFilterInput]
+  not: ModelPlayGameFilterInput
+}
+
+type Query {
+  getPlayGame(id: ID!): PlayGame @aws_api_key @aws_iam
+  listPlayGames(filter: ModelPlayGameFilterInput, limit: Int, nextToken: String): ModelPlayGameConnection @aws_api_key @aws_iam
+  syncPlayGames(filter: ModelPlayGameFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelPlayGameConnection @aws_api_key @aws_iam
+  getDoMakes(id: ID!): DoMakes @aws_api_key @aws_iam
+  listDoMakes(filter: ModelDoMakesFilterInput, limit: Int, nextToken: String): ModelDoMakesConnection @aws_api_key @aws_iam
+  syncDoMakes(filter: ModelDoMakesFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelDoMakesConnection @aws_api_key @aws_iam
+  getEmotions(id: ID!): Emotions @aws_api_key @aws_iam
+  listEmotions(filter: ModelEmotionsFilterInput, limit: Int, nextToken: String): ModelEmotionsConnection @aws_api_key @aws_iam
+  syncEmotions(filter: ModelEmotionsFilterInput, limit: Int, nextToken: String, lastSync: AWSTimestamp): ModelEmotionsConnection @aws_api_key @aws_iam
+}
+
+input ModelPlayGameConditionInput {
+  emotions: ModelStringInput
+  name: ModelStringInput
+  how_it_helps: ModelStringInput
+  src: ModelStringInput
+  and: [ModelPlayGameConditionInput]
+  or: [ModelPlayGameConditionInput]
+  not: ModelPlayGameConditionInput
+}
+
+input CreatePlayGameInput {
+  id: ID
+  emotions: String
+  name: String
+  how_it_helps: String
+  src: String
+  _version: Int
+}
+
+input UpdatePlayGameInput {
+  id: ID!
+  emotions: String
+  name: String
+  how_it_helps: String
+  src: String
+  _version: Int
+}
+
+input DeletePlayGameInput {
+  id: ID!
+  _version: Int
+}
+
+type Mutation {
+  createPlayGame(input: CreatePlayGameInput!, condition: ModelPlayGameConditionInput): PlayGame @aws_api_key @aws_iam
+  updatePlayGame(input: UpdatePlayGameInput!, condition: ModelPlayGameConditionInput): PlayGame @aws_api_key @aws_iam
+  deletePlayGame(input: DeletePlayGameInput!, condition: ModelPlayGameConditionInput): PlayGame @aws_api_key @aws_iam
+  createDoMakes(input: CreateDoMakesInput!, condition: ModelDoMakesConditionInput): DoMakes @aws_api_key @aws_iam
+  updateDoMakes(input: UpdateDoMakesInput!, condition: ModelDoMakesConditionInput): DoMakes @aws_api_key @aws_iam
+  deleteDoMakes(input: DeleteDoMakesInput!, condition: ModelDoMakesConditionInput): DoMakes @aws_api_key @aws_iam
+  createEmotions(input: CreateEmotionsInput!, condition: ModelEmotionsConditionInput): Emotions @aws_api_key @aws_iam
+  updateEmotions(input: UpdateEmotionsInput!, condition: ModelEmotionsConditionInput): Emotions @aws_api_key @aws_iam
+  deleteEmotions(input: DeleteEmotionsInput!, condition: ModelEmotionsConditionInput): Emotions @aws_api_key @aws_iam
+}
+
+input ModelSubscriptionPlayGameFilterInput {
+  id: ModelSubscriptionIDInput
+  emotions: ModelSubscriptionStringInput
+  name: ModelSubscriptionStringInput
+  how_it_helps: ModelSubscriptionStringInput
+  src: ModelSubscriptionStringInput
+  and: [ModelSubscriptionPlayGameFilterInput]
+  or: [ModelSubscriptionPlayGameFilterInput]
+}
+
+type Subscription {
+  onCreatePlayGame(filter: ModelSubscriptionPlayGameFilterInput): PlayGame @aws_subscribe(mutations: ["createPlayGame"]) @aws_api_key @aws_iam
+  onUpdatePlayGame(filter: ModelSubscriptionPlayGameFilterInput): PlayGame @aws_subscribe(mutations: ["updatePlayGame"]) @aws_api_key @aws_iam
+  onDeletePlayGame(filter: ModelSubscriptionPlayGameFilterInput): PlayGame @aws_subscribe(mutations: ["deletePlayGame"]) @aws_api_key @aws_iam
+  onCreateDoMakes(filter: ModelSubscriptionDoMakesFilterInput): DoMakes @aws_subscribe(mutations: ["createDoMakes"]) @aws_api_key @aws_iam
+  onUpdateDoMakes(filter: ModelSubscriptionDoMakesFilterInput): DoMakes @aws_subscribe(mutations: ["updateDoMakes"]) @aws_api_key @aws_iam
+  onDeleteDoMakes(filter: ModelSubscriptionDoMakesFilterInput): DoMakes @aws_subscribe(mutations: ["deleteDoMakes"]) @aws_api_key @aws_iam
+  onCreateEmotions(filter: ModelSubscriptionEmotionsFilterInput): Emotions @aws_subscribe(mutations: ["createEmotions"]) @aws_api_key @aws_iam
+  onUpdateEmotions(filter: ModelSubscriptionEmotionsFilterInput): Emotions @aws_subscribe(mutations: ["updateEmotions"]) @aws_api_key @aws_iam
+  onDeleteEmotions(filter: ModelSubscriptionEmotionsFilterInput): Emotions @aws_subscribe(mutations: ["deleteEmotions"]) @aws_api_key @aws_iam
+}
+
+type ModelDoMakesConnection @aws_api_key @aws_iam {
+  items: [DoMakes]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelDoMakesFilterInput {
+  id: ModelIDInput
+  emotions: ModelStringInput
+  title: ModelStringInput
+  description: ModelStringInput
+  src: ModelStringInput
+  how_it_helps: ModelStringInput
+  materials: ModelStringInput
+  instructions: ModelStringInput
+  and: [ModelDoMakesFilterInput]
+  or: [ModelDoMakesFilterInput]
+  not: ModelDoMakesFilterInput
+}
+
+input ModelDoMakesConditionInput {
+  emotions: ModelStringInput
+  title: ModelStringInput
+  description: ModelStringInput
+  src: ModelStringInput
+  how_it_helps: ModelStringInput
+  materials: ModelStringInput
+  instructions: ModelStringInput
+  and: [ModelDoMakesConditionInput]
+  or: [ModelDoMakesConditionInput]
+  not: ModelDoMakesConditionInput
+}
+
+input CreateDoMakesInput {
+  id: ID
+  emotions: String
+  title: String
+  description: String
+  src: String
+  how_it_helps: String
+  materials: String
+  instructions: String
+  _version: Int
+}
+
+input UpdateDoMakesInput {
+  id: ID!
+  emotions: String
+  title: String
+  description: String
+  src: String
+  how_it_helps: String
+  materials: String
+  instructions: String
+  _version: Int
+}
+
+input DeleteDoMakesInput {
+  id: ID!
+  _version: Int
+}
+
+input ModelSubscriptionDoMakesFilterInput {
+  id: ModelSubscriptionIDInput
+  emotions: ModelSubscriptionStringInput
+  title: ModelSubscriptionStringInput
+  description: ModelSubscriptionStringInput
+  src: ModelSubscriptionStringInput
+  how_it_helps: ModelSubscriptionStringInput
+  materials: ModelSubscriptionStringInput
+  instructions: ModelSubscriptionStringInput
+  and: [ModelSubscriptionDoMakesFilterInput]
+  or: [ModelSubscriptionDoMakesFilterInput]
+}
+
+type ModelEmotionsConnection @aws_api_key @aws_iam {
+  items: [Emotions]!
+  nextToken: String
+  startedAt: AWSTimestamp
+}
+
+input ModelEmotionsFilterInput {
+  id: ModelIDInput
+  name: ModelStringInput
+  under13_src: ModelStringInput
+  under13_description: ModelStringInput
+  over13_src: ModelStringInput
+  over13_description: ModelStringInput
+  restricted: ModelBooleanInput
+  and: [ModelEmotionsFilterInput]
+  or: [ModelEmotionsFilterInput]
+  not: ModelEmotionsFilterInput
+}
+
+input ModelEmotionsConditionInput {
+  name: ModelStringInput
+  under13_src: ModelStringInput
+  under13_description: ModelStringInput
+  over13_src: ModelStringInput
+  over13_description: ModelStringInput
+  restricted: ModelBooleanInput
+  and: [ModelEmotionsConditionInput]
+  or: [ModelEmotionsConditionInput]
+  not: ModelEmotionsConditionInput
+}
+
+input CreateEmotionsInput {
+  id: ID
+  name: String
+  under13_src: String
+  under13_description: String
+  over13_src: String
+  over13_description: String
+  restricted: Boolean
+  _version: Int
+}
+
+input UpdateEmotionsInput {
+  id: ID!
+  name: String
+  under13_src: String
+  under13_description: String
+  over13_src: String
+  over13_description: String
+  restricted: Boolean
+  _version: Int
+}
+
+input DeleteEmotionsInput {
+  id: ID!
+  _version: Int
+}
+
+input ModelSubscriptionEmotionsFilterInput {
+  id: ModelSubscriptionIDInput
+  name: ModelSubscriptionStringInput
+  under13_src: ModelSubscriptionStringInput
+  under13_description: ModelSubscriptionStringInput
+  over13_src: ModelSubscriptionStringInput
+  over13_description: ModelSubscriptionStringInput
+  restricted: ModelSubscriptionBooleanInput
+  and: [ModelSubscriptionEmotionsFilterInput]
+  or: [ModelSubscriptionEmotionsFilterInput]
+}
+

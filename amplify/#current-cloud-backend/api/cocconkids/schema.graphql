@@ -1,0 +1,29 @@
+type PlayGame @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  emotions: String
+  name: String
+  how_it_helps: String
+  src: String
+}
+
+type DoMakes @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  emotions: String
+  title: String
+  description: String
+  src: String
+  how_it_helps: String
+  materials: String
+  instructions: String
+}
+
+type Emotions @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  under13_src: String
+  under13_description: String
+  over13_src: String
+  over13_description: String
+  restricted: Boolean
+}
+ 
