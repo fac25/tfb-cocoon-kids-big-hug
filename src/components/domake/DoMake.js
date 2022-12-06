@@ -9,7 +9,7 @@ const DoMake = ({ domake }) => {
             <h2>{domake.title}</h2>
             <p>{domake.description}</p>
             <Image
-                src={`/assets/img/${domake.src}`}
+                src={`/assets/img/do/${domake.src}`}
                 alt={domake.title}
                 height={300}
                 width={300}

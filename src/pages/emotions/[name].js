@@ -5,24 +5,26 @@ import MuiAccordion from '@mui/material/Accordion'
 import MuiAccordionSummary from '@mui/material/AccordionSummary'
 import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
-import { fetchData } from '../../lib/FetchData'
 import SingleEmotion from '../../components/emotions/Emotion'
 import SinglePlayGame from '../../components/playgame/SinglePlayGame'
 import DoMake from '../../components/domake/DoMake'
 
 import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
-
+import path from 'path'
+import { promises as fs } from 'fs'
+/*
 export async function getStaticPaths() {
     const emotions = await fetchData('emotions')
 
+    console.log(emotions)
     const paths = emotions.map((emotion) => ({
         params: { name: emotion.name },
     }))
 
     return { paths, fallback: false }
 }
-
+*/
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -59,13 +61,23 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     borderTop: '1px solid rgba(0, 0, 0, .125)',
 }))
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     const name = context.params.name
 
-    const emotion = await fetchData('emotions/?name=' + name)
-    const chat = await fetchData('chat-speak')
-    const domake = await fetchData(`do-make`)
-    const games = await fetchData(`play-game`)
+    // const emotion = await fetchData('emotions/?name=' + name)
+    // const chat = await fetchData('chat-speak')
+    // const domake = await fetchData(`do-make`)
+    // const games = await fetchData(`play-game`)
+
+    const jsonDirectory = path.join(process.cwd(), 'json')
+    //Read the json data file data.json
+    const fileContents = await fs.readFile(jsonDirectory + '/db.json', 'utf8')
+    const data = JSON.parse(fileContents)
+    const emotion = data['emotions'].filter((emotion) => emotion.name === name)
+    const chat = data['chat-speak']
+    const domake = data[`do-make`]
+    const games = data[`play-game`]
+    //Return the content of the data file in json format
 
     return { props: { emotion, chat, games, domake, name } }
 }
