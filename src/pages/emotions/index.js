@@ -26,7 +26,7 @@ export default function AllEmotions({ emotions, selectOptions }) {
                     onChange={(opt) => setUserChoice(opt.value)}
                 />
 
-                <Link href={userChoice}>SEARCH</Link>
+                <Link href={`emotions/${userChoice}`}>SEARCH</Link>
             </div>
             <Emotions emotions={emotions} length={emotions.length} />
             <style>{`
