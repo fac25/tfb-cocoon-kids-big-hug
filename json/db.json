@@ -921,7 +921,9 @@
             "instructions": [
                 {
                     "src": null,
-                    "step": "Tissue paper can be good if you need to break it into tiny pieces. Sometimes it's useful to write or draw what's made you angry or annoyed on the paper before you rip it up"
+                    "step": [
+                        "Tissue paper can be good if you need to break it into tiny pieces. Sometimes it's useful to write or draw what's made you angry or annoyed on the paper before you rip it up"
+                    ]
                 }
             ]
         },
@@ -941,19 +943,21 @@
             "instructions": [
                 {
                     "src": null,
-                    "step": "Think about your anger monster. What does it do? What happens? Does it have a name?"
+                    "step": [
+                        "Think about your anger monster. What does it do? What happens? Does it have a name?"
+                    ]
                 },
                 {
                     "src": null,
-                    "step": "What colour is it?"
+                    "step": ["What colour is it?"]
                 },
                 {
                     "src": null,
-                    "step": "Think about what it sounds like and says."
+                    "step": ["Think about what it sounds like and says."]
                 },
                 {
                     "src": null,
-                    "step": "Draw your anger as a monster."
+                    "step": ["Draw your anger as a monster."]
                 }
             ]
         },
@@ -985,7 +989,9 @@
             "instructions": [
                 {
                     "src": null,
-                    "step": "It's important to remember that whatever you do should have a positive effect. "
+                    "step": [
+                        "It's important to remember that whatever you do should have a positive effect. "
+                    ]
                 }
             ]
         },
@@ -1013,31 +1019,37 @@
             "instructions": [
                 {
                     "src": null,
-                    "step": "Punch through bubble wrap or paper - you can get big sheets for free in packaging and boxes."
+                    "step": [
+                        "Punch through bubble wrap or paper - you can get big sheets for free in packaging and boxes."
+                    ]
                 },
                 {
                     "src": null,
-                    "step": "Shake all the parts of your body - start with your fingers, wrists, arms, body, toes, feet, legs... all of you at random."
+                    "step": [
+                        "Shake all the parts of your body - start with your fingers, wrists, arms, body, toes, feet, legs... all of you at random."
+                    ]
                 },
                 {
                     "src": null,
-                    "step": "Hit something that won't hurt you - pile up pillows or cushions and hit, punch, squeeze or throw them hard against the floor."
+                    "step": [
+                        "Hit something that won't hurt you - pile up pillows or cushions and hit, punch, squeeze or throw them hard against the floor."
+                    ]
                 },
                 {
                     "src": null,
-                    "step": "Tear something up into hundreds of pieces."
+                    "step": ["Tear something up into hundreds of pieces."]
                 },
                 {
                     "src": null,
-                    "step": "Exercise - go for a run, go for a fast walk."
+                    "step": ["Exercise - go for a run, go for a fast walk."]
                 },
                 {
                     "src": null,
-                    "step": "Turn your music up loud and shout and dance."
+                    "step": ["Turn your music up loud and shout and dance."]
                 },
                 {
                     "src": null,
-                    "step": "Squeeze a stress ball."
+                    "step": ["Squeeze a stress ball."]
                 }
             ]
         }
