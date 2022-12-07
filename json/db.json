@@ -944,20 +944,11 @@
                 {
                     "src": null,
                     "step": [
-                        "Think about your anger monster. What does it do? What happens? Does it have a name?"
+                        "Think about your anger monster. What does it do? What happens? Does it have a name?",
+                        "What colour is it?",
+                        "Think about what it sounds like and says.",
+                        "Draw your anger as a monster."
                     ]
-                },
-                {
-                    "src": null,
-                    "step": ["What colour is it?"]
-                },
-                {
-                    "src": null,
-                    "step": ["Think about what it sounds like and says."]
-                },
-                {
-                    "src": null,
-                    "step": ["Draw your anger as a monster."]
                 }
             ]
         },
@@ -1020,36 +1011,15 @@
                 {
                     "src": null,
                     "step": [
-                        "Punch through bubble wrap or paper - you can get big sheets for free in packaging and boxes."
+                        "Punch through bubble wrap or paper - you can get big sheets for free in packaging and boxes.",
+                        "Shake all the parts of your body - start with your fingers, wrists, arms, body, toes, feet, legs... all of you at random.",
+                        "Hit something that won't hurt you - pile up pillows or cushions and hit, punch, squeeze or throw them hard against the floor.",
+                        "Tear something up into hundreds of pieces.",
+                        "Exercise - go for a run, go for a fast walk.",
+                        "Exercise - go for a run, go for a fast walk.",
+                        "Turn your music up loud and shout and dance.",
+                        "Squeeze a stress ball."
                     ]
-                },
-                {
-                    "src": null,
-                    "step": [
-                        "Shake all the parts of your body - start with your fingers, wrists, arms, body, toes, feet, legs... all of you at random."
-                    ]
-                },
-                {
-                    "src": null,
-                    "step": [
-                        "Hit something that won't hurt you - pile up pillows or cushions and hit, punch, squeeze or throw them hard against the floor."
-                    ]
-                },
-                {
-                    "src": null,
-                    "step": ["Tear something up into hundreds of pieces."]
-                },
-                {
-                    "src": null,
-                    "step": ["Exercise - go for a run, go for a fast walk."]
-                },
-                {
-                    "src": null,
-                    "step": ["Turn your music up loud and shout and dance."]
-                },
-                {
-                    "src": null,
-                    "step": ["Squeeze a stress ball."]
                 }
             ]
         }

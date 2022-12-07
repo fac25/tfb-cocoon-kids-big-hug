@@ -76,11 +76,11 @@ const DoMake = ({ domake }) => {
                                         )}
                                     </div>
                                     <div className={styles.flex__info}>
-                                        <ul className="list-style">
+                                        <ol>
                                             {item.step?.map((item) => (
                                                 <li key={item}>{item}</li>
                                             ))}
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             ))}
