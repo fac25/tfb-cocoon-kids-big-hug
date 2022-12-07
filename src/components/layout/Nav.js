@@ -9,7 +9,7 @@ export default function Nav() {
         { name: 'Emotions', route: '/emotions' },
         { name: 'Do/Make', route: '/do' },
         { name: 'Play/Game', route: '/play' },
-        { name: 'Go/Join', route: '/go' },
+        { name: 'Go/Join', route: '/join' },
         { name: 'Chat/Speak', route: '/help' },
         { name: 'About us', route: '/about' },
         { name: 'Contact us', route: '/contact' },

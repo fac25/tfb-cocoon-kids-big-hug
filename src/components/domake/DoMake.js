@@ -4,7 +4,11 @@ import styles from '../../styles/Single.module.css'
 // import GlobalUserGroup from '../lib/GlobalContext'
 
 const DoMake = ({ domake }) => {
+    {
+        console.log(domake)
+    }
     return (
+<<<<<<< HEAD
         <article className="container">
             <header>
                 <h1 className="title">{domake.title}</h1>
@@ -28,6 +32,30 @@ const DoMake = ({ domake }) => {
                 </header>
                 <section>
                     <h2>How it Helps</h2>
+=======
+        <article>
+            <h2>{domake.title}</h2>
+            <p>{domake.description}</p>
+            <Image
+                src={`/assets/img/do/${domake.src}`}
+                alt={domake.title}
+                height={300}
+                width={300}
+            ></Image>
+            <div>
+                <h3>How it Helps</h3>
+                <ul>
+                    {domake['how-it-helps'].map((how) => {
+                        return <li key={how}>{how}</li>
+                    })}
+                </ul>
+            </div>
+            <h3>Caution!</h3>
+            <p>{domake.caution}</p>
+            {domake['materials'] && (
+                <div>
+                    <h3>Materials</h3>
+>>>>>>> main
                     <ul>
                         {domake['how-it-helps']?.map((how) => {
                             return <li key={how}>{how}</li>

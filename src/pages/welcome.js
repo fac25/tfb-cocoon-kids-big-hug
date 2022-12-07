@@ -1,17 +1,27 @@
 import Layout from '../components/layout/Layout'
 import Emotions from '../components/emotions/Emotions'
 import WhatToDo from '../components/WhatToDo'
-import { fetchData } from '../lib/FetchData'
+import useSWR from 'swr'
 
-export async function getStaticProps() {
-    const emotions = await fetchData('emotions')
-    return { props: { emotions } }
-}
+// export async function getStaticProps() {
+//     const emotions = await fetchData('emotions')
+//     return { props: { emotions } }
+// }
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default function Welcome({ emotions }) {
+export default function Welcome() {
+    const { data, error } = useSWR('/api/staticdata', fetcher)
+
+    //Handle the error state
+    if (error) return <div>Failed to load</div>
+    //Handle the loading state
+    if (!data) return <div>Loading...</div>
+
+    const json = JSON.parse(data)
+
     return (
         <Layout pageTitle="User Group">
-            <Emotions emotions={emotions} length={9} />
+            <Emotions emotions={json.emotions} length={9} />
             <WhatToDo></WhatToDo>
         </Layout>
     )

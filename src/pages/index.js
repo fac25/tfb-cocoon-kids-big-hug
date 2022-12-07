@@ -1,6 +1,7 @@
 import Layout from '../components/layout/Layout'
 import UserGroupBtn from '../components/UserGroupBtn'
 import styles from '../styles/Landing.module.css'
+
 export default function Landing() {
     return (
         <Layout isLanding={true} pageTitle="Landing">
