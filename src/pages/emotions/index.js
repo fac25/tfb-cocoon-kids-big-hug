@@ -3,21 +3,19 @@ import Layout from '../../components/layout/Layout'
 import Select from 'react-select'
 import { useState } from 'react'
 import Link from 'next/link'
-import { fetchData } from '../../lib/FetchData'
+import useSWR from 'swr'
 
-export async function getStaticProps() {
-    const emotions = await fetchData('emotions')
-    const emotionsArray = emotions.map((el) => el.name)
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
-    const selectOptions = emotionsArray.map((opt) => ({
-        label: opt,
-        value: opt,
-    }))
-    return { props: { emotions, selectOptions } }
-}
-
-export default function AllEmotions({ emotions, selectOptions }) {
+export default function AllEmotions({ selectOptions }) {
     const [userChoice, setUserChoice] = useState('')
+    const { data, error } = useSWR('/api/staticdata', fetcher)
+
+    if (error) return <div>Failed to load</div>
+    if (!data) return <div>Loading...</div>
+
+    const json = JSON.parse(data)
+
     return (
         <Layout pageTitle="Emotions">
             <div className="search">
@@ -28,7 +26,7 @@ export default function AllEmotions({ emotions, selectOptions }) {
 
                 <Link href={`emotions/${userChoice}`}>SEARCH</Link>
             </div>
-            <Emotions emotions={emotions} length={emotions.length} />
+            <Emotions emotions={json.emotions} length={json.emotions.length} />
             <style>{`
             .search{
                 width: 14rem;

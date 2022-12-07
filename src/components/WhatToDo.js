@@ -73,7 +73,7 @@ export default function WhatToDo() {
                             </span>
                         </div>
                     </Link>
-                    <Link href={'/chat'}>
+                    <Link href={'/help'}>
                         <div className="shapes__item">
                             <svg
                                 className="shapes__svg--lg"

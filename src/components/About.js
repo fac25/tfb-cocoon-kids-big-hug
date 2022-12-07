@@ -30,25 +30,27 @@ const About = () => {
                 <h3>We listened carefully.</h3>
                 <p>
                     You told us that there are worrying and sometimes dangerous
-                    links on other sites. You said you don't want inappropriate
-                    adverts. You want to know the price and cost upfront - and
-                    not have to pay extra suddenly, to get the full program. You
-                    wanted to be able to adapt the app to make it personalised
-                    for you and your child, young person or family's needs.
+                    links on other sites. You said you don&apos;t want
+                    inappropriate adverts. You want to know the price and cost
+                    upfront - and not have to pay extra suddenly, to get the
+                    full program. You wanted to be able to adapt the app to make
+                    it personalised for you and your child, young person or
+                    family&apos;s needs.
                     <br />
                     <br />
                     We use a few carefully selected links. But importantly,
                     these have been checked to be appropriate and stop at that
-                    page. This means your child or young person can't link out
-                    of this app. We also have some links that a only for parents
-                    and carers, teachers and other professionals. Only adults
-                    with an account can access these. You can choose to allow
-                    these to be accessed by your child or young person by
+                    page. This means your child or young person can&apos;t link
+                    out of this app. We also have some links that a only for
+                    parents and carers, teachers and other professionals. Only
+                    adults with an account can access these. You can choose to
+                    allow these to be accessed by your child or young person by
                     toggling the buttons on the parent and carer dashboard.
                     <br />
                     <br />
                     You can toggle the features on the site map so they better
-                    fit you, your child or young person, or your family's needs.
+                    fit you, your child or young person, or your family&apos;s
+                    needs.
                 </p>
             </div>
             <div>
@@ -57,8 +59,8 @@ const About = () => {
                     https://www.sensoryapphouse.com have kindly allowed us to
                     use and share their sensory regulatory apps at no cost to
                     us. Their apps are great, and are safe to use because they
-                    don't have any adverts, pop-ups, or dangerous lnks away from
-                    their site.
+                    don&apos;t have any adverts, pop-ups, or dangerous lnks away
+                    from their site.
                 </p>
                 <span>Chrystal Clear Campaign</span>
                 <div className="buttons">
@@ -107,10 +109,10 @@ const About = () => {
                     and emotions. This means scents miss the frontal cortex.
                     This is the part of your brain where you think - and may
                     have anxious or worrying thoughts. It also means that a
-                    scent misses the parts of your body where you're feeling
-                    anxiety. Instead, it can quickly start to work right in the
-                    hippocampus and the amygdala and help you to begin to feel
-                    calmer and more relaxed.
+                    scent misses the parts of your body where you&apos;re
+                    feeling anxiety. Instead, it can quickly start to work right
+                    in the hippocampus and the amygdala and help you to begin to
+                    feel calmer and more relaxed.
                 </p>
                 <br />
                 <br />
@@ -135,11 +137,11 @@ const About = () => {
                     <li>It helps you to feel safe and secure.</li>
                 </ul>
                 <p>
-                    That doesn't mean it's quiet - the womb is noisy! There's
-                    blood whooshing around. Most of the outside real world
-                    sounds are muffled. You can hear a heart, beating. This
-                    constant, low level noise can make it a soothing and calmng
-                    space.
+                    That doesn&apos;t mean it&apos;s quiet - the womb is noisy!
+                    There&apos;s blood whooshing around. Most of the outside
+                    real world sounds are muffled. You can hear a heart,
+                    beating. This constant, low level noise can make it a
+                    soothing and calmng space.
                 </p>
                 <ul>
                     <li>
@@ -169,10 +171,10 @@ const About = () => {
                     <li>
                         Moving your hands back and forward helps your heart,
                         mind and body to feel more relaxed too. This helps your
-                        nervous system to feel less like there's something to
-                        worry or panic about, because your body is reacting an a
-                        way that tells it is should be worried and ready to do
-                        something (fight or flight).{' '}
+                        nervous system to feel less like there&apos;s something
+                        to worry or panic about, because your body is reacting
+                        an a way that tells it is should be worried and ready to
+                        do something (fight or flight).{' '}
                     </li>
                     <li>
                         Scientists have found that you breathe in and out more

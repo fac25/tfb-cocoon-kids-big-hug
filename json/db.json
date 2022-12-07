@@ -658,6 +658,7 @@
             "caution": null,
             "description": "You don't need any water or oil... Use dry rice, pasta, or lentils, small lego, sand, beads, sequins, small plastic animals, floam, magic sand - or anything else that will make a noise! Can you make more than one? Can you find the best sound for you?",
             "src": null,
+            "how-it-helps": ["lorem ipsum", "lorem ipsum", "lorem ipsum"],
             "materials": [
                 "Plastic bottle",
                 "Bottle lid",
@@ -899,23 +900,6 @@
                         "Add cellotape if you need to"
                     ]
                 }
-            ]
-        },
-        {
-            "id": 7,
-            "emotions": ["Lorem ipsum", "Lorem ipsum"],
-            "under13": false,
-            "over13": true,
-            "title": "Lorem ipsum",
-            "caution": null,
-            "description": "Lorem ipsum",
-            "src": "url",
-            "how-it-helps": ["Lorem ipsum"],
-            "materials": ["Lorem ipsum", "Lorem ipsum"],
-            "instructions": [
-                { "src": "url", "step": "Lorem ipsum" },
-                { "src": "url", "step": "Lorem ipsum" },
-                { "src": "url", "step": "Lorem ipsum" }
             ]
         }
     ],

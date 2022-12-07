@@ -1,17 +1,19 @@
 import Layout from '../components/layout/Layout'
 import ChatSpeak from '../components/ChatSpeak'
-import { fetchData } from '../lib/FetchData'
+import useSWR from 'swr'
 
-export async function getStaticProps() {
-    const chat = await fetchData('chat-speak')
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
-    return { props: { chat } }
-}
+export default function Help() {
+    const { data, error } = useSWR('/api/staticdata', fetcher)
 
-export default function Help({ chat }) {
+    if (error) return <div>Failed to load</div>
+    if (!data) return <div>Loading...</div>
+
+    const chat = JSON.parse(data)
     return (
         <Layout pageTitle="Help">
-            <ChatSpeak chat={chat} />
+            {<ChatSpeak chat={chat['chat-speak']} />}
         </Layout>
     )
 }
