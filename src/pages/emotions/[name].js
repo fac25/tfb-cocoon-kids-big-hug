@@ -111,7 +111,7 @@ export default function Emotion({ emotion, chat, games, domake, name }) {
             <article className="container">
                 <h1 className="title">You are feeling {name}...</h1>
                 <SingleEmotion emotion={emotion} name={name} />
-                <div>
+                <div className="container-sm">
                     <Accordion
                         expanded={expanded === 'panel1'}
                         onChange={handleChange('panel1')}

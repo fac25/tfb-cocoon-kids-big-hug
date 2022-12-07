@@ -14,7 +14,7 @@ const Emotions = ({ emotions, length }) => {
                     {emotions &&
                         userGroup &&
                         emotions.map((emotion) => {
-                            if (parseInt(emotion.id) < length) {
+                            if (parseInt(emotion.id) <= length) {
                                 return (
                                     <Link
                                         href={'emotions/' + emotion.name}

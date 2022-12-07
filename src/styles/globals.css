@@ -137,7 +137,7 @@ h1 {
     margin-bottom: 1rem;
 }
 h2 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     margin-bottom: 1rem;
 }
 h3 {
@@ -160,6 +160,7 @@ p {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: var(--font-size-base);
 }
 .wrapper__main {
     display: flex;
@@ -172,12 +173,21 @@ p {
     display: flex;
     text-align: center;
     color: var(--white);
+    font-size: var(--font-size-base);
+    font-weight: 700;
     background-color: var(--blue-dark);
+}
+.wrapper__footer p {
+    margin-bottom: 0;
 }
 .container {
     width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
+}
+.container-sm {
+    max-width: 80em;
+    margin: auto;
 }
 .grid {
     display: grid;
@@ -298,13 +308,14 @@ p {
     height: 100%;
     width: 100%;
 }
-.caution {
-    padding: 2rem;
+.caution.caution {
+    padding: 2.5rem;
     background-color: var(--pink-lighter);
     border: 2px solid var(--red-alert);
     font-weight: 500;
     border-radius: 0.25rem;
-    margin: 2rem 0;
+    margin: 3rem auto;
+    width: fit-content;
 }
 /* Accordeon */
 .MuiCollapse-root,
@@ -337,13 +348,21 @@ p {
 }
 /* Utility */
 .lead {
-    font-size: 1.25rem;
+    font-size: var(--font-size-md);
     font-weight: 500;
     max-width: 50em;
 }
 .list-style {
     list-style-type: disc;
-    padding-left: 0.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.list-style li {
+    margin-bottom: 0.25rem;
 }
 
 .width-100 {
