@@ -16,6 +16,7 @@ export default function Landing() {
                         className={`${styles.grid__btn} ${styles['grid__btn--under13']}`}
                     >
                         <UserGroupBtn
+                            route="/welcome"
                             userGroup="under13"
                             text="I’m a child under 13"
                         />
@@ -24,6 +25,7 @@ export default function Landing() {
                         className={`${styles.grid__btn} ${styles['grid__btn--over13']}`}
                     >
                         <UserGroupBtn
+                            route="/welcome"
                             userGroup="over13"
                             text="I’m a child over 13"
                         />
@@ -32,6 +34,7 @@ export default function Landing() {
                         className={`${styles.grid__btn} ${styles['grid__btn--adult']}`}
                     >
                         <UserGroupBtn
+                            route="/schools"
                             userGroup="teacher"
                             text="I’m a teacher or professional"
                         />
@@ -40,6 +43,7 @@ export default function Landing() {
                         className={`${styles.grid__btn} ${styles['grid__btn--adult']}`}
                     >
                         <UserGroupBtn
+                            route="/parents"
                             userGroup="parent"
                             text="I’m a parent or carer"
                         />
