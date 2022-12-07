@@ -67,7 +67,42 @@ h6 {
 #__next {
     isolation: isolate;
 }
-
+:root {
+    --blue-alert: #03a9f4;
+    --red-alert: #ff4500;
+    --blue-dark: #0a44f2;
+    --blue: #7aceff;
+    --blue-medium: #405fdd;
+    --blue-light: #b6c9fc;
+    --blue-lighter: #e0e5fd;
+    --yellow-bright: #ffeb3b;
+    --yellow: #ffff00;
+    --yellow-dark: #f2d902;
+    --yellow-medium: #ede869;
+    --yellow-light: #f8f6c4;
+    --yellow-lighter: #fbfada;
+    --green-bright: #3efc4b;
+    --green: #24db36;
+    --green-medium: #71e578;
+    --green-light: #c8f4cb;
+    --pink: #f92872;
+    --pink-medium: #c26b96;
+    --pink-light: #f1b6cb;
+    --pink-lighter: #f5cad0;
+    --white: #ffffff;
+    --black: #000000;
+    --dark-grey: #3e3e3e;
+    --light-grey: #b9b9b9;
+    --lighter-grey: #e9e6e7;
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+    --line-height-sm: 1.25;
+}
 html,
 body {
     padding: 0;
@@ -85,40 +120,6 @@ ul {
     padding: 0;
 }
 
-:root {
-    --blue-alert: #03a9f4;
-    --red-alert: #ff4500;
-    --blue-dark: #0a44f2;
-    --blue: #7aceff;
-    --blue-medium: #405fdd;
-    --blue-light: #b6c9fc;
-    --blue-lighter: #e0e5fd;
-    --yellow-bright: #ffeb3b;
-    --yellow: #ffff00;
-    --yellow-dark: #f2d902;
-    --yellow-medium: #ede869;
-    --yellow-light: #f8f6c4;
-    --green-bright: #3efc4b;
-    --green: #24db36;
-    --green-medium: #71e578;
-    --green-light: #c8f4cb;
-    --pink: #f92872;
-    --pink-medium: #c26b96;
-    --pink-light: #f1b6cb;
-    --white: #ffffff;
-    --black: #000000;
-    --dark-grey: #3e3e3e;
-    --light-grey: #b9b9b9;
-    --lighter-grey: #e9e6e7;
-    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
-    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
-    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
-    --line-height-sm: 1.25;
-}
 img {
     max-width: 100%;
     height: auto;
@@ -129,9 +130,22 @@ img {
     font-size: var(--font-size-xxl);
     text-align: center;
     margin: 4rem auto;
+    line-height: 1.25;
+}
+h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: 1rem;
 }
 h2 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1rem;
 }
 .stretched-link::after {
     position: absolute;
@@ -284,7 +298,57 @@ h2 {
     height: 100%;
     width: 100%;
 }
+.caution {
+    padding: 2rem;
+    background-color: var(--pink-lighter);
+    border: 2px solid var(--red-alert);
+    font-weight: 500;
+    border-radius: 0.25rem;
+    margin: 2rem 0;
+}
+/* Accordeon */
+.MuiCollapse-root,
+.MuiButtonBase-root {
+    background-color: var(--yellow-lighter);
+}
+/* .MuiPaper-root:nth-child(1) .MuiButtonBase-root {
+    background-color: var(--pink-light);
+}
+.MuiPaper-root:nth-child(2) .MuiButtonBase-root {
+    background-color: var(--green-medium);
+}
+.MuiPaper-root:nth-child(3) .MuiButtonBase-root {
+    background-color: var(--yellow-medium);
+}
+.MuiPaper-root:nth-child(4) .MuiButtonBase-root {
+    background-color: var(--blue-light);
+} */
+.MuiAccordionSummary-content {
+    margin: 1.5rem 0.25rem;
+}
+.MuiAccordionSummary-content p {
+    color: var(--blue-dark);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.MuiAccordionSummary-expandIconWrapper {
+    color: var(--blue-dark);
+}
 /* Utility */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 50em;
+}
+.list-style {
+    list-style-type: disc;
+    padding-left: 0.5rem;
+}
+
+.width-100 {
+    width: 100%;
+}
 .mb-lg {
     margin-bottom: 6rem;
 }

@@ -108,67 +108,69 @@ export default function Emotion({ emotion, chat, games, domake, name }) {
 
     return (
         <Layout pageTitle="Emotion">
-            <h1>You are feeling {name}...</h1>
-            <SingleEmotion emotion={emotion} name={name} />
-            <div>
-                <Accordion
-                    expanded={expanded === 'panel1'}
-                    onChange={handleChange('panel1')}
-                >
-                    <AccordionSummary
-                        aria-controls="panel1d-content"
-                        id="panel1d-header"
+            <article className="container">
+                <h1 className="title">You are feeling {name}...</h1>
+                <SingleEmotion emotion={emotion} name={name} />
+                <div>
+                    <Accordion
+                        expanded={expanded === 'panel1'}
+                        onChange={handleChange('panel1')}
                     >
-                        <Typography>Make/do</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        {make && <DoMake domake={make} />}
-                    </AccordionDetails>
-                </Accordion>
+                        <AccordionSummary
+                            aria-controls="panel1d-content"
+                            id="panel1d-header"
+                        >
+                            <Typography>Make/do</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {make && <DoMake domake={make} />}
+                        </AccordionDetails>
+                    </Accordion>
 
-                <Accordion
-                    expanded={expanded === 'panel2'}
-                    onChange={handleChange('panel2')}
-                >
-                    <AccordionSummary
-                        aria-controls="panel2d-content"
-                        id="panel2d-header"
+                    <Accordion
+                        expanded={expanded === 'panel2'}
+                        onChange={handleChange('panel2')}
                     >
-                        <Typography>Play/game</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        {game && <SinglePlayGame game={game} />}
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion
-                    expanded={expanded === 'panel3'}
-                    onChange={handleChange('panel3')}
-                >
-                    <AccordionSummary
-                        aria-controls="panel3d-content"
-                        id="panel3d-header"
+                        <AccordionSummary
+                            aria-controls="panel2d-content"
+                            id="panel2d-header"
+                        >
+                            <Typography>Play/game</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {game && <SinglePlayGame game={game} />}
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion
+                        expanded={expanded === 'panel3'}
+                        onChange={handleChange('panel3')}
                     >
-                        <Typography>Join/go </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>add join go component</Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion
-                    expanded={expanded === 'panel4'}
-                    onChange={handleChange('panel4')}
-                >
-                    <AccordionSummary
-                        aria-controls="panel4d-content"
-                        id="panel4d-header"
+                        <AccordionSummary
+                            aria-controls="panel3d-content"
+                            id="panel3d-header"
+                        >
+                            <Typography>Join/go </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>add join go component</Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion
+                        expanded={expanded === 'panel4'}
+                        onChange={handleChange('panel4')}
                     >
-                        <Typography>Chat/Speak</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <ChatSpeak chat={chat} />
-                    </AccordionDetails>
-                </Accordion>
-            </div>
+                        <AccordionSummary
+                            aria-controls="panel4d-content"
+                            id="panel4d-header"
+                        >
+                            <Typography>Chat/Speak</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <ChatSpeak chat={chat} />
+                        </AccordionDetails>
+                    </Accordion>
+                </div>
+            </article>
         </Layout>
     )
 }
