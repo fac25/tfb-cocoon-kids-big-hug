@@ -1,0 +1,27 @@
+.about {
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about h2 {
+    font-size: var(--font-size-lg);
+}
+
+.about section > * + * {
+    margin-top: 10px;
+}
+
+.about article > * + * {
+    margin-top: 10px;
+}
+
+.about article {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about h3 + p {
+    font-weight: 600;
+}
