@@ -1,5 +1,4 @@
 const SinglePlayGame = ({ game }) => {
-    console.log(game)
     return (
         <article>
             <p>{game.name}</p>

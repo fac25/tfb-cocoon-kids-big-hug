@@ -5,11 +5,13 @@
             "name": "alone",
             "restricted": false,
             "under13": {
+                "title": "You are feeling alone",
                 "src": "alone.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "You are feeling alone",
                 "src": "alone.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -20,14 +22,26 @@
             "name": "angry",
             "restricted": false,
             "under13": {
+                "title": "Anger and angry feelings",
                 "src": "angry.jpg",
-                "description": "Lorem ipsum",
-                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                "description": "Anger and feeling angry is one of the most important emotions you have. Angry feelings are your brain, mind and body's way of telling and showing you that something's not feeling right for you. It can mean that something needs to change right now.",
+                "symptoms": [
+                    "Sometimes people are scared of anger. But, it's OK to share that you're angry. You might also want or need to do something with it.",
+                    "How do you know that you’re angry?:",
+                    "Is your body feeling angry? Are you feeling hot? Are your hands or jaw and teeth feeling tight? Do your shoulders feel stiff?",
+                    "Do you need to do something now?"
+                ]
             },
             "over13": {
+                "title": "Anger and angry feelings",
                 "src": "angry.jpg",
-                "description": "Lorem ipsum",
-                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                "description": "Anger - feeling angry, about to flip your lid, fuming, livid...?",
+                "symptoms": [
+                    "Anger and feeling angry is one of the most important emotion you have. It tells you a lot about what's happening for you in your world - and how you are feeling about this.",
+                    "Angry feelings are your brain, mind and body's way of telling and showing you that something's not feeling right for you. Sometimes being angry is called 'flipping your lid'.  It's important to notice and understand how your body is feeling just before you become angry, so you can find healthy ways to use it.",
+                    "It also can mean that something needs to change right now. Do you need to do something now.",
+                    "Healthy ways to deal with anger,  when you need to use up and get anger out of your body, brain and mind and share how you're feeling."
+                ]
             }
         },
         {
@@ -35,8 +49,9 @@
             "name": "anxious",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "anxious.jpg",
-                "description": "Anxiety is  feeling that everybody gets. How do you know if you're feeling anxious? You might...",
+                "description": "Anxiety is feeling that everybody gets. How do you know if you're feeling anxious? You might...",
                 "symptoms": [
                     "cry more",
                     "have a store tummy or feel sick",
@@ -57,6 +72,7 @@
                 ]
             },
             "over13": {
+                "title": "",
                 "src": "anxious.jpg",
                 "description": "It's really important to someone know and to get help if you feel like this regularly. Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than weeks.",
                 "symptoms": [
@@ -84,11 +100,13 @@
             "name": "ashamed",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "ashamed.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "ashamed.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -99,11 +117,13 @@
             "name": "bored",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "bored.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "bored.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -114,11 +134,13 @@
             "name": "chatty",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "chatty.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "chatty.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -129,11 +151,13 @@
             "name": "comfortable",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "comfortable.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "comfortable.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -144,11 +168,13 @@
             "name": "confident",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "confident.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "confident.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -159,11 +185,13 @@
             "name": "confused",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "confused.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "confused.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -174,11 +202,13 @@
             "name": "depressed",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "depressed.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "depressed.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -189,11 +219,13 @@
             "name": "disgusted",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "disgusted.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "disgusted.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -204,13 +236,16 @@
             "name": "down",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "down.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "down.jpg",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
         {
@@ -218,11 +253,13 @@
             "name": "embarrassed",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "embarrassed.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "embarrassed.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -233,11 +270,13 @@
             "name": "excited",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "excited.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "excited.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -248,11 +287,13 @@
             "name": "fed up",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "fedup.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "fedUp.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -263,11 +304,13 @@
             "name": "friendly",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "friendly.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "friendly.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -278,11 +321,13 @@
             "name": "frustrated",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "frustrated.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "frustrated.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -293,11 +338,13 @@
             "name": "guilty",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "guilty.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "guilty.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -308,11 +355,13 @@
             "name": "happy",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "happy.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "happy.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -323,11 +372,13 @@
             "name": "hopeless",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "hopeless.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "hopeless.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -338,14 +389,43 @@
             "name": "lonely",
             "restricted": false,
             "under13": {
+                "title": "Feeling sad or lonely",
                 "src": "lonely.jpg",
-                "description": "Lorem ipsum",
-                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                "description": "Feeling sad or lonely is an important emotion because it tells you that something is upsetting you. You can feel lonely for many different reasons.",
+                "symptoms": [
+                    "You might feel shocked or surprised",
+                    "You might have a sore tummy, or not be able to eat like you usually do.",
+                    "It can feel like you are going to cry more often than usual",
+                    "Your chest might feel tight and painful.",
+                    "You might feel angry or confused.",
+                    "You might feel left behind, forgotten or unimportant(even though you are important)",
+                    "You might feel all of these feelings at different times - and have other different feelings, too.",
+                    "It's important to let a trusted adult know if you’re feeling lonely, sad or alone regularly.",
+                    "Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than 2 weeks."
+                ]
             },
             "over13": {
+                "title": "Feeling sad or lonely.",
                 "src": "lonely.jpg",
-                "description": "Lorem ipsum",
-                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                "description": "It can feel really painful to feel sad or lonely.",
+                "symptoms": [
+                    "It can feel like you want or need to cry more often than usual",
+                    "Your chest might feel tight and painful.",
+                    "You might have a sore stomach(tummy), or not be able to eat like you usually do.",
+                    "You might feel angry.",
+                    "You might feel surprised or shocked or have no feeling at all",
+                    "You might feel left behind, forgotten or unimportant(even though you are important)",
+                    "You might feel confused.",
+                    "Sometimes it can feel like a wave of emotions are in you all at one time.",
+                    "You might feel like there’s not much point to doing anything, or like things feel hopeless at the moment.",
+                    "You might feel all of these feelings at different times. You might feel other different feelings, too.",
+                    "These are all very normal feelings.",
+                    "Sometimes you can feel lonely when an important friendship or relationship has changed, or someone has died.",
+                    "These feelings are important and show you that this person's an important person for you in your life.",
+                    "This is why it feels sad and painful at the moment.  It’s normal to feel one way one time and then differently another time, too.",
+                    "Remember that it's important to let a trusted adult know if you regularly feel lonely, sad or alone.",
+                    "Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than 2 weeks."
+                ]
             }
         },
         {
@@ -353,11 +433,13 @@
             "name": "quiet",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "quiet.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "quiet.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -368,11 +450,13 @@
             "name": "relieved",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "relieved.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "relieved.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -383,11 +467,13 @@
             "name": "sad",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "sad.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "sad.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -398,11 +484,13 @@
             "name": "satisfied",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "satisfied.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "satisfied.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -413,11 +501,13 @@
             "name": "scared",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "scared.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "scared.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -428,11 +518,13 @@
             "name": "surprised",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "surprised.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "surprised.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -443,11 +535,13 @@
             "name": "upset",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "upset.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "upset.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
@@ -458,14 +552,40 @@
             "name": "worried",
             "restricted": false,
             "under13": {
+                "title": "",
                 "src": "worried.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
+                "title": "",
                 "src": "worried.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+            }
+        },
+        {
+            "id": 30,
+            "name": "self-harm",
+            "restricted": false,
+            "under13": {
+                "title": "Self harm and self-injury",
+                "src": "alone.jpg",
+                "description": "Self-harm and self-injury are when someone hurts or harms themself or puts themself in danger or does dangerous things on purpose. \n ###  What do people say that they self harm or self-injure? ### \n There are many different reasons that people say they self-harm or self-injure. Sometimes they do it because of something difficult that is happening or has happened to them in the past. But sometimes they might not know why they’re doing it. Even if you or someone that you know doesn't understand why it's still really important to get help.",
+                "caution": "Sometimes people say things like it’s ‘attention seeking’. But it’s important that anyone who self-harms or self-injures gets the right support, help and advice as soon as possible. \n If you're worried that you or someone else is self-harming or self-injuring themselves, it's really important that you let a trusted adult know. This might be a parent or carer, or a friend's parent or carer, a teacher or your tutor, your doctor, a counsellor or therapist. \n You can also let a counsellor know without saying your name on ChildLine. Call 0800 1111, up to age 19 - they will be able to help you to get the right help.",
+                "symptoms": [
+                    "Self-harm includes cutting, pinching, pulling, tearing, scratching or burning skin, or stopping wounds from healing. -  It's pulling out hair, or punching or banging things until a person starts to bleed. It's deliberately taking medicines without deliberately trying to die (suicidal intention).  Not looking after yourself properly, taking drugs or using alcohol can all be self-harm, too. ",
+                    "There are many different reasons that people say they self-harm or self-injure. Sometimes they do it because of something difficult that is happening or has happened to them in the past. But sometimes they might not know why they’re doing it. Even if you or someone that you know doesn't understand why it's still really important to get help."
+                ]
+            },
+            "over13": {
+                "title": "What is self harm? ",
+                "src": "alone.jpg",
+                "description": "Self-harm and self-injury are when someone deliberately hurts or harms themself or puts themself in danger or does dangerous things. \n ###  What do people say that they self harm or self-injure? ### \n * it shows how they feel without speaking \n * they experience strong emotions such as anger \n * it helps them to cope with negative experiences \n * it distracts from how they’re feeling \n * it punishes them for something, or feel they deserve it \n * it stops them feeling disconnected from themselves or the world \n * it means they have to look after themselves",
+                "caution": "Sometimes people say things like it’s ‘attention seeking’. But it’s important that anyone who self-harms or self-injures gets the right support, help and advice as soon as possible. \n If you're worried that you or someone else is self-harming or self-injuring themselves, it's really important that you let a trusted adult know. This might be a parent or carer, or a friend's parent or carer, a teacher or your tutor, your doctor, a counsellor or therapist. \n You can also let a counsellor know without saying your name on ChildLine. Call 0800 1111, up to age 19 - they will be able to help you to get the right help.",
+                "symptoms": [
+                    "Self-harm includes cutting, pinching, pulling, tearing, scratching or burning skin, or stopping wounds from healing. It's pulling out hair, or punching or banging things until a person starts to bleed. It's deliberately taking medicines without deliberately trying to die (suicidal intention).  Not looking after yourself properly, taking drugs or using alcohol can all be self-harm, too."
+                ]
             }
         }
     ],
@@ -538,6 +658,7 @@
             "caution": null,
             "description": "You don't need any water or oil... Use dry rice, pasta, or lentils, small lego, sand, beads, sequins, small plastic animals, floam, magic sand - or anything else that will make a noise! Can you make more than one? Can you find the best sound for you?",
             "src": null,
+            "how-it-helps": ["lorem ipsum", "lorem ipsum", "lorem ipsum"],
             "materials": [
                 "Plastic bottle",
                 "Bottle lid",
@@ -738,7 +859,14 @@
             "caution": null,
             "description": "Engage your senses and feel grounded again, as you recycle plastic bottles. Sensory bottles are not just for young kids. There's lots of science behind why they help you to feel calmer, less anxious and more in control of your feelings. Make your sensory bottle out of a recycled clear plastic bottle or a glass jar - any shape, or size works.  how about making a 2 litre one? Add sequins, shells, pebbles, dice, glitter, gems, water beads (orbeez), jingle bells, buttons and coloured rice look satisfying. ",
             "src": "url",
-            "how-it-helps": "Lorem ipsum",
+            "how-it-helps": [
+                "Sensory bottles are tested by Scientists.",
+                "They see that they make people feel calmer, less anxious and less worried about things. ",
+                " Watching the shapes and colours slowly move helps us to focus and think about one thing right now..",
+                "This can help us to worry less about something else.",
+                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed. ",
+                " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)"
+            ],
             "materials": [
                 "Plastic bottle or glass jar - any size",
                 "the bottle lid",
@@ -772,23 +900,6 @@
                         "Add cellotape if you need to"
                     ]
                 }
-            ]
-        },
-        {
-            "id": 7,
-            "emotions": ["Lorem ipsum", "Lorem ipsum"],
-            "under13": false,
-            "over13": true,
-            "title": "Lorem ipsum",
-            "caution": null,
-            "description": "Lorem ipsum",
-            "src": "url",
-            "how-it-helps": "Lorem ipsum",
-            "materials": ["Lorem ipsum", "Lorem ipsum"],
-            "instructions": [
-                { "src": "url", "step": "Lorem ipsum" },
-                { "src": "url", "step": "Lorem ipsum" },
-                { "src": "url", "step": "Lorem ipsum" }
             ]
         }
     ],

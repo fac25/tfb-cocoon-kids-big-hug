@@ -4,6 +4,9 @@ import Image from 'next/image'
 // import GlobalUserGroup from '../lib/GlobalContext'
 
 const DoMake = ({ domake }) => {
+    {
+        console.log(domake)
+    }
     return (
         <article>
             <h2>{domake.title}</h2>
