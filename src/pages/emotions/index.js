@@ -7,7 +7,7 @@ import useSWR from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default function AllEmotions({ emotions, selectOptions }) {
+export default function AllEmotions({ selectOptions }) {
     const [userChoice, setUserChoice] = useState('')
     const { data, error } = useSWR('/api/staticdata', fetcher)
 
