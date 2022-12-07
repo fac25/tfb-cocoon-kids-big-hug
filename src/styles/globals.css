@@ -319,7 +319,7 @@ p {
 }
 /* Accordeon */
 .MuiCollapse-root,
-.MuiButtonBase-root {
+.MuiAccordionSummary-root {
     background-color: var(--yellow-lighter);
 }
 /* .MuiPaper-root:nth-child(1) .MuiButtonBase-root {
@@ -345,6 +345,12 @@ p {
 }
 .MuiAccordionSummary-expandIconWrapper {
     color: var(--blue-dark);
+}
+.MuiButton-outlined {
+    margin: 0 1rem;
+}
+.css-1p823my-MuiListItem-root {
+    border-bottom: 1px solid var(--light-grey);
 }
 /* Utility */
 .lead {

@@ -1,0 +1,8 @@
+.border {
+    border-top: 3px solid var(--blue-medium);
+}
+.border_bottom {
+    padding-bottom: 1rem;
+    margin: 2rem 0;
+    border-bottom: 2px solid var(--blue-medium);
+}
