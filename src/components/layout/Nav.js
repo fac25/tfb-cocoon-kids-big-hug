@@ -2,7 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import styles from '../../styles/Nav.module.css'
+
+import { Auth } from 'aws-amplify'
+
+import { getCookie, deleteCookie } from 'cookies-next';
+
 export default function Nav() {
+
+    const user = getCookie("user")
+
     const [isNavOpen, setIsNavOpen] = useState(false)
     const navMenu = [
         { name: 'Home', route: '/welcome' },
@@ -16,6 +24,11 @@ export default function Nav() {
         { name: 'Chat to someone', route: '/help' },
         { name: 'Choose your age', route: '/' },
     ]
+
+    const handleSignout = () => {
+        deleteCookie("user")
+        Auth.signOut()
+    }
     return (
         <header>
             <nav className={styles.nav}>
@@ -30,9 +43,20 @@ export default function Nav() {
                         <span>Coccon Kids & Big Hug</span>
                     </Link>
                     <div className={styles.btn_container}>
-                        <Link href="/authenticate" className={styles.login}>
-                            <span>Log in</span>
-                        </Link>
+                        <div>
+                            {user ? (
+                                <Link href="/welcome" className={styles.login}>
+                                    <span onClick={handleSignout}>Logout</span>
+                                </Link>
+                            ) : (
+                                <Link
+                                    href="/authenticate"
+                                    className={styles.login}
+                                >
+                                    <span>Login</span>
+                                </Link>
+                            )}
+                        </div>
                         <button
                             data-collapse-toggle="navbar-sticky"
                             aria-controls="navbar-sticky"

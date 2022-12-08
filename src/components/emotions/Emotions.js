@@ -4,8 +4,12 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import GlobalUserGroup from '../../context/GlobalContext'
 
+import { getCookie } from 'cookies-next'
+
 const Emotions = ({ emotions, length }) => {
     const { userGroup } = useContext(GlobalUserGroup)
+
+    const user = getCookie('user')
     return (
         <section>
             <div className="container">
@@ -15,25 +19,51 @@ const Emotions = ({ emotions, length }) => {
                         userGroup &&
                         emotions.map((emotion) => {
                             if (parseInt(emotion.id) <= length) {
-                                return (
-                                    <Link
-                                        href={'emotions/' + emotion.name}
-                                        key={emotion.id}
-                                    >
-                                        <div className="cards">
-                                            <Image
-                                                src={`/assets/img/${userGroup}/${emotion[userGroup].src}`}
-                                                width={300}
-                                                height={300}
-                                                alt={emotion.name}
-                                                className="cards__image"
-                                            />
-                                            <p className="cards__title">
-                                                {emotion.name}
-                                            </p>
-                                        </div>
-                                    </Link>
-                                )
+                                if (user) {
+                                    return (
+                                        <Link
+                                            href={'emotions/' + emotion.name}
+                                            key={emotion.id}
+                                        >
+                                            <div className="cards">
+                                                <Image
+                                                    src={`/assets/img/${userGroup}/${emotion[userGroup].src}`}
+                                                    width={300}
+                                                    height={300}
+                                                    alt={emotion.name}
+                                                    className="cards__image"
+                                                />
+                                                <p className="cards__title">
+                                                    {emotion.name}
+                                                </p>
+                                            </div>
+                                        </Link>
+                                    )
+                                } else {
+                                    if (!emotion.restricted) {
+                                        return (
+                                            <Link
+                                                href={
+                                                    'emotions/' + emotion.name
+                                                }
+                                                key={emotion.id}
+                                            >
+                                                <div className="cards">
+                                                    <Image
+                                                        src={`/assets/img/${userGroup}/${emotion[userGroup].src}`}
+                                                        width={300}
+                                                        height={300}
+                                                        alt={emotion.name}
+                                                        className="cards__image"
+                                                    />
+                                                    <p className="cards__title">
+                                                        {emotion.name}
+                                                    </p>
+                                                </div>
+                                            </Link>
+                                        )
+                                    }
+                                }
                             }
                         })}
                 </div>
