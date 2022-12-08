@@ -6,8 +6,6 @@
 
 Open two consoles:
 
-1. Start json server: ``` npm run j-s ```
-
 2. Start localhost: ``` npm run dev ```
 
 

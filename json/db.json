@@ -919,8 +919,10 @@
     "play-game": [
         {
             "id": 1,
-            "emotions": ["alone", "anxious", "surprised", "scared"],
+            "emotions": ["alone", "anxious"],
             "name": "justTouchToo",
+            "description": "Just Touch Too from Sensory is an engaging and relaxing touch effects app",
+            "src": "IMG_0705-min.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -931,8 +933,10 @@
         },
         {
             "id": 2,
-            "emotions": ["alone", "lonely", "anxious", "quiet", "relieved"],
+            "emotions": ["alone", "lonely", "anxious", "quiet"],
             "name": "chrysaora",
+            "description": "Chrysaora is a special kind of graceful jellyfish, with stunning colors.",
+            "src": "IMG_0934.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -943,33 +947,10 @@
         },
         {
             "id": 3,
-            "emotions": ["alone", "excited", "embarrassed", "down"],
+            "emotions": ["alone", "excited", "down"],
             "name": "sandbox",
-            "how-it-helps": [
-                "These games are called Sensory Regulatory games.",
-                "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-            ],
-            "game": "https://www.sensoryapphouse.com/sandbox-pwa/index.html"
-        },
-
-        {
-            "id": 4,
-            "emotions": ["alone", "anxious", "confused"],
-            "name": "sandbox",
-            "how-it-helps": [
-                "These games are called Sensory Regulatory games.",
-                "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
-            ],
-            "game": "https://www.sensoryapphouse.com/sandbox-pwa/index.html"
-        },
-        {
-            "id": 5,
-            "emotions": ["alone"],
-            "name": "sandbox",
+            "description": "Sensory SandBox. A box of sand to explore writing letters, words, numbers, symbols and creating unusual sandy drawings.",
+            "src": "IMG_0582-min.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
