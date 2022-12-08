@@ -4,8 +4,6 @@
 
 1. Install node modules: ``` run npm i ```
 
-Open two consoles:
-
 2. Start localhost: ``` npm run dev ```
 
 
@@ -57,9 +55,13 @@ It helped us refactor our wireframe and enhance existing ideas.
 ## Project learnings 
 
 ### Did your team work effectively?
+we broke down tasks into smaller issues and assigned them to pairs or individual people. In that sense we worked effectively. We did not research some things enough (reach.ui) and therefor got stuck with some things. Also we discussed many things over and over again, without acutally researching what the best way to to things would be. 
 
 ### What would you do differently next time?
 
+- Two days at the first week to research the tech we're going to use
+
+- Plan data structure properly.
 
 ## Research and findings 
 
@@ -71,15 +73,21 @@ It helped us refactor our wireframe and enhance existing ideas.
 
 ## Project outcomes 
 
+
 ### Were your assumptions right or wrong?
+
 
 
 ## Recommendations and conclusions 
 
 ### What features would you prioritise to build next?
+The Join/Go page. 
+The parents page.
+add functionality to parents page and schools page
 
 ### Was the project a success?
 
+Yes, we managed to create our MVP and even beyond that managed to add authentication and extra pages. The project is a working website and can be used by the product owner for intended purposes of presenting her ideas to potential clients and people willing to fund her project. 
 
 ## Software Development Lifecycle stages 
 
@@ -159,28 +167,34 @@ QA - Abdullah
 #### Did you create a technical specification?
 Review methods of software design with reference to functional/technical specifications and apply a justified approach to software development (K11, S11, S12)
 
+
+
 ### Implementation/Build 
 
 #### How did you ensure your code was good?
-Create logical and maintainable code to deliver project outcomes, explaining their choice of approach. (S1)
+We where careful to use clear variable names and tried to write as little code as possible to create something that works. 
 
 #### What interesting technical problems did you have to solve?
-Outline and apply the rationale and use of algorithms, logic and data structures. (K9, S16)
+We put a lot of thought and consideration into how to store the data. We chose to go with a json file, simply because there is not loads of content and its simple to use. It was interesting to think about how to use the json file in a deployed project on vercel, and we considered many things, like creating a database, making a third party api, and creating our own api endpoint in the project. 
 
 #### How did you debug issues that arose?
-Apply structured techniques to problem solving to identify and resolve issues and debug basic flaws in code (S7)
+We had github issues for bugs, either opened by ourselves, our mentors or other cohort  members. We assigned issues by priority and worked through them. 
 
 ### Test 
 
 #### How did you verify your project worked correctly?
-Identify and create test scenarios which satisfy the project specification (S6)
+We ran the project locally and manually checked for errors and bugs. 
 
 ### Deploy 
 #### Where/how did you deploy your application?
-Review and justify their contribution to building, managing and deploying code into the relevant environment in accordance with the project specification (S10)
+We deployed the app on vercel. 
 
 #### What problems did you encounter during deployment?
+We deployed our app on vercel and our data is in a json file. To read from the json file we used a server-json package in development, which didn't work in production. It wasn't possible to deploy like this, so we created an api endpoint and used SWR (react hook to data fetching) to access the data, suitable for deployment. 
 
 ### Maintain 
 #### Is it easy for someone make changes to the codebase?
+We made sure to use clear variable name and write concise code, so it should be easy for someone else to make changes to the codebase
+
 #### Could a new person quickly be onboarded to contribute?
+Yes, despite of the big scope of the project the code is relatively clear and concise, the folder structure makes sense, and we separated components from pages.
