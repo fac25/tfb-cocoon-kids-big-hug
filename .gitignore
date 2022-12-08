@@ -10,7 +10,7 @@
 
 
 #aws
-.aws-amplify.js
+.aws-exports.js
 
 # next.js
 /.next/

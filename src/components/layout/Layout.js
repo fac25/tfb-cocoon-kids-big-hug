@@ -8,7 +8,12 @@ export const siteTitle = 'Cocoon Kids Big Hug'
 import { useContext } from 'react'
 import GlobalUserGroup from '../../context/GlobalContext'
 
-export default function Layout({ pageTitle, isLanding = false, children }) {
+export default function Layout({
+    pageTitle,
+    isLanding = false,
+    children,
+    showEmergency = true,
+}) {
     const { userGroup } = useContext(GlobalUserGroup)
     return (
         <div className="wrapper">
@@ -42,7 +47,7 @@ export default function Layout({ pageTitle, isLanding = false, children }) {
                     </div>
                 </header>
             )}
-            <HelpAndExitButton />
+            {!!showEmergency && <HelpAndExitButton />}
 
             {!isLanding ? (
                 <>
