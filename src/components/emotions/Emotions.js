@@ -34,17 +34,20 @@ const Emotions = ({ emotions, length }) => {
                                                     className="cards__image"
                                                 />
                                                 <p className="cards__title">
-                                                    {emotion.name}
+                                                    {emotion.name[0].toUpperCase() +
+                                                        emotion.name.substring(
+                                                            1
+                                                        )}
                                                 </p>
                                             </div>
                                         </Link>
                                     )
                                 } else {
-                                    if (!emotion.restricted) {
+                                    if (emotion.restricted) {
                                         return (
                                             <Link
                                                 href={
-                                                    'emotions/' + emotion.name
+                                                    "authenticate"
                                                 }
                                                 key={emotion.id}
                                             >
@@ -57,12 +60,37 @@ const Emotions = ({ emotions, length }) => {
                                                         className="cards__image"
                                                     />
                                                     <p className="cards__title">
-                                                        {emotion.name}
+                                                        {emotion.name[0].toUpperCase() +
+                                                            emotion.name.substring(
+                                                                1
+                                                            )}
                                                     </p>
                                                 </div>
                                             </Link>
                                         )
                                     }
+                                    return (
+                                        <Link
+                                            href={'emotions/' + emotion.name}
+                                            key={emotion.id}
+                                        >
+                                            <div className="cards">
+                                                <Image
+                                                    src={`/assets/img/${userGroup}/${emotion[userGroup].src}`}
+                                                    width={300}
+                                                    height={300}
+                                                    alt={emotion.name}
+                                                    className="cards__image"
+                                                />
+                                                <p className="cards__title">
+                                                    {emotion.name[0].toUpperCase() +
+                                                        emotion.name.substring(
+                                                            1
+                                                        )}
+                                                </p>
+                                            </div>
+                                        </Link>
+                                    )
                                 }
                             }
                         })}

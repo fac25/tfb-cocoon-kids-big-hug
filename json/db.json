@@ -322,8 +322,8 @@
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             },
             "over13": {
-                "title": "",
-                "src": "fedUp.jpg",
+                "title": "fed up",
+                "src": "fedup.jpg",
                 "description": "Lorem ipsum",
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
@@ -415,7 +415,7 @@
         },
       
         {
-            "id": 22,
+            "id": 21,
             "name": "quiet",
             "restricted": false,
             "under13": {
@@ -432,7 +432,7 @@
             }
         },
         {
-            "id": 23,
+            "id": 22,
             "name": "relieved",
             "restricted": false,
             "under13": {
@@ -449,7 +449,7 @@
             }
         },
         {
-            "id": 24,
+            "id": 23,
             "name": "sad",
             "restricted": false,
             "under13": {
@@ -466,7 +466,7 @@
             }
         },
         {
-            "id": 25,
+            "id": 24,
             "name": "satisfied",
             "restricted": false,
             "under13": {
@@ -483,7 +483,7 @@
             }
         },
         {
-            "id": 26,
+            "id": 25,
             "name": "scared",
             "restricted": false,
             "under13": {
@@ -500,7 +500,7 @@
             }
         },
         {
-            "id": 27,
+            "id": 26,
             "name": "surprised",
             "restricted": false,
             "under13": {
@@ -517,7 +517,7 @@
             }
         },
         {
-            "id": 28,
+            "id": 27,
             "name": "upset",
             "restricted": false,
             "under13": {
@@ -534,7 +534,7 @@
             }
         },
         {
-            "id": 29,
+            "id": 28,
             "name": "worried",
             "restricted": false,
             "under13": {
@@ -551,7 +551,7 @@
             }
         },
         {
-            "id": 30,
+            "id": 29,
             "name": "self-harm",
             "restricted": true,
             "under13": {

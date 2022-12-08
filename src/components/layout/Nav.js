@@ -4,15 +4,24 @@ import { useState } from 'react'
 import styles from '../../styles/Nav.module.css'
 import { navMenu } from '../../const/menu'
 import { Auth } from 'aws-amplify'
-import { getCookie, deleteCookie } from 'cookies-next'
+import { setCookie, getCookie, deleteCookie } from 'cookies-next'
+
+import { useRouter } from 'next/router'
 
 export default function Nav() {
     const user = getCookie('user')
     const [isNavOpen, setIsNavOpen] = useState(false)
 
+    const router = useRouter()
+
     const handleSignout = () => {
         deleteCookie('user')
+        deleteCookie('path')
         Auth.signOut()
+    }
+
+    const handleLogin = () => {
+        setCookie('path', router.pathname)
     }
     return (
         <header>
@@ -30,13 +39,18 @@ export default function Nav() {
                     <div className={styles.btn_container}>
                         <div>
                             {user ? (
-                                <Link href="/welcome" className={styles.login}>
-                                    <span onClick={handleSignout}>Logout</span>
+                                <Link
+                                    onClick={handleSignout}
+                                    href="/welcome"
+                                    className={styles.login}
+                                >
+                                    <span>Logout</span>
                                 </Link>
                             ) : (
                                 <Link
                                     href="/authenticate"
                                     className={styles.login}
+                                    onClick={handleLogin}
                                 >
                                     <span>Login</span>
                                 </Link>
