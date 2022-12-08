@@ -1,22 +1,51 @@
 {
     "emotions": [
+
         {
             "id": 1,
-            "name": "alone",
+            "name": "lonely",
             "restricted": false,
             "under13": {
-                "title": "You are feeling alone",
-                "src": "alone.jpg",
-                "description": "Lorem ipsum",
-                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                "title": "Feeling sad or lonely",
+                "src": "lonely.jpg",
+                "description": "Feeling sad or lonely is an important emotion because it tells you that something is upsetting you. You can feel lonely for many different reasons.",
+                "symptoms": [
+                    "You might feel shocked or surprised",
+                    "You might have a sore tummy, or not be able to eat like you usually do.",
+                    "It can feel like you are going to cry more often than usual",
+                    "Your chest might feel tight and painful.",
+                    "You might feel angry or confused.",
+                    "You might feel left behind, forgotten or unimportant(even though you are important)",
+                    "You might feel all of these feelings at different times - and have other different feelings, too.",
+                    "It's important to let a trusted adult know if you’re feeling lonely, sad or alone regularly.",
+                    "Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than 2 weeks."
+                ]
             },
             "over13": {
-                "title": "You are feeling alone",
-                "src": "alone.jpg",
-                "description": "Lorem ipsum",
-                "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
+                "title": "Feeling sad or lonely.",
+                "src": "lonely.jpg",
+                "description": "It can feel really painful to feel sad or lonely.",
+                "symptoms": [
+                    "It can feel like you want or need to cry more often than usual",
+                    "Your chest might feel tight and painful.",
+                    "You might have a sore stomach(tummy), or not be able to eat like you usually do.",
+                    "You might feel angry.",
+                    "You might feel surprised or shocked or have no feeling at all",
+                    "You might feel left behind, forgotten or unimportant(even though you are important)",
+                    "You might feel confused.",
+                    "Sometimes it can feel like a wave of emotions are in you all at one time.",
+                    "You might feel like there’s not much point to doing anything, or like things feel hopeless at the moment.",
+                    "You might feel all of these feelings at different times. You might feel other different feelings, too.",
+                    "These are all very normal feelings.",
+                    "Sometimes you can feel lonely when an important friendship or relationship has changed, or someone has died.",
+                    "These feelings are important and show you that this person's an important person for you in your life.",
+                    "This is why it feels sad and painful at the moment.  It’s normal to feel one way one time and then differently another time, too.",
+                    "Remember that it's important to let a trusted adult know if you regularly feel lonely, sad or alone.",
+                    "Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than 2 weeks."
+                ]
             }
         },
+         
         {
             "id": 2,
             "name": "angry",
@@ -384,50 +413,7 @@
                 "symptoms": ["lorem ipsum", "lorem ipsum", "lorem ipsum"]
             }
         },
-        {
-            "id": 21,
-            "name": "lonely",
-            "restricted": false,
-            "under13": {
-                "title": "Feeling sad or lonely",
-                "src": "lonely.jpg",
-                "description": "Feeling sad or lonely is an important emotion because it tells you that something is upsetting you. You can feel lonely for many different reasons.",
-                "symptoms": [
-                    "You might feel shocked or surprised",
-                    "You might have a sore tummy, or not be able to eat like you usually do.",
-                    "It can feel like you are going to cry more often than usual",
-                    "Your chest might feel tight and painful.",
-                    "You might feel angry or confused.",
-                    "You might feel left behind, forgotten or unimportant(even though you are important)",
-                    "You might feel all of these feelings at different times - and have other different feelings, too.",
-                    "It's important to let a trusted adult know if you’re feeling lonely, sad or alone regularly.",
-                    "Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than 2 weeks."
-                ]
-            },
-            "over13": {
-                "title": "Feeling sad or lonely.",
-                "src": "lonely.jpg",
-                "description": "It can feel really painful to feel sad or lonely.",
-                "symptoms": [
-                    "It can feel like you want or need to cry more often than usual",
-                    "Your chest might feel tight and painful.",
-                    "You might have a sore stomach(tummy), or not be able to eat like you usually do.",
-                    "You might feel angry.",
-                    "You might feel surprised or shocked or have no feeling at all",
-                    "You might feel left behind, forgotten or unimportant(even though you are important)",
-                    "You might feel confused.",
-                    "Sometimes it can feel like a wave of emotions are in you all at one time.",
-                    "You might feel like there’s not much point to doing anything, or like things feel hopeless at the moment.",
-                    "You might feel all of these feelings at different times. You might feel other different feelings, too.",
-                    "These are all very normal feelings.",
-                    "Sometimes you can feel lonely when an important friendship or relationship has changed, or someone has died.",
-                    "These feelings are important and show you that this person's an important person for you in your life.",
-                    "This is why it feels sad and painful at the moment.  It’s normal to feel one way one time and then differently another time, too.",
-                    "Remember that it's important to let a trusted adult know if you regularly feel lonely, sad or alone.",
-                    "Regularly means more than 3 times a week, or you've felt like this a few times a week for longer than 2 weeks."
-                ]
-            }
-        },
+      
         {
             "id": 22,
             "name": "quiet",
@@ -922,7 +908,7 @@
             "emotions": ["alone", "anxious"],
             "name": "justTouchToo",
             "description": "Just Touch Too from Sensory is an engaging and relaxing touch effects app",
-            "src": "IMG_0705-min.jpg",
+            "src": "IMG_0582-min.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
@@ -950,7 +936,7 @@
             "emotions": ["alone", "excited", "down"],
             "name": "sandbox",
             "description": "Sensory SandBox. A box of sand to explore writing letters, words, numbers, symbols and creating unusual sandy drawings.",
-            "src": "IMG_0582-min.jpg",
+            "src": "IMG_0705-min.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
                 "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",

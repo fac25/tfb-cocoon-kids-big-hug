@@ -75,13 +75,16 @@ h6 {
     --blue-medium: #405fdd;
     --blue-light: #b6c9fc;
     --blue-lighter: #e0e5fd;
-    --yellow-bright: #ffeb3b;
+    --yellow-bright: #f8f6c4;
+    /* --yellow-bright: #ffeb3b; */
     --yellow: #ffff00;
     --yellow-dark: #f2d902;
     --yellow-medium: #ede869;
     --yellow-light: #f8f6c4;
-    --yellow-lighter: #fbfada;
-    --green-bright: #3efc4b;
+    /* --yellow-lighter: #fbfada; */
+    --yellow-lighter: white;
+    --green-bright: #c8f4cb;
+    /* --green-bright: #3efc4b; */
     --green: #24db36;
     --green-medium: #71e578;
     --green-light: #c8f4cb;
@@ -127,14 +130,14 @@ img {
 
 .title {
     max-width: 15em;
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
     text-align: center;
     margin: 2rem auto;
     line-height: 1.25;
 }
 .subtitle {
     max-width: 15em;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     text-align: center;
     margin: 2rem auto;
     line-height: 1.25;
@@ -259,7 +262,7 @@ p {
     /* background-color: var(--white); */
 }
 .cards:hover {
-    background-color: #ae92925c;
+    background-color: #ffffff50;
 }
 
 .cards__image {
@@ -362,17 +365,21 @@ p {
     border-bottom: 1px solid var(--light-grey);
 }
 /* Utility */
+.lead {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    max-width: 50em;
+}
+.lead--chat {
+    font-size: var(--font-size-base);
+}
 .lead--center {
     margin: 2rem auto;
     font-size: var(--font-size-md);
     font-weight: 500;
     max-width: 50em;
 }
-.lead {
-    font-size: var(--font-size-md);
-    font-weight: 500;
-    max-width: 50em;
-}
+
 .list-style {
     list-style-type: disc;
     display: block;
@@ -394,6 +401,18 @@ p {
 }
 .ms-md {
     margin: 2rem;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mr-0 {
+    margin-right: 0;
+}
+.ml-0 {
+    margin-left: 0;
 }
 .underline {
     text-decoration: underline;
@@ -478,14 +497,10 @@ p {
         padding: 1.25rem;
     }
     .shapes {
-        width: 50em;
+        width: 38em;
     }
     .shapes__title {
         margin: 0 0.5rem;
-    }
-    .title,
-    .subtitle {
-        margin: 4rem auto;
     }
 }
 
@@ -497,6 +512,10 @@ p {
     .logo-landing {
         max-width: 550px;
     }
+    .title,
+    .subtitle {
+        margin: 3rem auto;
+    }
 }
 
 @media (min-width: 1536px) {
@@ -505,6 +524,12 @@ p {
         padding: 0 2rem;
     }
     .shapes {
-        width: 45em;
+        width: 42em;
+    }
+
+    .title,
+    .subtitle {
+        margin: 4rem auto;
+        font-size: var(--font-size-xxl);
     }
 }

@@ -152,7 +152,7 @@ export default function Emotion({ emotion, chat, games, domake, name }) {
                             <Typography>Join/go </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>add join go component</Typography>
+                            <Typography>Coming soon...</Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion

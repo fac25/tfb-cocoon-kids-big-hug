@@ -1,6 +1,6 @@
 .wrapper {
     background-color: var(--yellow-lighter);
-    padding: 3rem;
+    padding: 1rem 3rem;
     border-radius: 1rem;
 }
 .lead {
