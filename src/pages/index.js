@@ -20,7 +20,11 @@ export default function Landing() {
                             <UserGroupBtn
                                 route="/welcome"
                                 userGroup="under13"
-                                text="I’m a child under 13"
+                                text={[
+                                    <>
+                                        I’m a child <span>under 13</span>
+                                    </>,
+                                ]}
                             />
                         </div>
                         <div
@@ -29,7 +33,11 @@ export default function Landing() {
                             <UserGroupBtn
                                 route="/welcome"
                                 userGroup="over13"
-                                text="I’m a child over 13"
+                                text={[
+                                    <>
+                                        I’m a child <span>over 13</span>
+                                    </>,
+                                ]}
                             />
                         </div>
                         <div

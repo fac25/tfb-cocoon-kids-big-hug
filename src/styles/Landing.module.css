@@ -25,6 +25,9 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
+.grid__btn > a > span {
+    display: inline-block;
+}
 .grid__btn:hover {
     cursor: pointer;
     background-color: var(--white);
@@ -52,7 +55,13 @@
         width: 22em;
     }
     .grid__btn {
-        padding: 1em;
+        padding: 1.25em;
+    }
+    .grid__btn:nth-child(1) {
+        padding: 1.5em;
+    }
+    .grid__btn:nth-child(2) {
+        padding: 1.5em;
     }
 }
 @media (min-width: 1024px) {
@@ -60,14 +69,20 @@
         width: 25em;
     }
     .grid__btn {
-        padding: 1.5em;
+        padding: 1.25em;
+    }
+    .grid__btn:nth-child(1),
+    .grid__btn:nth-child(2) {
+        padding: 1.75em;
     }
 }
 @media (min-width: 1536px) {
     .grid {
         width: 30em;
     }
-    .grid__btn {
+    .grid__btn,
+    .grid__btn:nth-child(1),
+    .grid__btn:nth-child(2) {
         padding: 1.5em;
     }
 }
