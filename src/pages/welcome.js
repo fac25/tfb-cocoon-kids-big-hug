@@ -3,10 +3,6 @@ import Emotions from '../components/emotions/Emotions'
 import WhatToDo from '../components/WhatToDo'
 import useSWR from 'swr'
 
-// export async function getStaticProps() {
-//     const emotions = await fetchData('emotions')
-//     return { props: { emotions } }
-// }
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Welcome() {

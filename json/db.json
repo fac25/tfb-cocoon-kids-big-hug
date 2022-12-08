@@ -567,7 +567,7 @@
         {
             "id": 30,
             "name": "self-harm",
-            "restricted": false,
+            "restricted": true,
             "under13": {
                 "title": "Self harm and self-injury",
                 "src": "alone.jpg",

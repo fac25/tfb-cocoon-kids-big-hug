@@ -4,8 +4,23 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import GlobalUserGroup from '../../context/GlobalContext'
 
+import { getCookie } from 'cookies-next'
+
 const Emotions = ({ emotions, length }) => {
     const { userGroup } = useContext(GlobalUserGroup)
+    const user = getCookie('user')
+
+    const date = new Date()
+// 
+    const array = user.split('-').reverse().toString().replaceAll(',', '/')
+    const day = date.toLocaleDateString()
+
+    // const sub = parseFloat(day) - parseFloat(array)
+
+    console.log(day)
+    console.log(user)
+    // console.log(sub)
+
     return (
         <section>
             <div className="container">
