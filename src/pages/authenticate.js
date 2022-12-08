@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { setCookie } from 'cookies-next'
 
-export default withAuthenticator(function authenticate({ user }) {
+export default withAuthenticator(function Authenticate({ user }) {
     const router = useRouter();
 
     setCookie('user', user.username)
