@@ -7,7 +7,7 @@ import useSWR from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default function AllEmotions({ selectOptions }) {
+export default function AllEmotions() {
     const [userChoice, setUserChoice] = useState('')
     const { data, error } = useSWR('/api/staticdata', fetcher)
 
@@ -15,6 +15,12 @@ export default function AllEmotions({ selectOptions }) {
     if (!data) return <div>Loading...</div>
 
     const json = JSON.parse(data)
+
+    const emotionsArray = json.emotions.map((el) => el.name)
+    const selectOptions = emotionsArray.map((opt) => ({
+        label: opt,
+        value: opt,
+    }))
 
     return (
         <Layout pageTitle="Emotions">
