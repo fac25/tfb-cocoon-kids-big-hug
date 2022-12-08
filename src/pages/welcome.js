@@ -29,8 +29,8 @@ export default function Welcome() {
 
     return (
         <Layout pageTitle="User Group">
-            <Emotions emotions={json.emotions} length={9} />
-            <WhatToDo></WhatToDo>
+            <Emotions emotions={json.emotions} length={10} />
+            <WhatToDo />
         </Layout>
     )
 }

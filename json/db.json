@@ -579,7 +579,7 @@
     "do-make": [
         {
             "id": 1,
-            "emotions": ["worried, anxious"],
+            "emotions": ["Worried, Anxious"],
             "under13": true,
             "over13": true,
             "title": "Make your own calming, regulating sensory bottle",
@@ -637,7 +637,7 @@
         },
         {
             "id": 2,
-            "emotions": ["upset"],
+            "emotions": ["Upset"],
             "under13": true,
             "over13": true,
             "title": "Make a rain stick sensory bottle",
@@ -670,7 +670,7 @@
         },
         {
             "id": 3,
-            "emotions": ["anxious, worried"],
+            "emotions": ["Anxious, Worried"],
             "under13": true,
             "over13": true,
             "title": "Bubblewrap anxiety helper",
@@ -710,7 +710,7 @@
         },
         {
             "id": 4,
-            "emotions": ["anxious"],
+            "emotions": ["Anxious"],
             "under13": true,
             "over13": true,
             "title": "Make a moving lava lamp bottle",
@@ -770,7 +770,7 @@
         },
         {
             "id": 5,
-            "emotions": ["worried, upset"],
+            "emotions": ["Worried, Upset"],
             "under13": true,
             "over13": true,
             "title": "Giant bubbles",
@@ -815,7 +815,7 @@
         },
         {
             "id": 7,
-            "emotions": ["sad"],
+            "emotions": ["Angry"],
             "under13": true,
             "over13": true,
             "title": "Tearing paper",
@@ -840,7 +840,7 @@
         },
         {
             "id": 8,
-            "emotions": ["angry"],
+            "emotions": ["Angry"],
             "under13": true,
             "over13": false,
             "title": "Draw and write about your anger monster",
@@ -905,43 +905,43 @@
     "play-game": [
         {
             "id": 1,
-            "emotions": ["alone", "anxious"],
-            "name": "justTouchToo",
-            "description": "Just Touch Too from Sensory is an engaging and relaxing touch effects app",
+            "emotions": ["Alone", "Anxious"],
+            "name": "JustTouchToo",
+            "description": "Just touch too from Sensory is an engaging and relaxing touch effects app",
             "src": "IMG_0582-min.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
-                "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+                " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+                " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
             ],
             "game": "https://www.sensoryapphouse.com/JustTouchToo-pwa/index.html"
         },
         {
             "id": 2,
-            "emotions": ["alone", "lonely", "anxious", "quiet"],
-            "name": "chrysaora",
+            "emotions": ["Alone", "Lonely", "Anxious", "Quiet"],
+            "name": "Chrysaora",
             "description": "Chrysaora is a special kind of graceful jellyfish, with stunning colors.",
             "src": "IMG_0934.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
-                "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them. ",
+                " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+                " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
             ],
             "game": "https://www.sensoryapphouse.com/chrysaora-pwa/index.html"
         },
         {
             "id": 3,
-            "emotions": ["alone", "excited", "down"],
-            "name": "sandbox",
+            "emotions": ["Alone", "Excited", "Down"],
+            "name": "Sandbox",
             "description": "Sensory SandBox. A box of sand to explore writing letters, words, numbers, symbols and creating unusual sandy drawings.",
             "src": "IMG_0705-min.jpg",
             "how-it-helps": [
                 "These games are called Sensory Regulatory games.",
-                "These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
-                "Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
-                "It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+                " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+                " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+                " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
             ],
             "game": "https://www.sensoryapphouse.com/sandbox-pwa/index.html"
         }
@@ -951,14 +951,14 @@
             "under13": [
                 {
                     "id": 1,
-                    "emotions": ["alone", "angry"],
+                    "emotions": ["Alone", "Angry"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"
                 },
                 {
                     "id": 2,
-                    "emotions": ["alone", "ashamed"],
+                    "emotions": ["Alone", "Ashamed"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"
@@ -967,14 +967,14 @@
             "over13": [
                 {
                     "id": 1,
-                    "emotions": ["alone", "ashamed"],
+                    "emotions": ["Alone", "Ashamed"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"
                 },
                 {
                     "id": 2,
-                    "emotions": ["alone", "ashamed"],
+                    "emotions": ["Alone", "Ashamed"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"

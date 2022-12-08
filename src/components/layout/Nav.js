@@ -34,7 +34,7 @@ export default function Nav() {
                             width={70}
                             alt="Cocoon kids logo"
                         />
-                        <span>Coccon Kids & Big Hug</span>
+                        <span>Coccon Kids Big Hug</span>
                     </Link>
                     <div className={styles.btn_container}>
                         <div>

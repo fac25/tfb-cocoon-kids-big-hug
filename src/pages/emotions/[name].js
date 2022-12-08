@@ -5,9 +5,9 @@ import MuiAccordion from '@mui/material/Accordion'
 import MuiAccordionSummary from '@mui/material/AccordionSummary'
 import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
-import SingleEmotion from '../../components/emotions/Emotion'
+import SingleEmotion from '../../components/emotions/SingleEmotion'
 import SinglePlayGame from '../../components/playgame/SinglePlayGame'
-import DoMake from '../../components/domake/DoMake'
+import SingleDoMake from '../../components/domake/SingleDoMake'
 
 import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
@@ -94,7 +94,7 @@ function handleActivity(activity, setGame, name) {
     })
 }
 
-export default function Emotion({ emotion, chat, games, domake, name }) {
+export default function SingleEmotionPage({ emotion, chat, games, domake, name }) {
     const [expanded, setExpanded] = useState('')
     const [game, setGame] = useState()
     const [make, setMake] = useState()
@@ -123,7 +123,7 @@ export default function Emotion({ emotion, chat, games, domake, name }) {
                             <Typography>Make/do</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {make && <DoMake domake={make} />}
+                            {make && <SingleDoMake domake={make} />}
                         </AccordionDetails>
                     </Accordion>
 
