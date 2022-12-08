@@ -3,6 +3,7 @@ import Emotions from '../components/emotions/Emotions'
 import WhatToDo from '../components/WhatToDo'
 import useSWR from 'swr'
 
+import CircularProgress from '@mui/material/CircularProgress'
 // export async function getStaticProps() {
 //     const emotions = await fetchData('emotions')
 //     return { props: { emotions } }
@@ -15,7 +16,14 @@ export default function Welcome() {
     //Handle the error state
     if (error) return <div>Failed to load</div>
     //Handle the loading state
-    if (!data) return <div>Loading...</div>
+    if (!data)
+        return (
+            <div className="full_page bg-under13">
+                <div>
+                    <CircularProgress /> Loading
+                </div>
+            </div>
+        )
 
     const json = JSON.parse(data)
 
