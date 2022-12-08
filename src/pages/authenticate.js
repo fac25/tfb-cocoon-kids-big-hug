@@ -1,13 +1,16 @@
-// import { withAuthenticator } from '@aws-amplify/ui-react'
-// import '@aws-amplify/ui-react/styles.css'
+import { withAuthenticator } from '@aws-amplify/ui-react'
+import '@aws-amplify/ui-react/styles.css'
 
-// export default withAuthenticator(function authenticate() {
-//     return <></>
-// })
+import { useRouter } from 'next/router'
 
+import { setCookie } from 'cookies-next'
 
-const AuthenticatePage = () => {
-    return ( <div>Authenticate</div> );
-}
- 
-export default AuthenticatePage;
+export default withAuthenticator(function Authenticate({ user }) {
+    const router = useRouter();
+
+    setCookie('user', user.username)
+
+    return (
+        <div>{user && <div onLoad={ router.push('/welcome')}></div>}</div>
+    )
+})

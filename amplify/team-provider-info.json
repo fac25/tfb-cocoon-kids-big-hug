@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cocoonkids-staging-122054-authRole",
+      "UnauthRoleArn": "arn:aws:iam::495923610530:role/amplify-cocoonkids-staging-122054-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::495923610530:role/amplify-cocoonkids-staging-122054-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-cocoonkids-staging-122054-deployment",
+      "UnauthRoleName": "amplify-cocoonkids-staging-122054-unauthRole",
+      "StackName": "amplify-cocoonkids-staging-122054",
+      "StackId": "arn:aws:cloudformation:eu-west-2:495923610530:stack/amplify-cocoonkids-staging-122054/989ebcf0-7629-11ed-979d-06799b6e2384",
+      "AmplifyAppId": "dlcgojuc6byo6"
+    },
+    "categories": {
+      "auth": {
+        "cocoonkids": {}
+      }
+    }
+  }
+}
