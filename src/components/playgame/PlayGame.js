@@ -18,7 +18,7 @@ const PlayGame = ({ games }) => {
                             <div className={styles.card__header}>
                                 {game.src ? (
                                     <Image
-                                        src={`/assets/img/game/${game.src}`}
+                                        src={`/assets/img/play/${game.src}`}
                                         alt={game.title}
                                         width={500}
                                         height={334}
@@ -33,11 +33,7 @@ const PlayGame = ({ games }) => {
                                     {game.title}
                                 </h2>
 
-                                <div>
-                                    {game['how-it-helps'].map((how) => (
-                                        <p key={how}>{how}</p>
-                                    ))}
-                                </div>
+                                <div>{game.description}</div>
                             </div>
                             <div className={styles.card__tags}>
                                 {game.emotions.map((emotion) => (

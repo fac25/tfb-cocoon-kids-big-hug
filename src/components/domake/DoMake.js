@@ -1,12 +1,7 @@
 import Image from 'next/image'
 import styles from '../../styles/Single.module.css'
-// import { useContext } from 'react'
-// import GlobalUserGroup from '../lib/GlobalContext'
 
 const DoMake = ({ domake }) => {
-    {
-        console.log(domake)
-    }
     return (
         <article className="container">
             <header>
