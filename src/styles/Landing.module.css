@@ -55,7 +55,15 @@
         padding: 1em;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .grid {
+        width: 25em;
+    }
+    .grid__btn {
+        padding: 1.5em;
+    }
+}
+@media (min-width: 1536px) {
     .grid {
         width: 30em;
     }

@@ -19,21 +19,24 @@ export default function PlayGamePage() {
                 <p className="text-center subtitle">
                     These games are called Sensory Regulatory games.
                 </p>
-                <div className="lead ms-md">
+                <div className="lead lead--chat ms-md">
                     <p>
                         These games are tested by Scientists. They saw that they
                         make people feel calmer, less anxious and less worried
                         about things. This is because you concentrate as you are
                         doing them.
                     </p>
-                    <p>
-                        Moving your hands back and forward helps your heart,
-                        mind and body to feel more relaxed too.{' '}
-                    </p>
-                    <p>
-                        It helps you to breathe in and out more slowly and at
-                        the same rhythm and beat (regulate your breathing).
-                    </p>
+                    <ul className="list-style">
+                        <li>
+                            Moving your hands back and forward helps your heart,
+                            mind and body to feel more relaxed too.
+                        </li>
+                        <li>
+                            It helps you to breathe in and out more slowly and
+                            at the same rhythm and beat (regulate your
+                            breathing).
+                        </li>
+                    </ul>
                 </div>
                 {<PlayGame games={games['play-game']} />}
             </div>

@@ -6,7 +6,8 @@
 .card {
     /* position relative for stretched link */
     position: relative;
-    background-color: var(--yellow-light);
+    /* background-color: var(--yellow-light); */
+    background-color: var(--white);
     border-radius: 1rem;
     aspect-ratio: 1 / 1;
     display: flex;
