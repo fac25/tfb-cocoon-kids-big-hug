@@ -69,7 +69,7 @@ export default function WhatToDo() {
                                 </defs>
                             </svg>
                             <span className="shapes__title">
-                                Make something
+                                Do / Make something
                             </span>
                         </div>
                     </Link>

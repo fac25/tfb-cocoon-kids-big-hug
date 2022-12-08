@@ -40,10 +40,15 @@
     border-color: var(--green);
     background-color: var(--green-light);
 }
-.grid__btn--adult {
+.grid__btn--parent {
     border-color: var(--blue-medium);
     background-color: var(--blue-light);
 }
+.grid__btn--school {
+    border-color: var(--pink-medium);
+    background-color: var(--pink-light);
+}
+
 
 @media (min-width: 425px) {
     .grid {

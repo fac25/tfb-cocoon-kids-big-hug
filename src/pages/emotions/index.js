@@ -1,5 +1,6 @@
 import Emotions from '../../components/emotions/Emotions'
 import Layout from '../../components/layout/Layout'
+import WhatToDo from '../../components/WhatToDo'
 import Select from 'react-select'
 import { useState } from 'react'
 import Link from 'next/link'
@@ -33,7 +34,11 @@ export default function AllEmotions() {
                 <Link href={`emotions/${userChoice}`}>SEARCH</Link>
             </div>
             <Emotions emotions={json.emotions} length={json.emotions.length} />
+            <WhatToDo id="what-can-i-do" />
             <style>{`
+            #test{
+                position: fixed;
+            }
             .search{
                 width: 14rem;
                 margin: auto;

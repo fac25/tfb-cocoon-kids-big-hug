@@ -1,14 +1,8 @@
-//import GlobalUserGroup from '../../context/GlobalContext'
-//import { useContext } from 'react'
 import styles from '../../styles/Activities.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const PlayGame = ({ games }) => {
-    //const { userGroup } = useContext(GlobalUserGroup)
-    // function excerpt(str) {
-    //     return str.replace(/^(.{140}[^\s]*).*/, '$1')
-    // }
     return (
         <section>
             <div className={styles.grid}>

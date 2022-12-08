@@ -41,7 +41,7 @@ export default function Landing() {
                             />
                         </div>
                         <div
-                            className={`${styles.grid__btn} ${styles['grid__btn--adult']}`}
+                            className={`${styles.grid__btn} ${styles['grid__btn--school']}`}
                         >
                             <UserGroupBtn
                                 route="/schools"
@@ -50,7 +50,7 @@ export default function Landing() {
                             />
                         </div>
                         <div
-                            className={`${styles.grid__btn} ${styles['grid__btn--adult']}`}
+                            className={`${styles.grid__btn} ${styles['grid__btn--parent']}`}
                         >
                             <UserGroupBtn
                                 route="/parents"

@@ -96,6 +96,7 @@ const Emotions = ({ emotions, length }) => {
                         })}
                 </div>
             </div>
+            
         </section>
     )
 }
