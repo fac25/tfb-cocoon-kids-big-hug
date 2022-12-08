@@ -3,7 +3,7 @@ const About = () => {
     return (
         <div className="container">
             <div className={styles.about}>
-                <section>
+                <section className={`container  ${styles.box}`}>
                     <h1>About Us</h1>
                     <p>
                         Founded by four like-minded people with lived-experience
@@ -21,7 +21,7 @@ const About = () => {
                         Cocoon Kids team xx xx
                     </span>
                 </section>
-                <section className="what">
+                <section className={`container  ${styles.box}`}>
                     <h2>What you asked for</h2>
                     <p>
                         Above all you want your child, young person and yourself
@@ -29,7 +29,7 @@ const About = () => {
                         any app.
                     </p>
                 </section>
-                <section className="listen">
+                <section className={`container  ${styles.box}`}>
                     <h2>We listened carefully.</h2>
                     <p>
                         You told us that there are worrying and sometimes
@@ -54,7 +54,7 @@ const About = () => {
                         child or young person, or your family&apos;s needs.
                     </p>
                 </section>
-                <section>
+                <section className={`container  ${styles.box}`}>
                     <h2>Organisations we work with</h2>
                     <p>
                         <a href="https://www.sensoryapphouse.com">
@@ -109,13 +109,13 @@ const About = () => {
                             Essential oils and aromatherapy in playdoh and
                             orbeex
                         </h3>
+                        <p> How does this help?</p>
                         <p>
                             In 2019, a study called Aromatherapy and Essential
                             Oils: A Map of the Evidence looked at all of the
                             research on Essential Oils and Aromatherapy and
                             found that they can be helpful.
                         </p>
-                        <p>How does this help?</p>
                         <p>
                             Your sense of smell (olfactory sense) is very
                             powerful. Sensory scents (smells) are carried in
