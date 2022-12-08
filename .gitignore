@@ -10,7 +10,8 @@
 
 
 #aws
-.aws-exports.js
+.env
+
 # next.js
 /.next/
 /out/
