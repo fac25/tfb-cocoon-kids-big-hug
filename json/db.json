@@ -579,7 +579,7 @@
     "do-make": [
         {
             "id": 1,
-            "emotions": ["Worried, Anxious"],
+            "emotions": ["worried, anxious"],
             "under13": true,
             "over13": true,
             "title": "Make your own calming, regulating sensory bottle",
@@ -637,7 +637,7 @@
         },
         {
             "id": 2,
-            "emotions": ["Upset"],
+            "emotions": ["upset"],
             "under13": true,
             "over13": true,
             "title": "Make a rain stick sensory bottle",
@@ -670,7 +670,7 @@
         },
         {
             "id": 3,
-            "emotions": ["Anxious, Worried"],
+            "emotions": ["anxious, worried"],
             "under13": true,
             "over13": true,
             "title": "Bubblewrap anxiety helper",
@@ -710,7 +710,7 @@
         },
         {
             "id": 4,
-            "emotions": ["Anxious"],
+            "emotions": ["anxious"],
             "under13": true,
             "over13": true,
             "title": "Make a moving lava lamp bottle",
@@ -770,7 +770,7 @@
         },
         {
             "id": 5,
-            "emotions": ["Worried, Upset"],
+            "emotions": ["worried, upset"],
             "under13": true,
             "over13": true,
             "title": "Giant bubbles",
@@ -815,7 +815,7 @@
         },
         {
             "id": 7,
-            "emotions": ["Angry"],
+            "emotions": ["angry"],
             "under13": true,
             "over13": true,
             "title": "Tearing paper",
@@ -840,7 +840,7 @@
         },
         {
             "id": 8,
-            "emotions": ["Angry"],
+            "emotions": ["angry"],
             "under13": true,
             "over13": false,
             "title": "Draw and write about your anger monster",
@@ -905,7 +905,7 @@
     "play-game": [
         {
             "id": 1,
-            "emotions": ["Alone", "Anxious"],
+            "emotions": ["alone", "anxious"],
             "name": "JustTouchToo",
             "description": "Just touch too from Sensory is an engaging and relaxing touch effects app",
             "src": "IMG_0582-min.jpg",
@@ -919,7 +919,7 @@
         },
         {
             "id": 2,
-            "emotions": ["Alone", "Lonely", "Anxious", "Quiet"],
+            "emotions": ["alone", "lonely", "anxious", "quiet"],
             "name": "Chrysaora",
             "description": "Chrysaora is a special kind of graceful jellyfish, with stunning colors.",
             "src": "IMG_0934.jpg",
@@ -933,7 +933,7 @@
         },
         {
             "id": 3,
-            "emotions": ["Alone", "Excited", "Down"],
+            "emotions": ["alone", "excited", "down"],
             "name": "Sandbox",
             "description": "Sensory SandBox. A box of sand to explore writing letters, words, numbers, symbols and creating unusual sandy drawings.",
             "src": "IMG_0705-min.jpg",
@@ -951,14 +951,14 @@
             "under13": [
                 {
                     "id": 1,
-                    "emotions": ["Alone", "Angry"],
+                    "emotions": ["alone", "angry"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"
                 },
                 {
                     "id": 2,
-                    "emotions": ["Alone", "Ashamed"],
+                    "emotions": ["alone", "ashamed"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"
@@ -967,14 +967,14 @@
             "over13": [
                 {
                     "id": 1,
-                    "emotions": ["Alone", "Ashamed"],
+                    "emotions": ["alone", "ashamed"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"
                 },
                 {
                     "id": 2,
-                    "emotions": ["Alone", "Ashamed"],
+                    "emotions": ["alone", "ashamed"],
                     "how-it-helps": "Lorem ipsum",
                     "title": "Lorem ipsum",
                     "location": "Lorem ipsum"

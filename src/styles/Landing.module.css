@@ -40,11 +40,11 @@
     border-color: var(--green);
     background-color: var(--green-light);
 }
-.grid__btn--parent {
+.grid__btn--school {
     border-color: var(--blue-medium);
     background-color: var(--blue-light);
 }
-.grid__btn--school {
+.grid__btn--parent {
     border-color: var(--pink-medium);
     background-color: var(--pink-light);
 }
