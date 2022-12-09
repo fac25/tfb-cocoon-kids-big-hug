@@ -6,6 +6,14 @@
 
 2. Start localhost: ``` npm run dev ```
 
+## Tech Stack
+- React with Nextjs
+- aws amplify for authentication
+- swr for data fetching
+- vanilla css and material ui for components, design and user interface
+- deployed on vercel
+- data is stored in a db.json file, and we created an api endpoint and read the data using swr
+
 
 ## Introduction 
 ### What are you building?
