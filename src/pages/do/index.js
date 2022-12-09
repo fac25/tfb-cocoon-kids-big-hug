@@ -1,4 +1,4 @@
-import DoMakeGrid from '../../components/domake/DoMakeGrid'
+import DoMake from '../../components/domake/DoMake'
 import Layout from '../../components/layout/Layout'
 import useSWR from 'swr'
 
@@ -16,7 +16,7 @@ export default function DoMakePage() {
         <Layout pageTitle="Do/Make">
             <div className="container">
                 <h1 className="title">Do / Make</h1>
-                <DoMakeGrid doMakes={json['do-make']} />
+                <DoMake doMakes={json['do-make']} />
             </div>
         </Layout>
     )

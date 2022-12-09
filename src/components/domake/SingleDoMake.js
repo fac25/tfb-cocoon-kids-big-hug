@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../../styles/Single.module.css'
 
-const DoMake = ({ domake }) => {
+const SingleDoMake = ({ domake }) => {
     return (
         <article className="container">
             <header>
@@ -87,4 +87,4 @@ const DoMake = ({ domake }) => {
     )
 }
 
-export default DoMake
+export default SingleDoMake
