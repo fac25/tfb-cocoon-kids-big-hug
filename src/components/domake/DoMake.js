@@ -4,7 +4,7 @@ import styles from '../../styles/Activities.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const DoMakeGrid = ({ doMakes }) => {
+const DoMake = ({ doMakes }) => {
     const { userGroup } = useContext(GlobalUserGroup)
     function excerpt(str) {
         return str.replace(/^(.{140}[^\s]*).*/, '$1')
