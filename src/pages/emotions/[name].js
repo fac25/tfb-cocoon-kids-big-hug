@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { styled } from '@mui/material/styles'
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
 import MuiAccordion from '@mui/material/Accordion'
@@ -13,6 +13,11 @@ import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
 import path from 'path'
 import { promises as fs } from 'fs'
+
+
+import dynamic from 'next/dynamic'
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
 /*
 export async function getStaticPaths() {
     const emotions = await fetchData('emotions')
@@ -77,9 +82,10 @@ export async function getServerSideProps(context) {
     const chat = data['chat-speak']
     const domake = data[`do-make`]
     const games = data[`play-game`]
+    const video = data[`video`].filter((video) => video.emotions.includes(name))
     //Return the content of the data file in json format
 
-    return { props: { emotion, chat, games, domake, name } }
+    return { props: { emotion, chat, games, domake, name ,video} }
 }
 
 function handleActivity(activity, setGame, name) {
@@ -94,10 +100,11 @@ function handleActivity(activity, setGame, name) {
     })
 }
 
-export default function SingleEmotionPage({ emotion, chat, games, domake, name }) {
+export default function SingleEmotionPage({ emotion, chat, games, domake, name ,video}) {
     const [expanded, setExpanded] = useState('')
     const [game, setGame] = useState()
     const [make, setMake] = useState()
+    
 
     const handleChange = (panel) => (event, newExpanded) => {
         handleActivity(games, setGame, name)
@@ -167,6 +174,21 @@ export default function SingleEmotionPage({ emotion, chat, games, domake, name }
                         </AccordionSummary>
                         <AccordionDetails>
                             <ChatSpeak chat={chat} />
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion
+                        expanded={expanded === 'panel5'}
+                        onChange={handleChange('panel5')}
+                    >
+                        <AccordionSummary
+                            aria-controls="panel5d-content"
+                            id="panel5d-header"
+                        >
+                            <Typography>Video</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <h2>NextJs VideoPlayer - GeeksforGeeks</h2>
+                            <ReactPlayer url={video[0].link}/>
                         </AccordionDetails>
                     </Accordion>
                 </div>
