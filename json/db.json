@@ -1414,7 +1414,7 @@
         "under13": true,
         "over13": true,
         "emotions": [
-            "lonely", "angry"
+            "lonely", "angry","down"
         ],
         "title":"Lorem ipsum",
         "link":"https://www.youtube.com/watch?v=iiADhChRriM&t=42s",
