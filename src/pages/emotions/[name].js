@@ -13,6 +13,7 @@ import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
 import path from 'path'
 import { promises as fs } from 'fs'
+import VideoPage from '../../components/VideoPage'
 
 
 import dynamic from 'next/dynamic'
@@ -187,8 +188,8 @@ export default function SingleEmotionPage({ emotion, chat, games, domake, name ,
                             <Typography>Video</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <h2>NextJs VideoPlayer - GeeksforGeeks</h2>
-                            <ReactPlayer url={video[0].link}/>
+                            {/* <ReactPlayer url={video[0].link}/> */}
+                            <VideoPage videos={video}/>
                         </AccordionDetails>
                     </Accordion>
                 </div>

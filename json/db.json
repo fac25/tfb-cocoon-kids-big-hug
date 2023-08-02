@@ -1123,8 +1123,217 @@
             " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
         ],
         "game": "https://www.sensoryapphouse.com/sandbox-pwa/index.html"
+    },
+    {
+        "id": 4,
+        "emotions": [
+            "angry"
+        ],
+        "name": "Flames Live!",
+        "description": "Sensory Flames Has A Range Of Different Flame And Sun Effects. Click Or Tap The Button And The App Will Launch Filling The Screen Or Window.",
+        "src": "flames.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/flames-pwa-xbox/index.html"
+    },
+    {
+        "id": 5,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Abstract Live!",
+        "description": "Sensory Abstract#6 App Is Another Digital Art Creation With Unusual Sensory Visual Effects. Click Or Tap The Button And The App Will Launch",
+        "src": "abstract.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/abstract6-pwa-xbox/index.html"
+    },
+    {
+        "id": 6,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "SpeakUp Live!",
+        "description": "Lorem Ipsum",
+        "src": "speakup.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/speakup-pwa/index.html"
+    },
+    {
+        "id": 7,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Electrique Live!",
+        "description": "Click or tap the button and the app will launch filling the screen or window,If the app fills the window, maximise the window to full screen and the app will run as full screen. Press ESC key or click/tap the X button to close the app.",
+        "src": "electrique.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/electrique-pwa/index.html"
+    },
+    {
+        "id": 8,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Flocking Live!",
+        "description": "Choose from the 8 Flocking scenes, and the background will load. Touch and move around, and the fish or other digital characters or objects will slowly flock together and follow. Touch the silver buttons to change the style of the character or object and add a trail, or change the background. If using on a tablet or phone, we suggest using the landscape orientation.",
+        "src":"flocking.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/flocking-pwa/index.html"
+    },
+    {
+        "id": 9,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Just Touch Live!",
+        "description": "After app launch by tapping the above button/icon, click the splash screen to start the app. JustTouch will then show the camera view, with some hall of mirrors type live images. Move the mouse or finger and you will see the images move. The single arrows will change the style of effect, and the double arrows will move to the next mode. The 4 modes are hall of mirrors, swirls, inversions and tunnels. Tapping or clicking changes the color, effect and direction of swirl.        ",
+        "src":"justTouch.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/justtouch-pwa/index.html"
+    },
+    {
+        "id": 10,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Lava Live!",
+        "description": "By pressing the silver buttons it is possible to change colors, change the number of bubble groups, change the general speed of movement and change the “diffusion”. The bubble edges of Lava are fully touch reactive, responding according to how close a bubble it to the touch.",
+        "src":"lavaLive.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/lava-pwa/index.html"
+    },
+    {
+        "id": 11,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Magma Live!",
+        "description":"The Sensory styles, sizes and colours can be chosen using touch/mouse and the silver buttons. The app can also be controlled by using a keyboard, switches or an XBox controller, or the Microsoft Adaptive Controller with any suitable switch inputs.",
+        "src":"magma.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/magma-pwa/"
+    },
+    {
+        "id": 12,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Mandala patterns!",
+        "description":"Run Mandala Patterns and touch of click and move on the screen and start creating symmetrical patterns. The right hand toolbar contains settings for Line Width, Symmetry type, Line Colour controls, Line Style, and a range of subtle pattern Effects. There is also a wobble animation button, just below the download artwork button.",
+        "src":"mandala.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/mandala-pwa/mandala-pwa/index.html"
+    },
+    {
+        "id": 13,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Mesmo Live!",
+        "description":"By pressing the silver buttons it is possible to change colours, change the number of bubble and effects groups, change the general speed of movement and change the “diffusion”. Mesmo is fully touch or pointer reactive.",
+        "src":"mesmo.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/mesmo-pwa/index.html"
+    },
+    {
+        "id": 14,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Simply Touch Live!",
+        "description":"Choose one of the top row of effect groups, then choose the effect you would like to use from the 4 in the second row. One the shape or effect has open, move around the mouse or tap and drag on the screen, and the shapes will move and transform and some will even follow you around.",
+        "src":"simplyTouch.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/SimplyTouch-pwa/index.html"
+    },
+    {
+        "id": 15,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Plazma Live!",
+        "description":"Plazma bubble effects can be influenced by touching or clicking on the screen. Plazma can be controlled by assistive technology switches that interface with your device (probably bluetooth) that produce character codes (1, 2, 3, 4 , Space , Enter) – all produce different changes in effects of the app and control the 4 effects buttons. Plazma also supports the XBox controller or Microsoft Adaptive Controller on many devices. Tapping A. B, X and Y control the app effects.",
+        "src":"plazma.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/plazma-pwa-xbox/index.html"
+    },
+    {
+        "id": 16,
+        "emotions": [
+            "Lorem Ipsum"
+        ],
+        "name": "Sensory Goo Live!",
+        "description":"Tap to make goo change",
+        "src":"sensoryGoo.jpg",
+        "how-it-helps": [
+            "These games are called Sensory Regulatory games.",
+            " These games are tested by Scientists. They saw that they make people feel calmer, less anxious and less worried about things. This is because you concentrate as you are doing them.",
+            " Moving your hands back and forward helps your heart, mind and body to feel more relaxed too. ",
+            " It helps you to breathe in and out more slowly and at the same rhythm and beat (regulate your breathing)."
+        ],
+        "game": "https://www.sensoryapphouse.com/goo-pwa/"
     }
 ],
+
 "join-go": [
     {
         "under13": [
@@ -1196,17 +1405,118 @@
         "emotions": [
             "angry"
         ],
-        "link":"https://www.youtube.com/watch?v=wkse4PPxkk4"
+        "title":"Meddidation video",
+        "link":"https://www.youtube.com/watch?v=wkse4PPxkk4",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "id":2,
         "under13": true,
         "over13": true,
         "emotions": [
-            "lonely"
+            "lonely", "angry"
         ],
-        "link":"https://www.youtube.com/watch?v=iiADhChRriM&t=42s"
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=iiADhChRriM&t=42s",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id":3,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum",
+            "angry"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=O-6f5wQXSu8",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique."
+    },{
+        "id":4,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum",
+            "Lorem Ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=itZMM5gCboo",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },{
+        "id":5,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=duUfdGPUtFs",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat. Elementum facilisis leo vel fringilla."
+    },{
+        "id":6,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum",
+            "Lorem Ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=BM2CNYvI45Y",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },{
+        "id":7,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=xNN7iTA57jM",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },{
+        "id":8,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum",
+            "Lorem Ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=SVrCG11zSPw",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique."
+    },{
+        "id":9,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=tMkvDp-jaes",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },{
+        "id":10,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum",
+            "Lorem Ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=vPhg6sc1Mk4",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique."
+    },{
+        "id":11,
+        "under13": true,
+        "over13": true,
+        "emotions": [
+            "Lorem ipsum"
+        ],
+        "title":"Lorem ipsum",
+        "link":"https://www.youtube.com/watch?v=jh4C7w-dvho",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
-    
 ]
 }   

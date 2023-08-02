@@ -26,7 +26,7 @@ export default function Schools() {
             <main>
                 <div className={styles.border_bottom}>
                     <h2>My Classrooms</h2>
-                    <Button variant="contained">+ add new</Button>
+                    <Button variant="contained">add new +</Button>
                 </div>
                 <Box>
                     <Box>
