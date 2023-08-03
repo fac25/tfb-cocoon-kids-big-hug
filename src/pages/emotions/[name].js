@@ -13,7 +13,7 @@ import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
 import path from 'path'
 import { promises as fs } from 'fs'
-import VideoPage from '../../components/VideoPage'
+import VideoPage from '../../components/video/videoCards'
 
 
 import dynamic from 'next/dynamic'

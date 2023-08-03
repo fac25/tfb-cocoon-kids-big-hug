@@ -1,6 +1,6 @@
 import Layout from '../../components/layout/Layout'
 import useSWR from 'swr'
-import VideoPage from '../../components/VideoPage'
+import VideoPage from '../../components/video/videoCards'
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 
