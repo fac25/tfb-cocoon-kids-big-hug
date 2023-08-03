@@ -12,19 +12,20 @@ const ExpandedVideo = React.memo(({ videoData, onClose }) => {
     return (
         <div className={styles.overlay}>
             <div className={styles.centered}>
-                    <button  onClick={onClose}>
+                   
                     <Image
                         src={`/assets/img/closebutton.jpg`}
                         width={20}
                         height={20}
+                        onClick={onClose}
                         className={styles.closeButton}
                     />
-                    </button>
+                  
                 <div className={styles.title}>{videoData.title}</div>
+
                 <div className={styles.videoWrapper}>
                     <ReactPlayer url={videoData.link} />
-                </div>
-                <div className={styles.description}>{videoData.description}</div>
+                </div>          
             </div>
         </div>
     );

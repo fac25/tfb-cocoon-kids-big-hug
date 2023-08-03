@@ -42,11 +42,8 @@
 }
 
 .videoWrapper {
+
     position: relative;
     padding-top: 20px;
     /* 16:9 aspect ratio (change if necessary) */
-}
-
-.description{
-    text-align: center;
 }
