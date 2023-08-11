@@ -6,7 +6,7 @@ import Switch from '@mui/material/Switch'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import { Box, Tab, Tabs, Typography, ListItem, Button } from '@mui/material'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 import { Amplify, API } from 'aws-amplify';
@@ -18,38 +18,37 @@ import * as queries from '../../graphql/queries';
 Amplify.configure(awsconfig);
 
 
-export default function Schools() {
+export default function Schools({ classList }) {
     const [tabIndex, setTabIndex] = useState(0)
 
-    // const [classes, setClasses] = useState(classes);
-
-         
+   
     const handleTabChange = (event, newTabIndex) => {
         setTabIndex(newTabIndex)
     }
+    // const [todoList, setTodoList] = useState(todos);
 
-    
+
+
 
     const onCreateClass = async () => {
         const newClass = {
-          ClassName: "helloWorld"
+            ClassName: "shush"
         };
-    
+
         try {
-          await API.graphql({
-            query: mutations.createClass,
-            variables: { input: newClass },
-          });
-          
-        //   setClasses((list) => [...list, { ...newClass }]);
+            await API.graphql({
+                query: mutations.createClass,
+                variables: { input: newClass },
+            });
 
+            setClasses((list) => [...list, { ...newClass }]);
 
-          console.log("Successfully created a class!");
+            console.log("Successfully created a class!");
         } catch (err) {
-          console.log("error: ", err);
+            console.log("error: ", err);
         }
-      };
-    
+    };
+
     return (
         <div className={`container ${styles.border}`}>
             <header className={styles.red}>
@@ -67,11 +66,16 @@ export default function Schools() {
                 </div>
                 <Box>
                     <Box>
-                        <Tabs value={tabIndex} onChange={handleTabChange}>
-                            <Tab label="YEAR 8 - B" />
-                            <Tab label="YEAR 8 - C" />
-                            <Tab label="YEAR 6 - A" />
-                        </Tabs>
+                        {/* <Tabs value={tabIndex} onChange={handleTabChange}> */}
+{/* 
+                        {classList.map((eachClass) => (
+                            <Tab
+                                key={eachClass.id}
+                                label={eachClass.ClassName}
+                            />
+                        ))}  */}
+
+                        {/* </Tabs> */}
                     </Box>
                     <Box sx={{ padding: 2 }}>
                         {tabIndex === 0 && (
@@ -83,96 +87,7 @@ export default function Schools() {
                                         View details
                                     </Button>
                                 </ListItem>
-                                <ListItem>
-                                    Student name 2 – Emotions: Happy - Bored
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 3 – Emotions: Sad - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 4 – Emotions: Depressed - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 5 – Emotions: Scared - Upset
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 6 – Emotions: excited - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 7 – Emotions: Happy
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 8 – Emotions: Excited
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 9 – Emotions: Angry - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 10 – Emotions: Happy
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 11 – Emotions: Upset - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 12 – Emotions: Excited
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 13 – Emotions: Angry - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 14 – Emotions: Happy
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 15 – Emotions: Happy
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 16 – Emotions: Upset
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
+
                             </Box>
                         )}
                         {tabIndex === 1 && (
@@ -184,48 +99,7 @@ export default function Schools() {
                                         View details
                                     </Button>
                                 </ListItem>
-                                <ListItem>
-                                    Student name 2 – Emotions: Happy - Bored
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 3 – Emotions: Sad - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 4 – Emotions: Depressed - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 5 – Emotions: Scared - Upset
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 6 – Emotions: excited - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 7 – Emotions: Happy
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 8 – Emotions: Excited
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
+
                             </Box>
                         )}
                         {tabIndex === 2 && (
@@ -233,12 +107,6 @@ export default function Schools() {
                                 <Typography>STUDENTS</Typography>
                                 <ListItem>
                                     Student name 1 – Emotions: Angry - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                                <ListItem>
-                                    Student name 2 – Emotions: Happy - Bored
                                     <Button variant="outlined">
                                         View details
                                     </Button>
