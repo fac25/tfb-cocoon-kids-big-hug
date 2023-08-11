@@ -1,4 +1,4 @@
-import Schools from '../../components/Schools'
+import Schools from '../../components/Schools/Schools'
 import Layout from '../../components/layout/Layout'
 const SchoolPage = () => {
     return (

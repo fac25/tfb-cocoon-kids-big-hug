@@ -1,4 +1,4 @@
-import styles from '../styles/Adults.module.css'
+import styles from '../../styles/Adults.module.css'
 
 import * as React from 'react'
 
@@ -7,12 +7,49 @@ import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import { Box, Tab, Tabs, Typography, ListItem, Button } from '@mui/material'
 import { useState } from 'react'
+
+
+import { Amplify, API } from 'aws-amplify';
+import awsconfig from '../../aws-exports';
+
+import * as mutations from "../../graphql/mutations";
+import * as queries from '../../graphql/queries';
+
+Amplify.configure(awsconfig);
+
+
 export default function Schools() {
     const [tabIndex, setTabIndex] = useState(0)
 
+    // const [classes, setClasses] = useState(classes);
+
+         
     const handleTabChange = (event, newTabIndex) => {
         setTabIndex(newTabIndex)
     }
+
+    
+
+    const onCreateClass = async () => {
+        const newClass = {
+          ClassName: "helloWorld"
+        };
+    
+        try {
+          await API.graphql({
+            query: mutations.createClass,
+            variables: { input: newClass },
+          });
+          
+        //   setClasses((list) => [...list, { ...newClass }]);
+
+
+          console.log("Successfully created a class!");
+        } catch (err) {
+          console.log("error: ", err);
+        }
+      };
+    
     return (
         <div className={`container ${styles.border}`}>
             <header className={styles.red}>
@@ -26,7 +63,7 @@ export default function Schools() {
             <main>
                 <div className={styles.border_bottom}>
                     <h2>My Classrooms</h2>
-                    <Button variant="contained">add new +</Button>
+                    <Button variant="contained" onClick={(event) => onCreateClass(event)}>add new +</Button>
                 </div>
                 <Box>
                     <Box>

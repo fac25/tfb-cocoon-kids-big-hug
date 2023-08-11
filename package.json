@@ -10,13 +10,16 @@
         "j-s": "npx json-server db.json --port 3003"
     },
     "dependencies": {
+        "@aws-amplify/api": "^5.4.0",
         "@aws-amplify/cli": "^10.5.1",
+        "@aws-amplify/datastore": "^4.7.0",
         "@aws-amplify/ui-react": "^4.1.0",
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
         "@mui/icons-material": "^5.10.16",
         "@mui/material": "^5.10.16",
         "aws-amplify": "^5.0.4",
+        "axios": "^1.4.0",
         "cookies-next": "^2.1.1",
         "eslint": "8.28.0",
         "eslint-config-next": "13.0.5",
