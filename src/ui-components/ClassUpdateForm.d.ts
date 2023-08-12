@@ -7,30 +7,32 @@
 import * as React from "react";
 import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { Class } from "../models";
 export declare type ValidationResponse = {
     hasError: boolean;
     errorMessage?: string;
 };
 export declare type ValidationFunction<T> = (value: T, validationResponse: ValidationResponse) => ValidationResponse | Promise<ValidationResponse>;
-export declare type ClassCreateFormInputValues = {
+export declare type ClassUpdateFormInputValues = {
     ClassName?: string;
 };
-export declare type ClassCreateFormValidationValues = {
+export declare type ClassUpdateFormValidationValues = {
     ClassName?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type ClassCreateFormOverridesProps = {
-    ClassCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
+export declare type ClassUpdateFormOverridesProps = {
+    ClassUpdateFormGrid?: PrimitiveOverrideProps<GridProps>;
     ClassName?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
-export declare type ClassCreateFormProps = React.PropsWithChildren<{
-    overrides?: ClassCreateFormOverridesProps | undefined | null;
+export declare type ClassUpdateFormProps = React.PropsWithChildren<{
+    overrides?: ClassUpdateFormOverridesProps | undefined | null;
 } & {
-    clearOnSuccess?: boolean;
-    onSubmit?: (fields: ClassCreateFormInputValues) => ClassCreateFormInputValues;
-    onSuccess?: (fields: ClassCreateFormInputValues) => void;
-    onError?: (fields: ClassCreateFormInputValues, errorMessage: string) => void;
-    onChange?: (fields: ClassCreateFormInputValues) => ClassCreateFormInputValues;
-    onValidate?: ClassCreateFormValidationValues;
+    id?: string;
+    class?: Class;
+    onSubmit?: (fields: ClassUpdateFormInputValues) => ClassUpdateFormInputValues;
+    onSuccess?: (fields: ClassUpdateFormInputValues) => void;
+    onError?: (fields: ClassUpdateFormInputValues, errorMessage: string) => void;
+    onChange?: (fields: ClassUpdateFormInputValues) => ClassUpdateFormInputValues;
+    onValidate?: ClassUpdateFormValidationValues;
 } & React.CSSProperties>;
-export default function ClassCreateForm(props: ClassCreateFormProps): React.ReactElement;
+export default function ClassUpdateForm(props: ClassUpdateFormProps): React.ReactElement;

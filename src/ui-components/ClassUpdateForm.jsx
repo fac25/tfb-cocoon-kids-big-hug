@@ -11,9 +11,10 @@ import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Class } from "../models";
 import { fetchByPath, validateField } from "./utils";
 import { DataStore } from "aws-amplify";
-export default function ClassCreateForm(props) {
+export default function ClassUpdateForm(props) {
   const {
-    clearOnSuccess = true,
+    id: idProp,
+    class: classModelProp,
     onSuccess,
     onError,
     onSubmit,
@@ -28,9 +29,23 @@ export default function ClassCreateForm(props) {
   const [ClassName, setClassName] = React.useState(initialValues.ClassName);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
-    setClassName(initialValues.ClassName);
+    const cleanValues = classRecord
+      ? { ...initialValues, ...classRecord }
+      : initialValues;
+    setClassName(cleanValues.ClassName);
     setErrors({});
   };
+  const [classRecord, setClassRecord] = React.useState(classModelProp);
+  React.useEffect(() => {
+    const queryData = async () => {
+      const record = idProp
+        ? await DataStore.query(Class, idProp)
+        : classModelProp;
+      setClassRecord(record);
+    };
+    queryData();
+  }, [idProp, classModelProp]);
+  React.useEffect(resetStateValues, [classRecord]);
   const validations = {
     ClassName: [],
   };
@@ -90,12 +105,13 @@ export default function ClassCreateForm(props) {
               modelFields[key] = null;
             }
           });
-          await DataStore.save(new Class(modelFields));
+          await DataStore.save(
+            Class.copyOf(classRecord, (updated) => {
+              Object.assign(updated, modelFields);
+            })
+          );
           if (onSuccess) {
             onSuccess(modelFields);
-          }
-          if (clearOnSuccess) {
-            resetStateValues();
           }
         } catch (err) {
           if (onError) {
@@ -103,7 +119,7 @@ export default function ClassCreateForm(props) {
           }
         }
       }}
-      {...getOverrideProps(overrides, "ClassCreateForm")}
+      {...getOverrideProps(overrides, "ClassUpdateForm")}
       {...rest}
     >
       <TextField
@@ -135,13 +151,14 @@ export default function ClassCreateForm(props) {
         {...getOverrideProps(overrides, "CTAFlex")}
       >
         <Button
-          children="Clear"
+          children="Reset"
           type="reset"
           onClick={(event) => {
             event.preventDefault();
             resetStateValues();
           }}
-          {...getOverrideProps(overrides, "ClearButton")}
+          isDisabled={!(idProp || classModelProp)}
+          {...getOverrideProps(overrides, "ResetButton")}
         ></Button>
         <Flex
           gap="15px"
@@ -151,7 +168,10 @@ export default function ClassCreateForm(props) {
             children="Submit"
             type="submit"
             variation="primary"
-            isDisabled={Object.values(errors).some((e) => e?.hasError)}
+            isDisabled={
+              !(idProp || classModelProp) ||
+              Object.values(errors).some((e) => e?.hasError)
+            }
             {...getOverrideProps(overrides, "SubmitButton")}
           ></Button>
         </Flex>

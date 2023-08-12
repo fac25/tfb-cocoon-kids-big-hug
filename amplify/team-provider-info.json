@@ -24,6 +24,10 @@
           "deploymentBucketName": "amplify-cocoonkids-dev-133706-deployment",
           "s3Key": "amplify-builds/teacherHandler-334b654b62714f667146-build.zip"
         }
+      },
+      "api": {
+        "apicfc63ed3": {},
+        "cocoonkids": {}
       }
     }
   },

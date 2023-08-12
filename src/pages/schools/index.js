@@ -6,15 +6,15 @@ import { API } from 'aws-amplify';
 import * as queries from '../../graphql/queries';
 
 function SchoolPage({ classes }) {
-    console.log({classes})
     return (
         <Layout isLanding={true} showEmergency={false}>
-            <Schools/>
+            <Schools classes={classes}/>
         </Layout>
     );
-}
+}   
 
-export async function getServerSideProps({ res }) {
+export async function getServerSideProps() {
+
     try {
         const classData = await API.graphql({
             query: queries.listClasses,
@@ -22,7 +22,6 @@ export async function getServerSideProps({ res }) {
 
         const classes = classData.data.listClasses.items;
 
-        res.setHeader('Cache-Control', 's-maxage=0');
 
         return {
             props: {

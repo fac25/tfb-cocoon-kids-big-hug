@@ -7,7 +7,7 @@ import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import { Box, Tab, Tabs, Typography, ListItem, Button } from '@mui/material'
 import { useState, useEffect } from 'react'
-
+import EnterClass from './enterClass'
 
 import { Amplify, API } from 'aws-amplify';
 import awsconfig from '../../aws-exports';
@@ -18,36 +18,14 @@ import * as queries from '../../graphql/queries';
 Amplify.configure(awsconfig);
 
 
-export default function Schools({ classList }) {
+export default function Schools({ classes }) {
     const [tabIndex, setTabIndex] = useState(0)
+    const [classList, setClastList] = useState(classes);
 
-   
+
     const handleTabChange = (event, newTabIndex) => {
         setTabIndex(newTabIndex)
     }
-    // const [todoList, setTodoList] = useState(todos);
-
-
-
-
-    const onCreateClass = async () => {
-        const newClass = {
-            ClassName: "shush"
-        };
-
-        try {
-            await API.graphql({
-                query: mutations.createClass,
-                variables: { input: newClass },
-            });
-
-            setClasses((list) => [...list, { ...newClass }]);
-
-            console.log("Successfully created a class!");
-        } catch (err) {
-            console.log("error: ", err);
-        }
-    };
 
     return (
         <div className={`container ${styles.border}`}>
@@ -62,20 +40,21 @@ export default function Schools({ classList }) {
             <main>
                 <div className={styles.border_bottom}>
                     <h2>My Classrooms</h2>
-                    <Button variant="contained" onClick={(event) => onCreateClass(event)}>add new +</Button>
+                    <EnterClass/>
+                    {/* <Button variant="contained" onClick={(event) => onCreateClass(event)}>add new +</Button> */}
                 </div>
                 <Box>
                     <Box>
-                        {/* <Tabs value={tabIndex} onChange={handleTabChange}> */}
-{/* 
+                        <Tabs value={tabIndex} onChange={handleTabChange} variant="scrollable"> 
+                        
                         {classList.map((eachClass) => (
                             <Tab
                                 key={eachClass.id}
                                 label={eachClass.ClassName}
                             />
-                        ))}  */}
+                        ))} 
 
-                        {/* </Tabs> */}
+                         </Tabs>
                     </Box>
                     <Box sx={{ padding: 2 }}>
                         {tabIndex === 0 && (
@@ -94,7 +73,7 @@ export default function Schools({ classList }) {
                             <Box>
                                 <Typography>STUDENTS</Typography>
                                 <ListItem>
-                                    Student name 1 – Emotions: Angry - Alone
+                                    Student name 1 – Emotions: asdnkasnd - Alone
                                     <Button variant="outlined">
                                         View details
                                     </Button>
