@@ -7,30 +7,30 @@ import { Amplify, API } from 'aws-amplify';
 import awsconfig from '../../aws-exports';
 import * as mutations from "../../graphql/mutations";
 
-const onCreateClass = async ({ inputValue }) => {
 
-
-    const newClass = {
-        ClassName: inputValue
-    };
-
-    try {
-        await API.graphql({
-            query: mutations.createClass,
-            variables: { input: newClass },
-        });
-
-        // setClastList((list) => [...list, { ...newClass }]);
-
-        console.log("Successfully created a class!");
-    } catch (err) {
-        console.log("error: ", err);
-    }
-};
-
-const EnterClass = React.memo(({ onClose }) => {
+const EnterClass = React.memo(({onChange }) => {
     const [inputValue, setInputValue] = useState('');
 
+    const onCreateClass = async () => {
+
+
+        const newClass = {
+            ClassName: inputValue
+        };
+
+        try {
+            await API.graphql({
+                query: mutations.createClass,
+                variables: { input: newClass },
+            });
+
+            onChange((list) => [...list, { ...newClass }]);
+
+            console.log("Successfully created a class!");
+        } catch (err) {
+            console.log("error: ", err);
+        }
+    };
 
 
     return (
@@ -45,7 +45,7 @@ const EnterClass = React.memo(({ onClose }) => {
                 }
             />
 
-            <button onClick={() => onCreateClass({ inputValue })}>Add Class!!</button>
+            <button onClick={() => onCreateClass()}>Add Class!!</button>
 
         </div>
     );

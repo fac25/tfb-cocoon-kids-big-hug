@@ -20,11 +20,15 @@ Amplify.configure(awsconfig);
 
 export default function Schools({ classes }) {
     const [tabIndex, setTabIndex] = useState(0)
-    const [classList, setClastList] = useState(classes);
+    const [classList, setClasstList] = useState(classes);
 
 
     const handleTabChange = (event, newTabIndex) => {
         setTabIndex(newTabIndex)
+    }
+
+    const handleSubmit = (newClass) => {
+        setClasstList(newClass);
     }
 
     return (
@@ -40,21 +44,21 @@ export default function Schools({ classes }) {
             <main>
                 <div className={styles.border_bottom}>
                     <h2>My Classrooms</h2>
-                    <EnterClass/>
+                    <EnterClass value ={classList} onChange ={handleSubmit}/>
                     {/* <Button variant="contained" onClick={(event) => onCreateClass(event)}>add new +</Button> */}
                 </div>
                 <Box>
                     <Box>
-                        <Tabs value={tabIndex} onChange={handleTabChange} variant="scrollable"> 
-                        
-                        {classList.map((eachClass) => (
-                            <Tab
-                                key={eachClass.id}
-                                label={eachClass.ClassName}
-                            />
-                        ))} 
+                        {/* <Tabs value={tabIndex} onChange={handleTabChange} variant="scrollable"> */}
 
-                         </Tabs>
+                            {classList.map((eachClass) => (
+                                <Tab
+                                    key={eachClass.id}
+                                    label={eachClass.ClassName}
+                                />
+                            ))}
+
+                        {/* </Tabs> */}
                     </Box>
                     <Box sx={{ padding: 2 }}>
                         {tabIndex === 0 && (
