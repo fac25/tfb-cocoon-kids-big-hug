@@ -21,6 +21,7 @@ Amplify.configure(awsconfig);
 export default function Schools({ classes }) {
     const [tabIndex, setTabIndex] = useState(0)
     const [classList, setClasstList] = useState(classes);
+    const [isOpen, setIsOpen] = useState(false);
 
 
     const handleTabChange = (event, newTabIndex) => {
@@ -31,6 +32,13 @@ export default function Schools({ classes }) {
         setClasstList(newClass);
     }
 
+    const handleOpenClose = () =>{
+        if(isOpen == true){
+            setIsOpen(false)
+        } else{
+            setIsOpen(true)
+        }
+    }
     return (
         <div className={`container ${styles.border}`}>
             <header className={styles.red}>
@@ -44,8 +52,10 @@ export default function Schools({ classes }) {
             <main>
                 <div className={styles.border_bottom}>
                     <h2>My Classrooms</h2>
-                    <EnterClass value ={classList} onChange ={handleSubmit}/>
-                    {/* <Button variant="contained" onClick={(event) => onCreateClass(event)}>add new +</Button> */}
+                    
+                    <Button variant="contained" onClick={handleOpenClose}>add new +</Button>
+
+                    {isOpen && <EnterClass value ={classList} onChange ={handleSubmit} onClose={handleOpenClose}/>}
                 </div>
                 <Box>
                     <Box>
