@@ -9,7 +9,7 @@ import awsconfig from '../../aws-exports';
 import * as mutations from "../../graphql/mutations";
 
 
-const EnterClass = React.memo(({ onChange , onClose}) => {
+const EnterClass = React.memo(({ onChange, onClose }) => {
     const [inputValue, setInputValue] = useState('');
 
     const onCreateClass = async () => {
@@ -37,13 +37,13 @@ const EnterClass = React.memo(({ onChange , onClose}) => {
     return (
         <div className={styles.overlay}>
             <div className={styles.centered}>
-            <Image
-                        src={`/assets/img/closebutton.jpg`}
-                        width={20}
-                        height={20}
-                        onClick={onClose}
-                        className={styles.closeButton}
-                    />
+                <Image
+                    src={`/assets/img/closebutton.jpg`}
+                    width={20}
+                    height={20}
+                    onClick={onClose}
+                    className={styles.closeButton}
+                />
                 <input
                     type="text"
                     placeholder="Class Name"

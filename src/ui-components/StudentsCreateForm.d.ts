@@ -5,23 +5,23 @@
  **************************************************************************/
 
 import * as React from "react";
-import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 export declare type ValidationResponse = {
     hasError: boolean;
     errorMessage?: string;
 };
 export declare type ValidationFunction<T> = (value: T, validationResponse: ValidationResponse) => ValidationResponse | Promise<ValidationResponse>;
 export declare type StudentsCreateFormInputValues = {
-    Name?: string;
+    name?: string;
 };
 export declare type StudentsCreateFormValidationValues = {
-    Name?: ValidationFunction<string>;
+    name?: ValidationFunction<string>;
 };
-export declare type FormProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type StudentsCreateFormOverridesProps = {
-    StudentsCreateFormGrid?: FormProps<GridProps>;
-    Name?: FormProps<TextFieldProps>;
+    StudentsCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
+    name?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type StudentsCreateFormProps = React.PropsWithChildren<{
     overrides?: StudentsCreateFormOverridesProps | undefined | null;
@@ -30,7 +30,6 @@ export declare type StudentsCreateFormProps = React.PropsWithChildren<{
     onSubmit?: (fields: StudentsCreateFormInputValues) => StudentsCreateFormInputValues;
     onSuccess?: (fields: StudentsCreateFormInputValues) => void;
     onError?: (fields: StudentsCreateFormInputValues, errorMessage: string) => void;
-    onCancel?: () => void;
     onChange?: (fields: StudentsCreateFormInputValues) => StudentsCreateFormInputValues;
     onValidate?: StudentsCreateFormValidationValues;
 } & React.CSSProperties>;

@@ -5,12 +5,12 @@ import * as React from 'react'
 import Switch from '@mui/material/Switch'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import { Box, Tab, Tabs, Typography, ListItem, Button } from '@mui/material'
 import { useState, useEffect } from 'react'
 import EnterClass from './enterClass'
-
+import ClassTabs from './ClassTabs.js'
 import { Amplify, API } from 'aws-amplify';
 import awsconfig from '../../aws-exports';
+import {Button } from '@mui/material'
 
 import * as mutations from "../../graphql/mutations";
 import * as queries from '../../graphql/queries';
@@ -19,14 +19,12 @@ Amplify.configure(awsconfig);
 
 
 export default function Schools({ classes }) {
-    const [tabIndex, setTabIndex] = useState(0)
+   
     const [classList, setClasstList] = useState(classes);
     const [isOpen, setIsOpen] = useState(false);
 
 
-    const handleTabChange = (event, newTabIndex) => {
-        setTabIndex(newTabIndex)
-    }
+   
 
     const handleSubmit = (newClass) => {
         setClasstList(newClass);
@@ -52,62 +50,12 @@ export default function Schools({ classes }) {
             <main>
                 <div className={styles.border_bottom}>
                     <h2>My Classrooms</h2>
-                    
                     <Button variant="contained" onClick={handleOpenClose}>add new +</Button>
-
                     {isOpen && <EnterClass value ={classList} onChange ={handleSubmit} onClose={handleOpenClose}/>}
                 </div>
-                <Box>
-                    <Box>
-                        {/* <Tabs value={tabIndex} onChange={handleTabChange} variant="scrollable"> */}
+                
+                <ClassTabs classList={classList}/>
 
-                            {classList.map((eachClass) => (
-                                <Tab
-                                    key={eachClass.id}
-                                    label={eachClass.ClassName}
-                                />
-                            ))}
-
-                        {/* </Tabs> */}
-                    </Box>
-                    <Box sx={{ padding: 2 }}>
-                        {tabIndex === 0 && (
-                            <Box>
-                                <Typography>STUDENTS</Typography>
-                                <ListItem>
-                                    Student name 1 – Emotions: Angry - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-
-                            </Box>
-                        )}
-                        {tabIndex === 1 && (
-                            <Box>
-                                <Typography>STUDENTS</Typography>
-                                <ListItem>
-                                    Student name 1 – Emotions: asdnkasnd - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-
-                            </Box>
-                        )}
-                        {tabIndex === 2 && (
-                            <Box>
-                                <Typography>STUDENTS</Typography>
-                                <ListItem>
-                                    Student name 1 – Emotions: Angry - Alone
-                                    <Button variant="outlined">
-                                        View details
-                                    </Button>
-                                </ListItem>
-                            </Box>
-                        )}
-                    </Box>
-                </Box>
                 <div className={styles.border_bottom}>
                     <h2>Enable / Diable Emotions</h2>
                 </div>

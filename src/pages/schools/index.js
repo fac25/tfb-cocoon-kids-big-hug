@@ -5,13 +5,6 @@ import Schools from '../../components/Schools/Schools';
 import { API } from 'aws-amplify';
 import * as queries from '../../graphql/queries';
 
-function SchoolPage({ classes }) {
-    return (
-        <Layout isLanding={true} showEmergency={false}>
-            <Schools classes={classes}/>
-        </Layout>
-    );
-}   
 
 export async function getServerSideProps() {
 
@@ -38,4 +31,11 @@ export async function getServerSideProps() {
     }
 }
 
+function SchoolPage({ classes }) {
+    return (
+        <Layout isLanding={true} showEmergency={false}>
+            <Schools classes={classes} />
+        </Layout>
+    );
+}
 export default SchoolPage;

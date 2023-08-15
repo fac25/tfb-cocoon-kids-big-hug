@@ -1,4 +1,17 @@
+type StudentClass @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  studentsID: ID! @index(name: "byStudents")
+  classID: ID! @index(name: "byClass")
+}
+
+type Students @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  StudentClasses: [StudentClass] @hasMany(indexName: "byStudents", fields: ["id"])
+}
+
 type Class @model @auth(rules: [{allow: public}]) {
   id: ID!
   ClassName: String
+  StudentClasses: [StudentClass] @hasMany(indexName: "byClass", fields: ["id"])
 } 
