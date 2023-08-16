@@ -1,60 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createStudentClass = /* GraphQL */ `
-  mutation CreateStudentClass(
-    $input: CreateStudentClassInput!
-    $condition: ModelStudentClassConditionInput
-  ) {
-    createStudentClass(input: $input, condition: $condition) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
-export const updateStudentClass = /* GraphQL */ `
-  mutation UpdateStudentClass(
-    $input: UpdateStudentClassInput!
-    $condition: ModelStudentClassConditionInput
-  ) {
-    updateStudentClass(input: $input, condition: $condition) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
-export const deleteStudentClass = /* GraphQL */ `
-  mutation DeleteStudentClass(
-    $input: DeleteStudentClassInput!
-    $condition: ModelStudentClassConditionInput
-  ) {
-    deleteStudentClass(input: $input, condition: $condition) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
 export const createStudents = /* GraphQL */ `
   mutation CreateStudents(
     $input: CreateStudentsInput!
@@ -63,7 +9,7 @@ export const createStudents = /* GraphQL */ `
     createStudents(input: $input, condition: $condition) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -85,7 +31,7 @@ export const updateStudents = /* GraphQL */ `
     updateStudents(input: $input, condition: $condition) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -107,7 +53,7 @@ export const deleteStudents = /* GraphQL */ `
     deleteStudents(input: $input, condition: $condition) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -129,7 +75,7 @@ export const createClass = /* GraphQL */ `
     createClass(input: $input, condition: $condition) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
         __typename
@@ -151,7 +97,7 @@ export const updateClass = /* GraphQL */ `
     updateClass(input: $input, condition: $condition) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
         __typename
@@ -173,9 +119,123 @@ export const deleteClass = /* GraphQL */ `
     deleteClass(input: $input, condition: $condition) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const createClassStudents = /* GraphQL */ `
+  mutation CreateClassStudents(
+    $input: CreateClassStudentsInput!
+    $condition: ModelClassStudentsConditionInput
+  ) {
+    createClassStudents(input: $input, condition: $condition) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const updateClassStudents = /* GraphQL */ `
+  mutation UpdateClassStudents(
+    $input: UpdateClassStudentsInput!
+    $condition: ModelClassStudentsConditionInput
+  ) {
+    updateClassStudents(input: $input, condition: $condition) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const deleteClassStudents = /* GraphQL */ `
+  mutation DeleteClassStudents(
+    $input: DeleteClassStudentsInput!
+    $condition: ModelClassStudentsConditionInput
+  ) {
+    deleteClassStudents(input: $input, condition: $condition) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt

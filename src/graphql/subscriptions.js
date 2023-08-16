@@ -1,63 +1,12 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateStudentClass = /* GraphQL */ `
-  subscription OnCreateStudentClass(
-    $filter: ModelSubscriptionStudentClassFilterInput
-  ) {
-    onCreateStudentClass(filter: $filter) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
-export const onUpdateStudentClass = /* GraphQL */ `
-  subscription OnUpdateStudentClass(
-    $filter: ModelSubscriptionStudentClassFilterInput
-  ) {
-    onUpdateStudentClass(filter: $filter) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
-export const onDeleteStudentClass = /* GraphQL */ `
-  subscription OnDeleteStudentClass(
-    $filter: ModelSubscriptionStudentClassFilterInput
-  ) {
-    onDeleteStudentClass(filter: $filter) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
 export const onCreateStudents = /* GraphQL */ `
   subscription OnCreateStudents($filter: ModelSubscriptionStudentsFilterInput) {
     onCreateStudents(filter: $filter) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -76,7 +25,7 @@ export const onUpdateStudents = /* GraphQL */ `
     onUpdateStudents(filter: $filter) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -95,7 +44,7 @@ export const onDeleteStudents = /* GraphQL */ `
     onDeleteStudents(filter: $filter) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -114,7 +63,7 @@ export const onCreateClass = /* GraphQL */ `
     onCreateClass(filter: $filter) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
         __typename
@@ -133,7 +82,7 @@ export const onUpdateClass = /* GraphQL */ `
     onUpdateClass(filter: $filter) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
         __typename
@@ -152,9 +101,120 @@ export const onDeleteClass = /* GraphQL */ `
     onDeleteClass(filter: $filter) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onCreateClassStudents = /* GraphQL */ `
+  subscription OnCreateClassStudents(
+    $filter: ModelSubscriptionClassStudentsFilterInput
+  ) {
+    onCreateClassStudents(filter: $filter) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateClassStudents = /* GraphQL */ `
+  subscription OnUpdateClassStudents(
+    $filter: ModelSubscriptionClassStudentsFilterInput
+  ) {
+    onUpdateClassStudents(filter: $filter) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteClassStudents = /* GraphQL */ `
+  subscription OnDeleteClassStudents(
+    $filter: ModelSubscriptionClassStudentsFilterInput
+  ) {
+    onDeleteClassStudents(filter: $filter) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         __typename
       }
       createdAt

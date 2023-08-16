@@ -15,25 +15,29 @@ const EnterClass = React.memo(({classID, onClose }) => {
     const [inputValue, setInputValue] = useState('');
 
     const createStudents = async () => {
-        console.log({inputValue},"classID: ", classID)
+        console.log("inputValue: ",inputValue,"classID: ", classID)
         try {
             const createStudentResponse = await API.graphql({
                 query: mutations.createStudents,
                 variables: { input: { name: inputValue } },
             });
 
+            console.log("createstudent",createStudentResponse.data)
             const studentID = createStudentResponse.data.createStudents.id;
-            const indexTableInput = {
-                studentID : studentID,
-                classID: classID
-                
-            }
-            const createStudentClassResponse = await API.graphql({
-                query: mutations.createStudentClass,
-                variables: { input: indexTableInput },
+        
+            // const tableInput = {
+            //     studentID : studentID,
+            //     classID: classID
 
-            });
+            // }       
+            // console.log(tableInput)
+            // const createStudentClassResponse = await API.graphql({
+            //     query: mutations.createClassStudents,
+            //     variables: { input: tableInput },
 
+            // });
+            
+            console.log("createstudentclass",createStudentClassResponse.data)
             console.log('Student and association added:', createStudentClassResponse);
         } catch (error) {
             console.error('Error adding student and association:', error);

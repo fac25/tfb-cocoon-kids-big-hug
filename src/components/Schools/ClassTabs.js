@@ -33,7 +33,6 @@ const ClassTabs = ({classList}) => {
                         {tabIndex === index && (
                             <Box>
                                 <div>
-                                {eachClass.id}
                                 <Typography>STUDENTS</Typography>
                                 <ListItem>
                                     Student name 1 – Emotions: {eachClass.ClassName} - Alone

@@ -1,89 +1,5 @@
 export const schema = {
     "models": {
-        "StudentClass": {
-            "name": "StudentClass",
-            "fields": {
-                "id": {
-                    "name": "id",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "studentsID": {
-                    "name": "studentsID",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "classID": {
-                    "name": "classID",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                }
-            },
-            "syncable": true,
-            "pluralName": "StudentClasses",
-            "attributes": [
-                {
-                    "type": "model",
-                    "properties": {}
-                },
-                {
-                    "type": "key",
-                    "properties": {
-                        "name": "byStudents",
-                        "fields": [
-                            "studentsID"
-                        ]
-                    }
-                },
-                {
-                    "type": "key",
-                    "properties": {
-                        "name": "byClass",
-                        "fields": [
-                            "classID"
-                        ]
-                    }
-                },
-                {
-                    "type": "auth",
-                    "properties": {
-                        "rules": [
-                            {
-                                "allow": "public",
-                                "operations": [
-                                    "create",
-                                    "update",
-                                    "delete",
-                                    "read"
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
         "Students": {
             "name": "Students",
             "fields": {
@@ -101,11 +17,11 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "StudentClasses": {
-                    "name": "StudentClasses",
+                "classs": {
+                    "name": "classs",
                     "isArray": true,
                     "type": {
-                        "model": "StudentClass"
+                        "model": "ClassStudents"
                     },
                     "isRequired": false,
                     "attributes": [],
@@ -113,7 +29,7 @@ export const schema = {
                     "association": {
                         "connectionType": "HAS_MANY",
                         "associatedWith": [
-                            "studentsID"
+                            "students"
                         ]
                     }
                 },
@@ -176,11 +92,11 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "StudentClasses": {
-                    "name": "StudentClasses",
+                "Students": {
+                    "name": "Students",
                     "isArray": true,
                     "type": {
-                        "model": "StudentClass"
+                        "model": "ClassStudents"
                     },
                     "isRequired": false,
                     "attributes": [],
@@ -188,7 +104,7 @@ export const schema = {
                     "association": {
                         "connectionType": "HAS_MANY",
                         "associatedWith": [
-                            "classID"
+                            "class"
                         ]
                     }
                 },
@@ -233,10 +149,108 @@ export const schema = {
                     }
                 }
             ]
+        },
+        "ClassStudents": {
+            "name": "ClassStudents",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "studentsId": {
+                    "name": "studentsId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "classId": {
+                    "name": "classId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "students": {
+                    "name": "students",
+                    "isArray": false,
+                    "type": {
+                        "model": "Students"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "studentsId"
+                        ]
+                    }
+                },
+                "class": {
+                    "name": "class",
+                    "isArray": false,
+                    "type": {
+                        "model": "Class"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "classId"
+                        ]
+                    }
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "ClassStudents",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byStudents",
+                        "fields": [
+                            "studentsId"
+                        ]
+                    }
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byClass",
+                        "fields": [
+                            "classId"
+                        ]
+                    }
+                }
+            ]
         }
     },
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.4.4",
-    "version": "b3a8a83051815705c8fda8496a4da8bb"
+    "version": "d552a32917823866884b9b0e6affbadf"
 };

@@ -1,145 +1,12 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getStudentClass = /* GraphQL */ `
-  query GetStudentClass($id: ID!) {
-    getStudentClass(id: $id) {
-      id
-      studentsID
-      classID
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
-      __typename
-    }
-  }
-`;
-export const listStudentClasses = /* GraphQL */ `
-  query ListStudentClasses(
-    $filter: ModelStudentClassFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listStudentClasses(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        studentsID
-        classID
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        __typename
-      }
-      nextToken
-      startedAt
-      __typename
-    }
-  }
-`;
-export const syncStudentClasses = /* GraphQL */ `
-  query SyncStudentClasses(
-    $filter: ModelStudentClassFilterInput
-    $limit: Int
-    $nextToken: String
-    $lastSync: AWSTimestamp
-  ) {
-    syncStudentClasses(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
-      items {
-        id
-        studentsID
-        classID
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        __typename
-      }
-      nextToken
-      startedAt
-      __typename
-    }
-  }
-`;
-export const studentClassesByStudentsID = /* GraphQL */ `
-  query StudentClassesByStudentsID(
-    $studentsID: ID!
-    $sortDirection: ModelSortDirection
-    $filter: ModelStudentClassFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    studentClassesByStudentsID(
-      studentsID: $studentsID
-      sortDirection: $sortDirection
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-    ) {
-      items {
-        id
-        studentsID
-        classID
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        __typename
-      }
-      nextToken
-      startedAt
-      __typename
-    }
-  }
-`;
-export const studentClassesByClassID = /* GraphQL */ `
-  query StudentClassesByClassID(
-    $classID: ID!
-    $sortDirection: ModelSortDirection
-    $filter: ModelStudentClassFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    studentClassesByClassID(
-      classID: $classID
-      sortDirection: $sortDirection
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-    ) {
-      items {
-        id
-        studentsID
-        classID
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        __typename
-      }
-      nextToken
-      startedAt
-      __typename
-    }
-  }
-`;
 export const getStudents = /* GraphQL */ `
   query GetStudents($id: ID!) {
     getStudents(id: $id) {
       id
       name
-      StudentClasses {
+      classs {
         nextToken
         startedAt
         __typename
@@ -210,7 +77,7 @@ export const getClass = /* GraphQL */ `
     getClass(id: $id) {
       id
       ClassName
-      StudentClasses {
+      Students {
         nextToken
         startedAt
         __typename
@@ -263,6 +130,159 @@ export const syncClasses = /* GraphQL */ `
       items {
         id
         ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const getClassStudents = /* GraphQL */ `
+  query GetClassStudents($id: ID!) {
+    getClassStudents(id: $id) {
+      id
+      studentsId
+      classId
+      students {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      class {
+        id
+        ClassName
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const listClassStudents = /* GraphQL */ `
+  query ListClassStudents(
+    $filter: ModelClassStudentsFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listClassStudents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        studentsId
+        classId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const syncClassStudents = /* GraphQL */ `
+  query SyncClassStudents(
+    $filter: ModelClassStudentsFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncClassStudents(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        studentsId
+        classId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const classStudentsByStudentsId = /* GraphQL */ `
+  query ClassStudentsByStudentsId(
+    $studentsId: ID!
+    $sortDirection: ModelSortDirection
+    $filter: ModelClassStudentsFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    classStudentsByStudentsId(
+      studentsId: $studentsId
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        studentsId
+        classId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const classStudentsByClassId = /* GraphQL */ `
+  query ClassStudentsByClassId(
+    $classId: ID!
+    $sortDirection: ModelSortDirection
+    $filter: ModelClassStudentsFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    classStudentsByClassId(
+      classId: $classId
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        studentsId
+        classId
         createdAt
         updatedAt
         _version
