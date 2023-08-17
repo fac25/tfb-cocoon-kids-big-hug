@@ -8,7 +8,6 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const ExpandedVideo = React.memo(({ videoData, onClose }) => {
     
-    console.log("data",{videoData})
     return (
         <div className={styles.overlay}>
             <div className={styles.centered}>

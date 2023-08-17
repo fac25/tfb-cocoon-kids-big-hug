@@ -10,7 +10,7 @@ const ClassTabs = ({classList}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOpenClose = () =>{
-        if(isOpen == true){
+        if(!isOpen){
             setIsOpen(false)
         } else{
             setIsOpen(true)
@@ -39,7 +39,6 @@ const ClassTabs = ({classList}) => {
                                     <Button variant="outlined">View details</Button>
                                 </ListItem>
                                 <Button variant="contained" onClick={handleOpenClose}>add Student +</Button>
-                                {/* {isOpen && <EnterClass value ={classList} onChange ={handleSubmit} onClose={handleOpenClose}/>} */}
                                 {isOpen && <EnterStudentDetails classID ={eachClass.id} onClose={handleOpenClose}/>}
                                 </div>
                             </Box>

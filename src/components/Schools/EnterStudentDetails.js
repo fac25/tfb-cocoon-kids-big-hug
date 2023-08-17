@@ -15,7 +15,6 @@ const EnterClass = React.memo(({classID, onClose }) => {
     const [inputValue, setInputValue] = useState('');
 
     const createStudents = async () => {
-        console.log("inputValue: ",inputValue,"classID: ", classID)
         try {
             const createStudentResponse = await API.graphql({
                 query: mutations.createStudents,
@@ -25,20 +24,10 @@ const EnterClass = React.memo(({classID, onClose }) => {
             console.log("createstudent",createStudentResponse.data)
             const studentID = createStudentResponse.data.createStudents.id;
         
-            // const tableInput = {
-            //     studentID : studentID,
-            //     classID: classID
-
-            // }       
-            // console.log(tableInput)
-            // const createStudentClassResponse = await API.graphql({
-            //     query: mutations.createClassStudents,
-            //     variables: { input: tableInput },
-
-            // });
+           //Need to add student and class ids to bridge table here.
             
-            console.log("createstudentclass",createStudentClassResponse.data)
-            console.log('Student and association added:', createStudentClassResponse);
+           
+            console.log('Student and association added:', createStudentResponse);
         } catch (error) {
             console.error('Error adding student and association:', error);
         }

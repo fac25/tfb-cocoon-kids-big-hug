@@ -12,26 +12,24 @@ import { Amplify, API } from 'aws-amplify';
 import awsconfig from '../../aws-exports';
 import {Button } from '@mui/material'
 
-import * as mutations from "../../graphql/mutations";
-import * as queries from '../../graphql/queries';
 
 Amplify.configure(awsconfig);
 
 
 export default function Schools({ classes }) {
-   
-    const [classList, setClasstList] = useState(classes);
+    
+    const [classList, setClassList] = useState(classes);
     const [isOpen, setIsOpen] = useState(false);
 
 
    
 
     const handleSubmit = (newClass) => {
-        setClasstList(newClass);
+        setClassList(newClass);
     }
 
     const handleOpenClose = () =>{
-        if(isOpen == true){
+        if(!isOpen){
             setIsOpen(false)
         } else{
             setIsOpen(true)
