@@ -21,7 +21,6 @@ const EnterClass = React.memo(({classID, onClose }) => {
                 variables: { input: { name: inputValue } },
             });
 
-            console.log("createstudent",createStudentResponse.data)
             const studentID = createStudentResponse.data.createStudents.id;
         
            //Need to add student and class ids to bridge table here.

@@ -27,9 +27,7 @@ const EnterClass = React.memo(({ onChange, onClose }) => {
 
             onChange((list) => [...list, { ...newClass }]);
 
-            console.log("Successfully created a class!");
         } catch (err) {
-            console.log("error: ", err);
         }
     };
 

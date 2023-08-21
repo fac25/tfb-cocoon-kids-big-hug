@@ -10,11 +10,7 @@ const ClassTabs = ({classList}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOpenClose = () =>{
-        if(!isOpen){
-            setIsOpen(false)
-        } else{
-            setIsOpen(true)
-        }
+        setIsOpen(!isOpen)
     }
     return (
         <div>
