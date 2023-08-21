@@ -27,7 +27,6 @@ const EnterClass = React.memo(({classID, onClose }) => {
            //Need to add student and class ids to bridge table here.
             
            
-            console.log('Student and association added:', createStudentResponse);
         } catch (error) {
             console.error('Error adding student and association:', error);
         }

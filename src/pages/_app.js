@@ -11,9 +11,8 @@ Amplify.configure({
 })
 
 
-
-
 function MyApp({ Component, pageProps }) {
+    
     const initialState = 'under13'
     const [userGroup, setUserGroup] = useState(initialState)
 
