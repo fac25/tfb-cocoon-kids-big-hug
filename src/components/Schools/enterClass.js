@@ -1,11 +1,10 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import styles from '../../styles/ExpandedVideo.module.css'
 
 import Image from 'next/image'
 
-import { Amplify, API } from 'aws-amplify';
-import awsconfig from '../../aws-exports';
+import { API } from 'aws-amplify';
 import * as mutations from "../../graphql/mutations";
 
 
@@ -28,6 +27,7 @@ const EnterClass = React.memo(({ onChange, onClose }) => {
             onChange((list) => [...list, { ...newClass }]);
 
         } catch (err) {
+            console.error(err)
         }
     };
 
@@ -37,6 +37,7 @@ const EnterClass = React.memo(({ onChange, onClose }) => {
             <div className={styles.centered}>
                 <Image
                     src={`/assets/img/closebutton.jpg`}
+                    alt=''
                     width={20}
                     height={20}
                     onClick={onClose}
@@ -57,4 +58,7 @@ const EnterClass = React.memo(({ onChange, onClose }) => {
         </div>
     );
 });
+
+EnterClass.displayName = 'EnterClass';
+
 export default EnterClass;

@@ -4,7 +4,7 @@ import VideoPage from '../../components/video/videoCards'
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 
-export default function Emotion({ videos }) {
+export default function Emotion() {
     const { data, error } = useSWR('/api/staticdata', fetcher)
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>

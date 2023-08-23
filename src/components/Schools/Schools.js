@@ -5,10 +5,10 @@ import * as React from 'react'
 import Switch from '@mui/material/Switch'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import EnterClass from './enterClass'
 import ClassTabs from './ClassTabs.js'
-import { Amplify, API } from 'aws-amplify';
+import {Amplify} from 'aws-amplify';
 import awsconfig from '../../aws-exports';
 import {Button } from '@mui/material'
 

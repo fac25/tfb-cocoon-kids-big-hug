@@ -14,6 +14,7 @@ const ExpandedVideo = React.memo(({ videoData, onClose }) => {
                    
                     <Image
                         src={`/assets/img/closebutton.jpg`}
+                        alt=''
                         width={20}
                         height={20}
                         onClick={onClose}
@@ -29,4 +30,7 @@ const ExpandedVideo = React.memo(({ videoData, onClose }) => {
         </div>
     );
 });
+
+ExpandedVideo.displayName = 'ExpandedVideo';
+
 export default ExpandedVideo;
