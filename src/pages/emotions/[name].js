@@ -13,18 +13,9 @@ import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
 import path from 'path'
 import { promises as fs } from 'fs'
-/*
-export async function getStaticPaths() {
-    const emotions = await fetchData('emotions')
+import VideoPage from '../../components/video/videoCards'
 
-    console.log(emotions)
-    const paths = emotions.map((emotion) => ({
-        params: { name: emotion.name },
-    }))
 
-    return { paths, fallback: false }
-}
-*/
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -64,11 +55,6 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 export async function getServerSideProps(context) {
     const name = context.params.name
 
-    // const emotion = await fetchData('emotions/?name=' + name)
-    // const chat = await fetchData('chat-speak')
-    // const domake = await fetchData(`do-make`)
-    // const games = await fetchData(`play-game`)
-
     const jsonDirectory = path.join(process.cwd(), 'json')
     //Read the json data file data.json
     const fileContents = await fs.readFile(jsonDirectory + '/db.json', 'utf8')
@@ -77,9 +63,10 @@ export async function getServerSideProps(context) {
     const chat = data['chat-speak']
     const domake = data[`do-make`]
     const games = data[`play-game`]
+    const video = data[`video`].filter((video) => video.emotions.includes(name))
     //Return the content of the data file in json format
 
-    return { props: { emotion, chat, games, domake, name } }
+    return { props: { emotion, chat, games, domake, name , video} }
 }
 
 function handleActivity(activity, setGame, name) {
@@ -94,10 +81,11 @@ function handleActivity(activity, setGame, name) {
     })
 }
 
-export default function SingleEmotionPage({ emotion, chat, games, domake, name }) {
+export default function SingleEmotionPage({ emotion, chat, games, domake, name ,video}) {
     const [expanded, setExpanded] = useState('')
     const [game, setGame] = useState()
     const [make, setMake] = useState()
+    
 
     const handleChange = (panel) => (event, newExpanded) => {
         handleActivity(games, setGame, name)
@@ -167,6 +155,20 @@ export default function SingleEmotionPage({ emotion, chat, games, domake, name }
                         </AccordionSummary>
                         <AccordionDetails>
                             <ChatSpeak chat={chat} />
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion
+                        expanded={expanded === 'panel5'}
+                        onChange={handleChange('panel5')}
+                    >
+                        <AccordionSummary
+                            aria-controls="panel5d-content"
+                            id="panel5d-header"
+                        >
+                            <Typography>Video</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <VideoPage videos={video}/>
                         </AccordionDetails>
                     </Accordion>
                 </div>
