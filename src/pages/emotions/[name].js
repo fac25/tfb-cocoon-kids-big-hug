@@ -14,6 +14,7 @@ import ChatSpeak from '../../components/ChatSpeak'
 import path from 'path'
 import { promises as fs } from 'fs'
 import VideoPage from '../../components/video/videoCards'
+import PlayGame from '../../components/playgame/PlayGame'
 
 
 const Accordion = styled((props) => (
@@ -62,7 +63,7 @@ export async function getServerSideProps(context) {
     const emotion = data['emotions'].filter((emotion) => emotion.name === name)
     const chat = data['chat-speak']
     const domake = data[`do-make`]
-    const games = data[`play-game`]
+    const games = data[`play-game`].filter((games) => games.emotions.includes(name))
     const video = data[`video`].filter((video) => video.emotions.includes(name))
     //Return the content of the data file in json format
 
@@ -126,7 +127,7 @@ export default function SingleEmotionPage({ emotion, chat, games, domake, name ,
                             <Typography>Play/game</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {game && <SinglePlayGame game={game} />}
+                            <PlayGame games={games}/>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion
