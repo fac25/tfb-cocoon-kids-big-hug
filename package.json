@@ -8,7 +8,8 @@
         "start": "next start",
         "lint": "next lint",
         "j-s": "npx json-server db.json --port 3003",
-        "commit": "cz"
+        "commit": "cz",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@aws-amplify/api": "^5.4.0",
@@ -40,6 +41,7 @@
         "@types/node": "^20.4.9",
         "@types/react": "^18.2.20",
         "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.3",
         "ts-loader": "^9.4.4",
         "typescript": "^5.1.6"
     },
