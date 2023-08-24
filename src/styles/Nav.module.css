@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
+        
 }
 
 .logo > a > span {
@@ -30,6 +31,7 @@
 .toggle:hover {
     background-color: var(--blue-lighter);
     color: var(--blue-dark);
+    cursor: pointer;
 }
 .toggle:focus {
     outline: 2px solid transparent;
@@ -86,6 +88,9 @@
 }
 .Show ul {
     display: block;
+}
+.nav {
+    border-bottom: solid 1px gray;
 }
 @media (min-width: 425px) {
     .logo > a > span {
