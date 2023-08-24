@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
+import {useState} from 'react'
 import { Box, Tab, Tabs, Typography, ListItem, Button } from '@mui/material'
 import EnterStudentDetails from './EnterStudentDetails';
 const ClassTabs = ({classList}) => {

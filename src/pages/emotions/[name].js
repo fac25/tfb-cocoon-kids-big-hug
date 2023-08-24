@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { styled } from '@mui/material/styles'
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
 import MuiAccordion from '@mui/material/Accordion'
@@ -15,9 +15,6 @@ import path from 'path'
 import { promises as fs } from 'fs'
 import VideoPage from '../../components/video/videoCards'
 
-
-import dynamic from 'next/dynamic'
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
