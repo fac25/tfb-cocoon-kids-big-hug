@@ -10,8 +10,8 @@ export default function Landing() {
     const [openHowOld, setOpenHowOld] = useState<boolean>(false)
 
 
-  const handleHowOldState = () => {
-    setOpenHowOld(!openHowOld); 
+    const handleHowOldState = () => {
+        setOpenHowOld(!openHowOld);
     };
 
     return (
@@ -78,7 +78,7 @@ export default function Landing() {
                         </div>
                     </section>
                 </div>
-                {openHowOld && <HowOld onClose={handleHowOldState}/>}
+                {openHowOld && <HowOld onClose={handleHowOldState} />}
             </Layout>
         </div>
     )
