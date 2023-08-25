@@ -1,14 +1,27 @@
 import styles from '../styles/ExpandedVideo.module.css'
 import Image from 'next/image'
 import { useState } from 'react';
+import { useContext } from 'react'
+import GlobalUserGroup from '../context/GlobalContext'
+import { useRouter } from 'next/router';
 
 export default function HowOld({ onClose }) {
+    const router = useRouter();
+    const { setUserGroup } = useContext(GlobalUserGroup)
+   
+    // return (
+    //     <Link href="/welcome" className="stretched-link">
+    //         {text}
+    //     </Link>
+    // )
+
+
     const [age, setAge] = useState(0);
 
     const today = new Date();
-    const currentMonth = today.getMonth()+1;
+    const currentMonth = today.getMonth() + 1;
     const currentYear = today.getFullYear();
-    const currentDay = today. getDate();
+    const currentDay = today.getDate();
 
 
 
@@ -19,6 +32,7 @@ export default function HowOld({ onClose }) {
 
     const handleDayChange = (event) => {
         setSelectedDay(event.target.value);
+
     };
     const handleMonthChange = (event) => {
         setSelectedMonth(event.target.value);
@@ -27,22 +41,25 @@ export default function HowOld({ onClose }) {
         setSelectedYear(event.target.value);
     };
 
-    const handleSubmit = () =>{
+    const handleSubmit = () => {
         let day = parseInt(selectedDay);
         let month = parseInt(selectedMonth);
         let year = parseInt(selectedYear);
-       
+
         let calculatedAge = currentYear - year;
 
-        if(currentMonth < month || (currentMonth === month && currentDate < day)){
-           calculatedAge--; 
+        if (currentMonth < month || (currentMonth === month && currentDay < day)) {
+            calculatedAge--;
         }
 
         setAge(calculatedAge);
-        
-        console.log(age )
-       
 
+        if (calculatedAge > 13) {
+            setUserGroup(localStorage.setItem('user-group', "under13"))
+        } else {
+            setUserGroup(localStorage.setItem('user-group', "over13"))
+        }
+        router.push('/welcome');
     }
 
 
@@ -98,7 +115,14 @@ export default function HowOld({ onClose }) {
                             {yearList}
                         </select>
                     </div>
-                    <button onClick={handleSubmit}>continue</button>
+
+                    <button onClick={handleSubmit}>
+                        Contine
+                    </button>
+
+                    <div>
+                        your age is: {age}
+                    </div>
                     <button onClick={onClose}>cancel</button>
                 </div>
             </div>
