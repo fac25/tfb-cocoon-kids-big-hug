@@ -3,7 +3,13 @@ import Image from 'next/image'
 import { useState } from 'react';
 
 export default function HowOld({ onClose }) {
-    const currentYear = new Date().getFullYear();
+    const [age, setAge] = useState(0);
+
+    const today = new Date();
+    const currentMonth = today.getMonth()+1;
+    const currentYear = today.getFullYear();
+    const currentDay = today. getDate();
+
 
 
     const [selectedDay, setSelectedDay] = useState("1");
@@ -22,7 +28,21 @@ export default function HowOld({ onClose }) {
     };
 
     const handleSubmit = () =>{
-        console.log({selectedDay},{selectedMonth},{selectedYear})
+        let day = parseInt(selectedDay);
+        let month = parseInt(selectedMonth);
+        let year = parseInt(selectedYear);
+       
+        let calculatedAge = currentYear - year;
+
+        if(currentMonth < month || (currentMonth === month && currentDate < day)){
+           calculatedAge--; 
+        }
+
+        setAge(calculatedAge);
+        
+        console.log(age )
+       
+
     }
 
 
@@ -61,18 +81,18 @@ export default function HowOld({ onClose }) {
                             {dayList}
                         </select>
                         <select value={selectedMonth} onChange={handleMonthChange}>
-                            <option>January</option>
-                            <option>Febuary</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>November</option>
-                            <option>October</option>
-                            <option>December</option>
+                            <option value={1}>January</option>
+                            <option value={2}>Febuary</option>
+                            <option value={3}>March</option>
+                            <option value={4}>April</option>
+                            <option value={5}>May</option>
+                            <option value={6}>June</option>
+                            <option value={7}>July</option>
+                            <option value={8}>August</option>
+                            <option value={9}>September</option>
+                            <option value={10}>November</option>
+                            <option value={11}>October</option>
+                            <option value={12}>December</option>
                         </select>
                         <select value={selectedYear} onChange={handleYearChange}>
                             {yearList}
