@@ -4,10 +4,7 @@ import WhatToDo from '../components/WhatToDo'
 import useSWR from 'swr'
 
 import CircularProgress from '@mui/material/CircularProgress'
-// export async function getStaticProps() {
-//     const emotions = await fetchData('emotions')
-//     return { props: { emotions } }
-// }
+
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Welcome() {

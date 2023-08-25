@@ -727,7 +727,7 @@
     {
         "id": 1,
         "emotions": [
-            "worried, anxious"
+            "worried", "anxious"
         ],
         "under13": true,
         "over13": true,
@@ -822,7 +822,7 @@
     {
         "id": 3,
         "emotions": [
-            "anxious, worried"
+            "anxious", "worried"
         ],
         "under13": true,
         "over13": true,
@@ -929,7 +929,7 @@
     {
         "id": 5,
         "emotions": [
-            "worried, upset"
+            "worried", "upset"
         ],
         "under13": true,
         "over13": true,

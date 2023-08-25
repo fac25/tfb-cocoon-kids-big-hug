@@ -6,7 +6,6 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary'
 import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
 import SingleEmotion from '../../components/emotions/SingleEmotion'
-import SinglePlayGame from '../../components/playgame/SinglePlayGame'
 import SingleDoMake from '../../components/domake/SingleDoMake'
 
 import Layout from '../../components/layout/Layout'
@@ -14,7 +13,8 @@ import ChatSpeak from '../../components/ChatSpeak'
 import path from 'path'
 import { promises as fs } from 'fs'
 import VideoPage from '../../components/video/videoCards'
-
+import PlayGame from '../../components/playgame/PlayGame'
+import DoMake from '../../components/domake/DoMake'
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -61,8 +61,8 @@ export async function getServerSideProps(context) {
     const data = JSON.parse(fileContents)
     const emotion = data['emotions'].filter((emotion) => emotion.name === name)
     const chat = data['chat-speak']
-    const domake = data[`do-make`]
-    const games = data[`play-game`]
+    const domake = data[`do-make`].filter((domake) => domake.emotions.includes(name))
+    const games = data[`play-game`].filter((games) => games.emotions.includes(name))
     const video = data[`video`].filter((video) => video.emotions.includes(name))
     //Return the content of the data file in json format
 
@@ -111,7 +111,7 @@ export default function SingleEmotionPage({ emotion, chat, games, domake, name ,
                             <Typography>Make/do</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {make && <SingleDoMake domake={make} />}
+                            <DoMake doMakes = {domake}/>
                         </AccordionDetails>
                     </Accordion>
 
@@ -126,7 +126,7 @@ export default function SingleEmotionPage({ emotion, chat, games, domake, name ,
                             <Typography>Play/game</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {game && <SinglePlayGame game={game} />}
+                            <PlayGame games={games}/>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion
