@@ -1,4 +1,4 @@
-import styles from '../styles/ExpandedVideo.module.css'
+import styles from '../styles/howOld.module.css'
 import Image from 'next/image'
 import { useState } from 'react';
 import { useContext } from 'react'
@@ -54,12 +54,12 @@ export default function HowOld({ onClose }) {
 
         setAge(calculatedAge);
 
-        if (calculatedAge > 13) {
+      if (calculatedAge > 13) {
             setUserGroup(localStorage.setItem('user-group', "under13"))
         } else {
             setUserGroup(localStorage.setItem('user-group', "over13"))
         }
-        router.push('/welcome');
+        router.push('/welcome');  
     }
 
 
@@ -92,12 +92,16 @@ export default function HowOld({ onClose }) {
                     className={styles.closeButton}
                 />
                 <div>
-                    <div>Please enter your birth date to continue</div>
                     <div>
-                        <select value={selectedDay} onChange={handleDayChange}>
+                    <div>Please enter your birth date to continue</div>
+                    <div>We are asking for your age to personalise your experince</div>
+                    <div>WE WANT THE BEST FOR YOU!</div>
+                    </div>
+                    <div className={styles.selectWrapper}>
+                        <select value={selectedDay} onChange={handleDayChange} className={styles.select}>
                             {dayList}
                         </select>
-                        <select value={selectedMonth} onChange={handleMonthChange}>
+                        <select value={selectedMonth} onChange={handleMonthChange} className={styles.select}>
                             <option value={1}>January</option>
                             <option value={2}>Febuary</option>
                             <option value={3}>March</option>
@@ -111,19 +115,16 @@ export default function HowOld({ onClose }) {
                             <option value={11}>October</option>
                             <option value={12}>December</option>
                         </select>
-                        <select value={selectedYear} onChange={handleYearChange}>
+                        <select value={selectedYear} onChange={handleYearChange} className={styles.select}>
                             {yearList}
                         </select>
                     </div>
 
-                    <button onClick={handleSubmit}>
+                    <button onClick={handleSubmit} className={styles.buttons}>
                         Contine
                     </button>
 
-                    <div>
-                        your age is: {age}
-                    </div>
-                    <button onClick={onClose}>cancel</button>
+                    <button onClick={onClose} className={styles.buttons}>cancel</button>
                 </div>
             </div>
         </div>
