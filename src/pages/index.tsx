@@ -1,5 +1,4 @@
-import { link } from 'fs'
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/layout/Layout'
 import Nav from '../components/layout/Nav'
 import UserGroupBtn from '../components/UserGroupBtn'
@@ -28,35 +27,10 @@ export default function Landing() {
                     </header>
                     <section className="mb-lg">
                         <div className={styles.grid}>
-                            <div className={`${styles.grid__btn} ${styles['grid__btn--under13']}`} onClick={handleHowOldState} >
-                                I'm a child
+                            <div className={`${styles.grid__btn} ${styles['grid__btn--howOld']}`} onClick={handleHowOldState} >
+                                I&apos;m a child
                             </div>
-                            <div
-                                className={`${styles.grid__btn} ${styles['grid__btn--under13']}`}
-                            >
-                                <UserGroupBtn
-                                    route="/welcome"
-                                    userGroup="under13"
-                                    text={[
-                                        <>
-                                            I’m a child <span>under 13</span>
-                                        </>,
-                                    ]}
-                                />
-                            </div>
-                            <div
-                                className={`${styles.grid__btn} ${styles['grid__btn--over13']}`}
-                            >
-                                <UserGroupBtn
-                                    route="/welcome"
-                                    userGroup="over13"
-                                    text={[
-                                        <>
-                                            I’m a child <span>over 13</span>
-                                        </>,
-                                    ]}
-                                />
-                            </div>
+                           
                             <div
                                 className={`${styles.grid__btn} ${styles['grid__btn--school']}`}
                             >
@@ -72,7 +46,7 @@ export default function Landing() {
                                 <UserGroupBtn
                                     route="/parents"
                                     userGroup="parent"
-                                    text="I’m a parent or carer"
+                                    text="I&apos;m a parent or carer"
                                 />
                             </div>
                         </div>

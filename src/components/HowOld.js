@@ -8,15 +8,6 @@ import { useRouter } from 'next/router';
 export default function HowOld({ onClose }) {
     const router = useRouter();
     const { setUserGroup } = useContext(GlobalUserGroup)
-   
-    // return (
-    //     <Link href="/welcome" className="stretched-link">
-    //         {text}
-    //     </Link>
-    // )
-
-
-    const [age, setAge] = useState(0);
 
     const today = new Date();
     const currentMonth = today.getMonth() + 1;
@@ -52,14 +43,12 @@ export default function HowOld({ onClose }) {
             calculatedAge--;
         }
 
-        setAge(calculatedAge);
-
-      if (calculatedAge > 13) {
+        if (calculatedAge > 13) {
             setUserGroup(localStorage.setItem('user-group', "under13"))
         } else {
             setUserGroup(localStorage.setItem('user-group', "over13"))
         }
-        router.push('/welcome');  
+        router.push('/welcome');
     }
 
 
@@ -93,9 +82,9 @@ export default function HowOld({ onClose }) {
                 />
                 <div>
                     <div>
-                    <div>Please enter your birth date to continue</div>
-                    <div>We are asking for your age to personalise your experince</div>
-                    <div>WE WANT THE BEST FOR YOU!</div>
+                        <div className={styles.text}>Please enter your birth date to continue</div>
+                        <div className={styles.text}>We are asking for your age to personalise your experince</div>
+                        <div className={styles.text}>WE WANT THE BEST FOR YOU!</div>
                     </div>
                     <div className={styles.selectWrapper}>
                         <select value={selectedDay} onChange={handleDayChange} className={styles.select}>
@@ -120,11 +109,13 @@ export default function HowOld({ onClose }) {
                         </select>
                     </div>
 
-                    <button onClick={handleSubmit} className={styles.buttons}>
-                        Contine
-                    </button>
+                    <div className={styles.buttonWrapper}>
+                        <button onClick={handleSubmit} className={styles.buttons}>
+                            Contine
+                        </button>
 
-                    <button onClick={onClose} className={styles.buttons}>cancel</button>
+                        <button onClick={onClose} className={styles.buttons}>cancel</button>
+                    </div>
                 </div>
             </div>
         </div>

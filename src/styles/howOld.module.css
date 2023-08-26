@@ -26,6 +26,12 @@
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.text{
+    text-align: center;
 }
 
 .selectWrapper{
@@ -33,6 +39,11 @@
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
     
 }
 
@@ -45,11 +56,20 @@
    
 }
 
+
+.buttonWrapper{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    align-items: center;
+}
+
 .buttons{
     background-color: rgb(170, 209, 244);
     padding: 10px;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     border-width: 0;
     transition: 0.5s all ease;
 }
