@@ -6,7 +6,6 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary'
 import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
 import SingleEmotion from '../../components/emotions/SingleEmotion'
-import SingleDoMake from '../../components/domake/SingleDoMake'
 
 import Layout from '../../components/layout/Layout'
 import ChatSpeak from '../../components/ChatSpeak'
@@ -83,13 +82,11 @@ function handleActivity(activity, setGame, name) {
 
 export default function SingleEmotionPage({ emotion, chat, games, domake, name ,video}) {
     const [expanded, setExpanded] = useState('')
-    const [game, setGame] = useState()
-    const [make, setMake] = useState()
-    
+   
 
     const handleChange = (panel) => (event, newExpanded) => {
-        handleActivity(games, setGame, name)
-        handleActivity(domake, setMake, name)
+        handleActivity(games, name)
+        handleActivity(domake, name)
 
         setExpanded(newExpanded ? panel : false)
     }

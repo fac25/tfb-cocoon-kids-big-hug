@@ -1,9 +1,9 @@
 .grid {
-    width: 18em;
+    width: 40em;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 0.75rem;
 }
 .grid__btn {
@@ -32,14 +32,11 @@
     cursor: pointer;
     background-color: var(--white);
 }
-.grid__btn--under13 {
+.grid__btn--howOld {
     border-color: var(--yellow-dark);
     background-color: var(--yellow-light);
 }
-.grid__btn--over13 {
-    border-color: var(--green);
-    background-color: var(--green-light);
-}
+
 .grid__btn--school {
     border-color: var(--blue-medium);
     background-color: var(--blue-light);

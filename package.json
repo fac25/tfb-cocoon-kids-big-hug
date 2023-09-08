@@ -14,6 +14,7 @@
     "dependencies": {
         "@aws-amplify/api": "^5.4.0",
         "@aws-amplify/cli": "^10.5.1",
+        "@aws-amplify/core": "^5.8.4",
         "@aws-amplify/datastore": "^4.7.0",
         "@aws-amplify/ui-react": "^4.1.0",
         "@emotion/react": "^11.10.5",
@@ -30,6 +31,7 @@
         "next": "13.0.5",
         "prettier": "^2.8.0",
         "react": "18.2.0",
+        "react-datepicker": "^4.16.0",
         "react-dom": "18.2.0",
         "react-markdown": "^8.0.4",
         "react-player": "^2.12.0",
